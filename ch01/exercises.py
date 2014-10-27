@@ -288,7 +288,52 @@ characters literally.
 def demonstration_list_comprehension_abc():
     return [chr(x) for x in range(ord('a'), ord('z')+1)]
 
+"""Python’s random module includes a function shuffle(data) that accepts a
+list of elements and randomly reorders the elements so that each possi-
+ble order occurs with equal probability. The random module includes a
+more basic function randint(a, b) that returns a uniformly random integer
+from a to b (including both endpoints). Using only the randint function,
+implement your own version of the shuffle function.
+"""
+def sub_shuffle(data, indexlist):
+    import random
+    index = random.randint(0, len(indexlist)-1)
+    rElement = data[indexlist[index]]
+    indexlist.pop(index)
+    return rElement
 
+def custome_shuffle(data):
+    indexes_of_data = range(len(data))
+    return [sub_shuffle(data, indexes_of_data) for e in range(len(data))]
+
+"""Write a Python program that repeatedly reads lines from standard input
+until an EOFError is raised, and then outputs those lines in reverse order
+(a user can indicate end of input by typing ctrl-D).
+"""
+def read_sdin(data):
+    age = 1
+    if age > 0:
+        try:
+            age = int(input( "Enter other person's age:" ))
+            data.append(age)
+            if age <= 0:
+                print( "Your age must be positive" )
+            read_sdin()
+        except ValueError:
+            print( "That is an invalid age specification" )
+            read_sdin()
+        except EOFError:
+            print(data)
+            print( "There was an unexpected error reading input." )
+            raise
+    else:
+        read_sdin()
+
+
+"""Write a short Python program that takes two arrays a and b of length n
+storing int values, and returns the dot product ofa and b. That is, it returns
+an array c of length n such that c[i] = a[i]·b[i], for i = 0,...,n−1.
+"""
 
 
 if __name__ == "__main__":
@@ -333,3 +378,6 @@ if __name__ == "__main__":
     print(scale(l2, 5))
     print(demonstration_list_comprehension())
     print(demonstration_list_comprehension_abc())
+    print(custome_shuffle(l))
+    s = list()
+    read_sdin(s)
