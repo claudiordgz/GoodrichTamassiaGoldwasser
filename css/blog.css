@@ -41,7 +41,7 @@ footer {
 }
 
 .boxed {
-  height:40px;
+  height:75px;
 }
 
 pre span.pln {
@@ -59,3 +59,4 @@ pre p {
 display:none;}
 
 .MathJax_MathML {text-indent: 0;} 
+
