@@ -8,7 +8,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <!-- html,xhtml,mathml --> 
 <meta name="src" content="GoodrichTamassiaGoldwasserPages.tex" /> 
-<meta name="date" content="2014-10-28 14:03:00" /> 
+<meta name="date" content="2014-10-28 14:24:00" /> 
 <link rel="stylesheet" type="text/css" href="GoodrichTamassiaGoldwasserPages.css" /> 
 <meta charset="UTF-8" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
@@ -80,7 +80,7 @@ class="small-caps">r</span></span><br />
    </p> 
 
    <h2 class="likechapterHead"><a 
- id="x1-1000"></a>Contents</h2> <div class="container-fluid"><div class="row"><div class="col-sm-2" id="leftCol"><div class="nav nav-stacked" id="sidebar"><div class="boxed"><img src="logo/logo_black.png" alt="pict" class="center" border="0" /></div><h3 class="likesectionHead">Contents</h3><div class="tableofcontents">
+ id="x1-1000"></a>Contents</h2> <div class="container-fluid"><div class="row"><div class="col-sm-3" id="leftCol"><div class="nav nav-stacked" id="sidebar"><div class="boxed"><img src="logo/logo_black.png" alt="pict" class="center" border="0" /></div><h4 class="likesectionHead">Contents</h4><div class="tableofcontents">
    <span class="chapterToc" >1 <a 
 href="#x1-20001" id="QQ2-1-2">Python Primer</a></span>
 <br />   &#x00A0;<span class="sectionToc" >1.1 <a 
@@ -90,7 +90,13 @@ href="#x1-40001" id="QQ2-1-4">Exercises</a></span>
 <br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
 href="#x1-50001" id="QQ2-1-5"><b><span 
 class="cmbx-12">R-1.1</span></b></a></span>
-   </div></div></div><div class="col-sm-10">
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-60001" id="QQ2-1-7"><b><span 
+class="cmbx-12">R-1.2</span></b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-70001" id="QQ2-1-9"><b><span 
+class="cmbx-12">R-1.3</span></b></a></span>
+   </div></div></div><div class="col-sm-8">
                                                                                               
                                                                                               
 <p>   <a 
@@ -192,6 +198,123 @@ class="cmbx-12">if</span>&#x00A0;(n&#x00A0;%&#x00A0;m&#x00A0;==&#x00A0;0)&#x00A0
 class="cmbx-12">else</span>&#x00A0;False
    &#x00A0;<br /><span class="label"><a 
  id="x1-5005r3"></a></span></pre>
+<p></pre>
+</p> 
+<p>   <a 
+ id="sssec:ex1_2"></a>
+</p> 
+
+<h5 class="subsubsectionHead"><a 
+ id="x1-60001"></a><b><span 
+class="cmbx-12x-x-144">R-1.2</span></b></h5>
+<p>Write a short Python function, <code><span 
+class="pcrr7t-x-x-120">is_even(k)</span></code>, that takes an integer value and returns <code><span 
+class="pcrr7t-x-x-120">True</span></code> if
+<!--l. 27--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math> is even,
+and <code><span 
+class="pcrr7t-x-x-120">False</span></code> otherwise. However, your function cannot use the multiplication, modulo, or division
+operators
+</p> 
+<p>   <pre class="prettyprint">
+<a 
+ id="x1-6001r2"></a>
+<a 
+ id="x1-6002"></a>
+<br /> </p> 
+<div class="caption" 
+><span class="id">Listing&#x00A0;1.2: </span><span  
+class="content">Exercise R-1.2</span></div><!--tex4ht:label?: x1-6001r1 --><!--l. 29--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-6003r1"></a></span><span 
+class="cmbx-12">def</span>&#x00A0;is_even(k):&#x00A0;<br /><span class="label"><a 
+ id="x1-6004r2"></a></span>&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">return</span>&#x00A0;(k&#x00A0;&amp;&#x00A0;1&#x00A0;==&#x00A0;0)
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-6005r3"></a></span></pre>
+<p></pre>
+</p> 
+<p>   <a 
+ id="sssec:ex1_3"></a>
+</p> 
+
+<h5 class="subsubsectionHead"><a 
+ id="x1-70001"></a><b><span 
+class="cmbx-12x-x-144">R-1.3</span></b></h5>
+<p>Write a short Python function, <code><span 
+class="pcrr7t-x-x-120">minmax(data)</span></code>, that takes a sequence of one or more numbers, and
+returns the smallest and largest numbers, in the form of a tuple of length two. Do not use the built-in
+functions <code><span 
+class="pcrr7t-x-x-120">min</span></code> or <code><span 
+class="pcrr7t-x-x-120">max</span></code> in implementing your solution.
+</p> 
+<p>   <pre class="prettyprint">
+<a 
+ id="x1-7001r3"></a>
+<a 
+ id="x1-7002"></a>
+<br /> </p> 
+<div class="caption" 
+><span class="id">Listing&#x00A0;1.3: </span><span  
+class="content">Exercise R-1.3</span></div><!--tex4ht:label?: x1-7001r1 --><!--l. 38--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-7003r1"></a></span><span 
+class="cmbx-12">class</span>&#x00A0;MinMax():&#x00A0;<br /><span class="label"><a 
+ id="x1-7004r2"></a></span>&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">def</span>&#x00A0;__init__(self,&#x00A0;field1,&#x00A0;field2):&#x00A0;<br /><span class="label"><a 
+ id="x1-7005r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.min&#x00A0;=&#x00A0;field1&#x00A0;<br /><span class="label"><a 
+ id="x1-7006r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.max&#x00A0;=&#x00A0;field2&#x00A0;<br /><span class="label"><a 
+ id="x1-7007r5"></a></span>&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">def</span>&#x00A0;__str__(self):&#x00A0;<br /><span class="label"><a 
+ id="x1-7008r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">return</span>&#x00A0;<!--l. 44--><span class="listings-nested">&#8221;Min&#x00A0;<span 
+class="cmsy-10x-x-120">{</span>min<span 
+class="cmsy-10x-x-120">}</span>&#x00A0;<span 
+class="cmsy-10x-x-120">-</span>&#x00A0;Max&#x00A0;<span 
+class="cmsy-10x-x-120">{</span>max<span 
+class="cmsy-10x-x-120">}</span>&#8221;</span>.format(min=str(self.min),&#x00A0;max=str(self.max))&#x00A0;<br /><span class="label"><a 
+ id="x1-7009r7"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-7010r8"></a></span><span 
+class="cmbx-12">def</span>&#x00A0;minmax(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-7011r9"></a></span>&#x00A0;&#x00A0;&#x00A0;start&#x00A0;=&#x00A0;0&#x00A0;<br /><span class="label"><a 
+ id="x1-7012r10"></a></span>&#x00A0;&#x00A0;&#x00A0;mm&#x00A0;=&#x00A0;MinMax(data[start],data[start])&#x00A0;<br /><span class="label"><a 
+ id="x1-7013r11"></a></span>&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">if</span>&#x00A0;len(data)&#x00A0;&amp;&#x00A0;1&#x00A0;==&#x00A0;1:&#x00A0;<br /><span class="label"><a 
+ id="x1-7014r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">if</span>&#x00A0;data[start]&#x00A0;<span 
+class="cmmi-12">&#x003C;</span>&#x00A0;data[start+1]:&#x00A0;<br /><span class="label"><a 
+ id="x1-7015r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;data[start+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-7016r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;data[start]&#x00A0;<br /><span class="label"><a 
+ id="x1-7017r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;2&#x00A0;<br /><span class="label"><a 
+ id="x1-7018r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">else</span>:&#x00A0;<br /><span class="label"><a 
+ id="x1-7019r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;1&#x00A0;<br /><span class="label"><a 
+ id="x1-7020r18"></a></span>&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">for</span>&#x00A0;index&#x00A0;<span 
+class="cmbx-12">in</span>&#x00A0;range(start,&#x00A0;len(data[start:]),&#x00A0;2):&#x00A0;<br /><span class="label"><a 
+ id="x1-7021r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">if</span>&#x00A0;data[index]&#x00A0;<span 
+class="cmmi-12">&#x003C;</span>&#x00A0;data[index+1]&#x00A0;:&#x00A0;<br /><span class="label"><a 
+ id="x1-7022r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
+ id="x1-7023r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-7024r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">else</span>:&#x00A0;<br /><span class="label"><a 
+ id="x1-7025r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-7026r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
+ id="x1-7027r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">if</span>&#x00A0;mm.min&#x00A0;<span 
+class="cmmi-12">&#x003E;</span>&#x00A0;l_min:&#x00A0;<br /><span class="label"><a 
+ id="x1-7028r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;l_min&#x00A0;<br /><span class="label"><a 
+ id="x1-7029r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">if</span>&#x00A0;mm.max&#x00A0;<span 
+class="cmmi-12">&#x003C;</span>&#x00A0;l_max:&#x00A0;<br /><span class="label"><a 
+ id="x1-7030r28"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;l_max&#x00A0;<br /><span class="label"><a 
+ id="x1-7031r29"></a></span>&#x00A0;&#x00A0;&#x00A0;<span 
+class="cmbx-12">return</span>&#x00A0;mm
+                                                                                              
+                                                                                              
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-7032r30"></a></span></pre>
 <p></pre>
                                                                                               
                                                                                               
