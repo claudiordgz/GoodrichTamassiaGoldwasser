@@ -8,3 +8,10 @@ $(window).scroll(function() {
         $('.tableofcontents').css({position: 'absolute', top: bt+'px' })
 
 });
+
+/* swap open/close side menu icons */
+$('[data-toggle=collapse]').click(function(){
+  	// toggle icon
+  	$(this).find("i").toggleClass("glyphicon-chevron-right glyphicon-chevron-down");
+});
+       
