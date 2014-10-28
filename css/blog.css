@@ -41,7 +41,7 @@ footer {
 }
 
 .boxed {
-  height:50px;
+  height:40px;
 }
 
 pre span.pln {
@@ -57,4 +57,5 @@ pre.listings span.label {
 
 pre p {
 display:none;}
+
 
