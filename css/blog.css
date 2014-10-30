@@ -41,11 +41,19 @@ footer {
 }
 
 .boxed {
-  height:75px;
+	width:100px;
+	position:absolute;
+    right:-20px;
 }
 
-pre span.pln {
-  display:none;
+.lower-right-box {
+	bottom: 0;
+    left: 0;
+    position: fixed;
+]
+
+pre .prettyprint span .pln, {
+  display:none !important;
 }
 
 pre.listings span.pln {

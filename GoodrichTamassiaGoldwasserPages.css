@@ -176,18 +176,12 @@ div.lstinputlisting{ font-family: monospace; white-space: nowrap; }
  @font-face { font-family: QuattrocentoSans Bold Italic; src: url("fonts/QuattrocentoSans-BoldItalic.ttf") format('truetype'); } 
  * { font-size: 102%; font-family: 'DroidSansMono'; } 
  .tableofcontents {} 
- .container { float:left; top:20px; padding-left:15px; width:65%; height:1024px; } 
  table { width:100% !important; } 
  div.tabular { width:inherit !important; } 
  td p img { height:auto !important; width:120px !important; } 
- img.center { height:inherit; display: block; margin-left: auto; margin-right: auto; } 
+ img.center { width:inherit; height:inherit; display: block; margin-left: auto; margin-right: auto; } 
  .likechapterHead { display:none !important; } 
  span.titlemark { display:none !important; } 
- .navbar-bright { background-color:#3C54A6; color:#fff; }
- .navbar-bright a, #masthead a, #masthead .lead { color:#aaaacc; }
- .navbar-bright li > a:hover { background-color:#000033; }
- @media (min-width: 979px) { #sidebar.affix-top { position: static; margin-top:0px; width:310px; }}
- #sidebar.affix { position: fixed; top:65px; width:310px; } 
- #sidebar li.active { border:0 #eee solid; border-right-width:4px; }
+ .cmbx-12x-x-207 { font-size:inherit;}
 /* end css.sty */
 
