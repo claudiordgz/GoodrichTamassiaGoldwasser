@@ -43,7 +43,7 @@ footer {
 .boxed {
 	width:100px;
 	position:absolute;
-    right:-5px;
+    right:-25px;
 }
 
 .lower-right-box {
@@ -68,3 +68,8 @@ display:none;}
 
 .MathJax_MathML {text-indent: 0;} 
 
+div.#leftCol { 
+	background-image: url(logo/logo_black.png); 
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	}

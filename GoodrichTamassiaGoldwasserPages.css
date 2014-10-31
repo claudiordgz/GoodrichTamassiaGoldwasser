@@ -25,6 +25,11 @@
 .cmbx-12x-x-207{ font-weight: bold;}
 .cmcsc-10x-x-248{font-size:206%;}
 .pcrr7t-x-x-120{font-family: monospace;}
+.cmss-12{  font-family: sans-serif;}
+.cmss-12{  font-family: sans-serif;}
+.cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
+.cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
+.cmti-12{ font-style: italic;}
 .cmbx-12x-x-144{font-size:144%; font-weight: bold;}
 .cmbx-12x-x-144{ font-weight: bold;}
 .cmbx-12x-x-144{ font-weight: bold;}
@@ -183,5 +188,11 @@ div.lstinputlisting{ font-family: monospace; white-space: nowrap; }
  .likechapterHead { display:none !important; } 
  span.titlemark { display:none !important; } 
  .cmbx-12x-x-207 { font-size:inherit;}
+div.lstlisting .cmtt-10 {font-family:monospace; color:DimGray}
+div.lstlisting .cmss-10 {font-family:monospace; color:Black}
+div.lstlisting .cmssbx-10 {font-family:monospace; color:Blue}
+div.lstlisting .cmr-10 {font-family:monospace; color:Green}
+div.lstlisting .cmti-10 {font-family:monospace; color:DarkRed}
+div.lstlisting .cmr-8 {display:inline-block; width:20px}
 /* end css.sty */
 

@@ -1,35 +1,85 @@
+\blogchapter{chap:Format}{Format}
+
+All exercises will be presented with their own Python Doctest documentation to allow testing. To run them in your own python package you can copy paste the text and add a main like the following:
+
+\begin{lstlisting}[title=Running Doctest]
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+\end{lstlisting}
+
+This is just to try to keep it as simple as possible while adding how to run the code in your own work environment.
+
+\ProTip{JetBrains Pycharm is awesome, I really recommend it, plus they got a Community Edition if you are pennyless like me. The colors, the functionality it just rocks.}
+
+
+\ProTip{I like to use Anaconda for my Python distro, but the standalone Python $2.7$ or $>=3$ works too.}
+
+
 \blogchapter{chap:PythonPrimer}{Python Primer}
 
-I doubted doing the exercises for the first chapter for like an hour while I walked to my home from work. Hell, I even doubted doing the whole book, Data Structures? But even though I know most of the theory, I can't extract it like its hot. The other day I was implementing a solution to a VERY simple problem and I had trouble recalling the data structure with constant time complexity removal (answer: linked list). After that I felt extremely bad for myself, if I can't use data structures as if they were cards in a poker match then I am not really a Software Developer. My job is to juggle multiple solutions to craft one that is at least perfect.
-
-\blogsection{sec:reshaping}{Reshaping the future}{}{} \label{sec:reshaping}
-
-It feels like I've been doing it wrong during the last years, I've been focusing on developing a complete top notch quality solution, worrying about code quality, unit testing, commenting my code, learning back end and front end, and learning to make my own architectures, hell, my last subject was starting to learn QT.
-
-It ends now, I am focusing full force on Computer Science, and just a tiny bit of time learning new technologies. It is amazing what I am seeing everywhere, Angular JS, Node, MVVM on WPF, QML, it is just fantastic. But trying to cover everything is exhausting, I feel like I am getting nowhere. I need to up the ante, and I feel the only way is to have the most solid foundation, which is Computer Science, plain and simple.
+The first chapter in the book is all about learning to handle Python syntax. Subjects include objects, control flow, functions, I/O operations, exceptions, iterators and generators, namespaces, modules, and scope. There is nothing regarding python packaging to redistribute your own module, which is a subject of its own. 
 
 \blogsubsection{ssec:Exercises}{Exercises}{}{}
 \label{ssec:Exercises}
 
-So it took me some strength to accept and do this chapter no matter what, but now that I have started... it is fun. Feels good being good at something. 
+The exercises in the first chapter are fun, no joke. I've seen what's coming in chapter 2 and those exercises look terrible because they are open ended questions, but they are also important concepts.  
 
 \blogsubsubsection{sssec:ex1_1}{R-1.1}{chap:PythonPrimer}{} \label{sssec:ex1_1}
 
 
 Write a short Python function, \texttt{is_multiple(n, m)}, that takes two integer values and returns \texttt{True} if $n$ is a multiple of $m$, that is, $n = mi$ for some integer $i$, and \texttt{False} otherwise.
 
-\begin{lstlisting}
+\begin{lstlisting}[title=Exercise R-1.1]
 def is_multiple(n, m):
-    return True if (n % m == 0) else False
+    """Return True if n is multiple of m such that n = mi else returns False
+
+    >>> is_multiple(50,3)
+    False
+    >>> is_multiple(60,3)
+    True
+    >>> is_multiple(70,3)
+    False
+    >>> is_multiple(-50,2)
+    True
+    >>> is_multiple(-60,2)
+    True
+    >>> is_multiple("test",10)
+    Numbers must be Integer values
+    >>> is_multiple(-60,"test")
+    Numbers must be Integer values
+    """
+    try:
+        return True if (int(n) % int(m) == 0) else False
+    except ValueError:
+        print("Numbers must be Integer values")
 \end{lstlisting}
 
 \blogsubsubsection{sssec:ex1_2}{R-1.2}{chap:PythonPrimer}{} \label{sssec:ex1_2}
 
 Write a short Python function, \texttt{is_even(k)}, that takes an integer value and returns \texttt{True} if $k$ is even, and \texttt{False} otherwise. However, your function cannot use the multiplication, modulo, or division operators
 
-\begin{lstlisting}
+\begin{lstlisting}[title=Exercise R-1.2]
 def is_even(k):
-    return (k & 1 == 0)
+    """Return True if n is even else returns False
+
+    >>> is_even(10)
+    True
+    >>> is_even(9)
+    False
+    >>> is_even(11)
+    False
+    >>> is_even(13)
+    False
+    >>> is_even(1025)
+    False
+    >>> is_even("test")
+    Number must be Integer values
+    """
+    try:
+        return int(k) & 1 == 0
+    except ValueError:
+        print("Numbers must be Integer values")
 \end{lstlisting}
 
 \blogsubsubsection{sssec:ex1_3}{R-1.3}{chap:PythonPrimer}{} \label{sssec:ex1_3}
