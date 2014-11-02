@@ -1,0 +1,452 @@
+<!doctype html> 
+<html lang="en"> 
+<head>
+   <title>Claudiordgz Blog Series</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<!-- html,xhtml,mathml, -css --> 
+<meta name="src" content="GoodrichTamassiaGoldwasserPages.tex" /> 
+<meta name="date" content="2014-11-02 09:18:00" /> 
+<link rel="stylesheet" type="text/css" href="GoodrichTamassiaGoldwasserPages.css" /> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> 
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" /> 
+<link rel="stylesheet" type="text/css" href="css/blog.css" /> 
+<script> 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
+ 
+ga('create', 'UA-35752941-2', 'auto'); 
+ga('require', 'linkid', 'linkid.js'); 
+ga('require', 'displayfeatures'); 
+ga('send', 'pageview'); 
+ 
+</script> 
+</head><body>  <div class="container-fluid"><div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+                                                                                              
+                                                                                              
+<div class="center" 
+>
+<p>
+</p> 
+ <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="##"> 
+ </a> </div> <div id="main-nav" class="collapse navbar-collapse">  <p class="navbar-text"> Claudiordgz<br />
+</p>
+<p class="navbar-text"> Solutions of Data Structures and Algorithms in Python<br /><br />
+</p> <p class="navbar-text"> Book Authors: Goodrich, Tamassia and Goldwasser<br />
+</p>
+</div>
+                                                                                              
+                                                                                              
+   </div></div>
+                                                                                              
+                                                                                              
+<p>   <a 
+ id="toc"></a>
+                                                                                              
+                                                                                              
+</p> 
+
+<a 
+ id="x1-1000"></a>
+   <h2 class="likechapterHead"><a 
+ id="x1-2000"></a>Contents</h2>  <div class="row"> 
+<div class="col-md-2" id="leftCol"> 
+<div class="nav nav-stacked" id="sidebar"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<h4 class="likesectionHead">Contents</h4> 
+</div> 
+<div class="col-xs-5"> 
+<a href="http://www.claudiordgz.com/"><div class="boxed"><img src="logo/logo_black.png" alt="pict" class="center" border="0" /></div></a> 
+</div> 
+</div> 
+<div class="tableofcontents">
+   <span class="chapterToc" >1 <a 
+href="#x1-30001" id="QQ2-1-3">Format</a></span>
+<br />   <span class="chapterToc" >2 <a 
+href="#x1-40002" id="QQ2-1-4">Python Primer</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.0.1 <a 
+href="#x1-50001" id="QQ2-1-5">Exercises</a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-80001" id="QQ2-1-8"><b>R-1.1</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-110001" id="QQ2-1-11"><b>R-1.2</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-140001" id="QQ2-1-14"><b>R-1.3</b></a></span>
+   </div></div> 
+   
+  <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-arrow-down"></span> Download PDF</button>
+  </div> 
+<div class="col-md-7"><div class="well">
+                                                                                              
+                                                                                              
+<p>   <a 
+ id="chap:Format"></a>
+                                                                                              
+                                                                                              
+   </p> 
+
+   <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;1</span><br /><a 
+ id="x1-30001"></a>Format</h2>
+<p>All exercises will be presented with their own Python Doctest documentation to allow testing. To run
+them in your own python package you can copy paste the text and add a main like the
+following:
+</p> 
+<p>    <div class="panel-group" id="accordionx1-30001"> 
+<div class="panel panel-default"> 
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionx1-30001" href="#collapsex1-30001"> 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span> 
+</h4> 
+</div> 
+</a> 
+<div id="collapsex1-30001" class="panel-collapse collapse"> 
+<div class="panel-body"> 
+<pre class="prettyprint"><p> 
+
+<br /> </p> 
+<div class="caption" 
+><span class="id">: </span><span  
+class="content">Running Doctest</span></div><!--tex4ht:label?: x1-30001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-3001r1"></a>1</span>if&#x00A0;__name__&#x00A0;==&#x00A0;<!--l. 6--><span class="listings-nested">&#8221;__main__&#8221;</span>:&#x00A0;<br /><span class="label"><a 
+ id="x1-3002r2"></a>2</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;import&#x00A0;doctest&#x00A0;<br /><span class="label"><a 
+ id="x1-3003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;doctest.testmod()
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-3004r4"></a>4</span></pre>
+<p></p></pre> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+</p> 
+<p>   This is just to try to keep it as simple as possible while adding how to run the code in your own work
+environment.
+</p> 
+<p>   <b>Pro-Tip</b>. JetBrains Pycharm is awesome, I really recommend it, plus they got a Community Edition
+if you are pennyless like me. The colors, the functionality it just rocks.
+</p> 
+<p>   <b>Pro-Tip</b>. I like to use Anaconda for my Python distro, but the standalone Python
+<!--l. 16--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>2</mn><mo 
+class="MathClass-punc">.</mo><mn>7</mn></math> or
+<!--l. 16--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" > <mo 
+class="MathClass-rel">&#x003E;</mo><mo 
+class="MathClass-rel">=</mo> <mn>3</mn></math> works
+too.
+</p> 
+<p>   <a 
+ id="chap:PythonPrimer"></a>
+                                                                                              
+                                                                                              
+   </p> 
+
+   <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;2</span><br /><a 
+ id="x1-40002"></a>Python Primer</h2>
+<p>The first chapter in the book is all about learning to handle Python syntax. Subjects include objects,
+control flow, functions, I/O operations, exceptions, iterators and generators, namespaces, modules, and
+scope. There is nothing regarding python packaging to redistribute your own module, which is a subject
+of its own.
+</p> 
+<p>   <a 
+ id="ssec:Exercises"></a>
+<a 
+ id="x1-4001r1"></a>
+</p> 
+
+<h4 class="subsectionHead"><span class="titlemark">2.0.1   </span> <a 
+ id="x1-50001"></a>Exercises</h4>
+<p>The exercises in the first chapter are fun, no joke. I&#8217;ve seen what&#8217;s coming in chapter 2 and those
+exercises look terrible because they are open ended questions, but they are also important
+concepts.
+</p> 
+<p>   <a 
+ id="sssec:ex1_1"></a>  <table id="TBL-3" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-3-1g"><col 
+id="TBL-3-1" /><col 
+id="TBL-3-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-3-1-"><td  style="text-align:left;" id="TBL-3-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-80001"></a><b>R-1.1</b></h5>
+ <p>                                                             </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-3-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-2-"><td  style="text-align:left;" id="TBL-3-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+<p>   Write a short Python function, <code>is_multiple(n, m)</code>, that takes two integer values and returns <code>True</code> if
+<!--l. 30--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math> is a multiple
+of <!--l. 30--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>m</mi></math>, that
+is, <!--l. 30--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>m</mi><mi 
+>i</mi></math> for some
+integer <!--l. 30--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>i</mi></math>,
+and <code>False</code> otherwise.
+</p> 
+<p>    <div class="panel-group" id="accordionx1-80001"> 
+<div class="panel panel-default"> 
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionx1-80001" href="#collapsex1-80001"> 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span> 
+</h4> 
+</div> 
+</a> 
+<div id="collapsex1-80001" class="panel-collapse collapse"> 
+<div class="panel-body"> 
+<pre class="prettyprint"><p> 
+
+<br /> </p> 
+<div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise R-1.1</span></div><!--tex4ht:label?: x1-80002 --><!--l. 32--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-8001r1"></a>1</span>def&#x00A0;is_multiple(n,&#x00A0;m):&#x00A0;<br /><span class="label"><a 
+ id="x1-8002r2"></a>2</span><!--l. 34--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 34--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;multiple&#x00A0;of&#x00A0;m&#x00A0;<br /><span class="label"><a 
+ id="x1-8003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;such&#x00A0;that&#x00A0;n&#x00A0;=&#x00A0;mi&#x00A0;else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-8004r4"></a>4</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(50,3)&#x00A0;<br /><span class="label"><a 
+ id="x1-8006r6"></a>6</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-8007r7"></a>7</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(60,3)&#x00A0;<br /><span class="label"><a 
+ id="x1-8008r8"></a>8</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
+ id="x1-8009r9"></a>9</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(70,3)&#x00A0;<br /><span class="label"><a 
+ id="x1-8010r10"></a>10</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-8011r11"></a>11</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-50,2)&#x00A0;<br /><span class="label"><a 
+ id="x1-8012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
+ id="x1-8013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-60,2)&#x00A0;<br /><span class="label"><a 
+ id="x1-8014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
+ id="x1-8015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(&#8221;</span>test<!--l. 47--><span class="listings-nested">&#8221;,10)&#x00A0;<br /><span class="label"><a 
+ id="x1-8016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
+ id="x1-8017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-60,&#8221;</span>test<!--l. 49--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
+ id="x1-8018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
+ id="x1-8019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 51--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8020r20"></a>20</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;try:&#x00A0;<br /><span class="label"><a 
+ id="x1-8021r21"></a>21</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;True&#x00A0;if&#x00A0;(int(n)&#x00A0;%&#x00A0;int(m)&#x00A0;==&#x00A0;0)&#x00A0;else&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-8022r22"></a>22</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;ValueError:&#x00A0;<br /><span class="label"><a 
+ id="x1-8023r23"></a>23</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 55--><span class="listings-nested">&#8221;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-8024r24"></a>24</span></pre>
+<p></p></pre> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+</p> 
+<p>   <a 
+ id="sssec:ex1_2"></a>  <table id="TBL-6" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-6-1g"><col 
+id="TBL-6-1" /><col 
+id="TBL-6-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-6-1-"><td  style="text-align:left;" id="TBL-6-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-110001"></a><b>R-1.2</b></h5>
+ <p>                                                             </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-6-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-2-"><td  style="text-align:left;" id="TBL-6-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+<p>   Write a short Python function, <code>is_even(k)</code>, that takes an integer value and returns <code>True</code> if
+<!--l. 60--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>k</mi></math> is even,
+and <code>False</code> otherwise. However, your function cannot use the multiplication, modulo, or division
+operators.
+                                                                                              
+                                                                                              
+</p> 
+<p>    <div class="panel-group" id="accordionx1-110001"> 
+<div class="panel panel-default"> 
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionx1-110001" href="#collapsex1-110001"> 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span> 
+</h4> 
+</div> 
+</a> 
+<div id="collapsex1-110001" class="panel-collapse collapse"> 
+<div class="panel-body"> 
+<pre class="prettyprint"><p> 
+
+<br /> </p> 
+<div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise R-1.2</span></div><!--tex4ht:label?: x1-110002 --><!--l. 62--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-11001r1"></a>1</span>def&#x00A0;is_even(k):&#x00A0;<br /><span class="label"><a 
+ id="x1-11002r2"></a>2</span><!--l. 64--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 64--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;even&#x00A0;<br /><span class="label"><a 
+ id="x1-11003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-11004r4"></a>4</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-11005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(10)&#x00A0;<br /><span class="label"><a 
+ id="x1-11006r6"></a>6</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
+ id="x1-11007r7"></a>7</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(9)&#x00A0;<br /><span class="label"><a 
+ id="x1-11008r8"></a>8</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-11009r9"></a>9</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(11)&#x00A0;<br /><span class="label"><a 
+ id="x1-11010r10"></a>10</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-11011r11"></a>11</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(13)&#x00A0;<br /><span class="label"><a 
+ id="x1-11012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-11013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(1025)&#x00A0;<br /><span class="label"><a 
+ id="x1-11014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-11015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(&#8221;</span>test<!--l. 77--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
+ id="x1-11016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Number&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
+ id="x1-11017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 79--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-11018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;try:&#x00A0;<br /><span class="label"><a 
+ id="x1-11019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;int(k)&#x00A0;&amp;&#x00A0;1&#x00A0;==&#x00A0;0&#x00A0;<br /><span class="label"><a 
+ id="x1-11020r20"></a>20</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;ValueError:&#x00A0;<br /><span class="label"><a 
+ id="x1-11021r21"></a>21</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 83--><span class="listings-nested">&#8221;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-11022r22"></a>22</span></pre>
+<p></p></pre> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+</p> 
+<p>   <a 
+ id="sssec:ex1_3"></a>  <table id="TBL-9" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-9-1g"><col 
+id="TBL-9-1" /><col 
+id="TBL-9-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-9-1-"><td  style="text-align:left;" id="TBL-9-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-140001"></a><b>R-1.3</b></h5>
+ <p>                                                             </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-9-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-9-2-"><td  style="text-align:left;" id="TBL-9-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+<p>   Write a short Python function, <code>minmax(data)</code>, that takes a sequence of one or more numbers, and
+returns the smallest and largest numbers, in the form of a tuple of length two. Do not use the built-in
+functions <code>min</code> or <code>max</code> in implementing your solution.
+</p> 
+<p>    <div class="panel-group" id="accordionx1-140001"> 
+<div class="panel panel-default"> 
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionx1-140001" href="#collapsex1-140001"> 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span> 
+</h4> 
+</div> 
+</a> 
+<div id="collapsex1-140001" class="panel-collapse collapse"> 
+<div class="panel-body"> 
+<pre class="prettyprint"><p> 
+
+<br /> </p> 
+<div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise R-1.3</span></div><!--tex4ht:label?: x1-140002 --><!--l. 90--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-14001r1"></a>1</span>class&#x00A0;MinMax():&#x00A0;<br /><span class="label"><a 
+ id="x1-14002r2"></a>2</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__init__(self,&#x00A0;field1,&#x00A0;field2):&#x00A0;<br /><span class="label"><a 
+ id="x1-14003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.min&#x00A0;=&#x00A0;field1&#x00A0;<br /><span class="label"><a 
+ id="x1-14004r4"></a>4</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.max&#x00A0;=&#x00A0;field2&#x00A0;<br /><span class="label"><a 
+ id="x1-14005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__str__(self):&#x00A0;<br /><span class="label"><a 
+ id="x1-14006r6"></a>6</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;<!--l. 96--><span class="listings-nested">&#8221;Min&#x00A0;{min}&#x00A0;-&#x00A0;&#8221;</span>&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-14007r7"></a>7</span><!--l. 97--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;Max&#x00A0;{max}&#8221;</span>.format(min=str(self.min),&#x00A0;<br /><span class="label"><a 
+ id="x1-14008r8"></a>8</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max=str(self.max))&#x00A0;<br /><span class="label"><a 
+ id="x1-14009r9"></a>9</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14010r10"></a>10</span>def&#x00A0;minmax(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-14011r11"></a>11</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;=&#x00A0;0&#x00A0;<br /><span class="label"><a 
+ id="x1-14012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm&#x00A0;=&#x00A0;MinMax(data[start],data[start])&#x00A0;<br /><span class="label"><a 
+ id="x1-14013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;len(data)&#x00A0;&amp;&#x00A0;1&#x00A0;&#x00A0;==&#x00A0;1:&#x00A0;<br /><span class="label"><a 
+ id="x1-14014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[start]&#x00A0;&#x003C;&#x00A0;data[start+1]:&#x00A0;<br /><span class="label"><a 
+ id="x1-14015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;data[start+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-14016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;data[start]&#x00A0;<br /><span class="label"><a 
+ id="x1-14017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;2&#x00A0;<br /><span class="label"><a 
+ id="x1-14018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
+ id="x1-14019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;1&#x00A0;<br /><span class="label"><a 
+ id="x1-14020r20"></a>20</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;for&#x00A0;index&#x00A0;in&#x00A0;range(start,&#x00A0;len(data[start:]),&#x00A0;2):&#x00A0;<br /><span class="label"><a 
+ id="x1-14021r21"></a>21</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[index]&#x00A0;&#x003C;&#x00A0;data[index+1]&#x00A0;:&#x00A0;<br /><span class="label"><a 
+ id="x1-14022r22"></a>22</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
+ id="x1-14023r23"></a>23</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-14024r24"></a>24</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
+ id="x1-14025r25"></a>25</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-14026r26"></a>26</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
+ id="x1-14027r27"></a>27</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.min&#x00A0;&#x003E;&#x00A0;l_min:&#x00A0;<br /><span class="label"><a 
+ id="x1-14028r28"></a>28</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;l_min&#x00A0;<br /><span class="label"><a 
+ id="x1-14029r29"></a>29</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.max&#x00A0;&#x003C;&#x00A0;l_max:&#x00A0;<br /><span class="label"><a 
+ id="x1-14030r30"></a>30</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;l_max&#x00A0;<br /><span class="label"><a 
+ id="x1-14031r31"></a>31</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;mm
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-14032r32"></a>32</span></pre>
+<p></p></pre> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+                                                                                              
+                                                                                              
+    <p> 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<!-- GithubAd --> 
+<ins class="adsbygoogle" 
+style="display:inline-block;width:320px;height:100px" 
+data-ad-client="ca-pub-8374950284869319" 
+data-ad-slot="7397143883"></ins> 
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script> 
+</p> 
+</div> 
+</div> 
+<div class="col-md-3"> 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<!-- GithubRightPlacedAds --> 
+<ins class="adsbygoogle" 
+style="display:inline-block;width:300px;height:600px" 
+data-ad-client="ca-pub-8374950284869319" 
+data-ad-slot="1966059086"></ins> 
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script> 
+</div> 
+</div> 
+</div> 
+</div> 
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/blog.js"></script> 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+<script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> 
+</body>  
+</html>
+                                                                                              
+
+

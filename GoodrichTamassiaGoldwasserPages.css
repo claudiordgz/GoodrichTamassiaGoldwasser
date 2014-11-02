@@ -3,7 +3,6 @@
 .cmex-10{font-size:83%;}
 .cmbx-12{ font-weight: bold;}
 .cmbx-12{ font-weight: bold;}
-.cmbx-12{ font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
@@ -20,19 +19,14 @@
 .cmmi-6{font-size:50%;font-style: italic;}
 .cmsy-8{font-size:66%;}
 .cmsy-6{font-size:50%;}
-.cmbx-12x-x-207{font-size:207%; font-weight: bold;}
-.cmbx-12x-x-207{ font-weight: bold;}
-.cmbx-12x-x-207{ font-weight: bold;}
-.cmcsc-10x-x-248{font-size:206%;}
+.cmbx-12x-x-144{font-size:144%; font-weight: bold;}
+.cmbx-12x-x-144{ font-weight: bold;}
 .pcrr7t-x-x-120{font-family: monospace;}
 .cmss-12{  font-family: sans-serif;}
 .cmss-12{  font-family: sans-serif;}
 .cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
 .cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
 .cmti-12{ font-style: italic;}
-.cmbx-12x-x-144{font-size:144%; font-weight: bold;}
-.cmbx-12x-x-144{ font-weight: bold;}
-.cmbx-12x-x-144{ font-weight: bold;}
 .cmr-10x-x-109{font-size:90%;}
 .small-caps{font-variant: small-caps; }
 p.noindent { text-indent: 0em }
@@ -179,7 +173,7 @@ div.lstinputlisting{ font-family: monospace; white-space: nowrap; }
  @font-face { font-family: QuattrocentoSans Bold; src: url("fonts/QuattrocentoSans-Bold.ttf") format('truetype'); } 
  @font-face { font-family: QuattrocentoSans Italic; src: url("fonts/QuattrocentoSans-Italic.ttf") format('truetype'); } 
  @font-face { font-family: QuattrocentoSans Bold Italic; src: url("fonts/QuattrocentoSans-BoldItalic.ttf") format('truetype'); } 
- * { font-size: 102%; font-family: 'DroidSansMono'; } 
+ * { font-size: 100%; font-family: 'DroidSansMono'; } 
  .tableofcontents {} 
  table { width:100% !important; } 
  div.tabular { width:inherit !important; } 

@@ -2,12 +2,14 @@
 *.4tc
 *.auc
 *.idv
+*.dvi
 *.aux
 *.lg
 *.glo
 *.idx
 *.log
 *.toc
+*.tps
 *.ist
 *.acn
 *.acr

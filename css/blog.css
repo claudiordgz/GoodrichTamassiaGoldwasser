@@ -1,11 +1,11 @@
 .navbar-static-top {
   margin-bottom:20px;
 }
-
+ 
 i {
   font-size:16px;
 }
-
+ 
 .nav > li > a {
   color:#787878;
 }
@@ -16,7 +16,7 @@ footer {
   padding-bottom:20px;
   background-color:#efefef;
 }
-
+ 
 /* count indicator near icons */
 .nav>li .count {
   position: absolute;
@@ -33,43 +33,41 @@ footer {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-
+ 
 /* indent 2nd level */
 .list-unstyled li > ul > li {
    margin-left:10px;
    padding:8px;
 }
-
+ 
 .boxed {
 	width:100px;
 	position:absolute;
     right:-25px;
 }
-
+ 
 .lower-right-box {
 	bottom: 0;
     left: 0;
     position: fixed;
 ]
-
+ 
 pre .prettyprint span .pln, {
   display:none !important;
 }
-
+ 
 pre.listings span.pln {
 	display: inline !important;
 }
 pre.listings span.label {
 	display:none;
 }
-
+ 
 pre p {
 display:none;}
-
+ 
 .MathJax_MathML {text-indent: 0;} 
-
-div.#leftCol { 
-	background-image: url(logo/logo_black.png); 
-	background-repeat: no-repeat; 
-	background-attachment: fixed; 
-	}
+ 
+li p {
+    white-space: nowrap;
+}
