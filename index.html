@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <!-- html,xhtml,mathml, -css --> 
 <meta name="src" content="GoodrichTamassiaGoldwasserPages.tex" /> 
-<meta name="date" content="2014-11-02 09:34:00" /> 
+<meta name="date" content="2014-11-02 16:23:00" /> 
 <link rel="stylesheet" type="text/css" href="GoodrichTamassiaGoldwasserPages.css" /> 
 <meta charset="UTF-8" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
@@ -78,6 +78,12 @@ href="#x1-80001" id="QQ2-1-8"><b>R-1.1</b></a></span>
 href="#x1-110001" id="QQ2-1-11"><b>R-1.2</b></a></span>
 <br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
 href="#x1-140001" id="QQ2-1-14"><b>R-1.3</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-170001" id="QQ2-1-17"><b>R-1.4 &amp; R-1.5</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-200001" id="QQ2-1-20"><b>R-1.6 &amp; R-1.7</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-230001" id="QQ2-1-23"><b>R-1.8</b></a></span>
    </div></div> </div> 
 <div class="col-md-7"><div class="well">
                                                                                               
@@ -127,7 +133,8 @@ class="content">Running Doctest</span></div><!--tex4ht:label?: x1-30001 --><!--l
 environment.
 </p> 
 <p>   <b>Pro-Tip</b>. JetBrains Pycharm is awesome, I really recommend it, plus they got a Community Edition
-if you are pennyless like me. The colors, the functionality it just rocks.
+if you are pennyless like me. The colors, the functionality it just rocks. <b>Plus the IDE can run the
+examples without the need of using a main function.</b>
 </p> 
 <p>   <b>Pro-Tip</b>. I like to use Anaconda for my Python distro, but the standalone Python
 <!--l. 16--><math 
@@ -185,22 +192,22 @@ href="#chap:PythonPrimer">Go to Top</a>  </td>
 class="td11"> <p>                                                       </p> 
 </td> </tr></table>
 <p>   Write a short Python function, <code>is_multiple(n, m)</code>, that takes two integer values and returns <code>True</code> if
-<!--l. 30--><math 
+<!--l. 3--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mi 
 >n</mi></math> is a multiple
-of <!--l. 30--><math 
+of <!--l. 3--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mi 
 >m</mi></math>, that
-is, <!--l. 30--><math 
+is, <!--l. 3--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mi 
 >n</mi> <mo 
 class="MathClass-rel">=</mo> <mi 
 >m</mi><mi 
 >i</mi></math> for some
-integer <!--l. 30--><math 
+integer <!--l. 3--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mi 
 >i</mi></math>,
@@ -222,9 +229,9 @@ and <code>False</code> otherwise.
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.1</span></div><!--tex4ht:label?: x1-80002 --><!--l. 32--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+class="content">Exercise R-1.1</span></div><!--tex4ht:label?: x1-80002 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
  id="x1-8001r1"></a>1</span>def&#x00A0;is_multiple(n,&#x00A0;m):&#x00A0;<br /><span class="label"><a 
- id="x1-8002r2"></a>2</span><!--l. 34--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 34--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;multiple&#x00A0;of&#x00A0;m&#x00A0;<br /><span class="label"><a 
+ id="x1-8002r2"></a>2</span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;multiple&#x00A0;of&#x00A0;m&#x00A0;<br /><span class="label"><a 
  id="x1-8003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;such&#x00A0;that&#x00A0;n&#x00A0;=&#x00A0;mi&#x00A0;else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
  id="x1-8004r4"></a>4</span>&#x00A0;<br /><span class="label"><a 
  id="x1-8005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(50,3)&#x00A0;<br /><span class="label"><a 
@@ -237,15 +244,15 @@ class="content">Exercise R-1.1</span></div><!--tex4ht:label?: x1-80002 --><!--l.
  id="x1-8012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
  id="x1-8013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-60,2)&#x00A0;<br /><span class="label"><a 
  id="x1-8014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
- id="x1-8015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(&#8221;</span>test<!--l. 47--><span class="listings-nested">&#8221;,10)&#x00A0;<br /><span class="label"><a 
+ id="x1-8015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(&#8221;</span>test<!--l. 20--><span class="listings-nested">&#8221;,10)&#x00A0;<br /><span class="label"><a 
  id="x1-8016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
- id="x1-8017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-60,&#8221;</span>test<!--l. 49--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
+ id="x1-8017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-60,&#8221;</span>test<!--l. 22--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
  id="x1-8018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
- id="x1-8019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 51--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 24--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
  id="x1-8020r20"></a>20</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;try:&#x00A0;<br /><span class="label"><a 
  id="x1-8021r21"></a>21</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;True&#x00A0;if&#x00A0;(int(n)&#x00A0;%&#x00A0;int(m)&#x00A0;==&#x00A0;0)&#x00A0;else&#x00A0;False&#x00A0;<br /><span class="label"><a 
  id="x1-8022r22"></a>22</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;ValueError:&#x00A0;<br /><span class="label"><a 
- id="x1-8023r23"></a>23</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 55--><span class="listings-nested">&#8221;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
+ id="x1-8023r23"></a>23</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 28--><span class="listings-nested">&#8221;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
    &#x00A0;<br /><span class="label"><a 
  id="x1-8024r24"></a>24</span></pre>
 <p></p></pre> 
@@ -253,10 +260,8 @@ class="content">Exercise R-1.1</span></div><!--tex4ht:label?: x1-80002 --><!--l.
 </div> 
 </div> 
 </div> 
-
-</p> 
-<p>   <a 
- id="sssec:ex1_2"></a>  <table id="TBL-6" class="tabular" 
+<a 
+ id="sssec:ex1_2"></a><table id="TBL-6" class="tabular" 
 cellspacing="0" cellpadding="0"  
 ><colgroup id="TBL-6-1g"><col 
 id="TBL-6-1" /><col 
@@ -269,19 +274,17 @@ class="td11">
 </td><td  style="text-align:right; white-space:nowrap;" id="TBL-6-1-2"  
 class="td11"> <a 
 href="#chap:PythonPrimer">Go to Top</a>  </td>
- </tr><tr  
+</tr><tr  
  style="vertical-align:baseline;" id="TBL-6-2-"><td  style="text-align:left;" id="TBL-6-2-1"  
 class="td11"> <p>                                                       </p> 
-</td> </tr></table>
+</td></tr></table>
 <p>   Write a short Python function, <code>is_even(k)</code>, that takes an integer value and returns <code>True</code> if
-<!--l. 60--><math 
+<!--l. 3--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mi 
 >k</mi></math> is even,
 and <code>False</code> otherwise. However, your function cannot use the multiplication, modulo, or division
 operators.
-                                                                                              
-                                                                                              
 </p> 
 <p>    <div class="panel-group" id="accordionx1-110001"> 
 <div class="panel panel-default"> 
@@ -296,12 +299,14 @@ operators.
 <div class="panel-body"> 
 <pre class="prettyprint"><p> 
 
+                                                                                              
+                                                                                              
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.2</span></div><!--tex4ht:label?: x1-110002 --><!--l. 62--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+class="content">Exercise R-1.2</span></div><!--tex4ht:label?: x1-110002 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
  id="x1-11001r1"></a>1</span>def&#x00A0;is_even(k):&#x00A0;<br /><span class="label"><a 
- id="x1-11002r2"></a>2</span><!--l. 64--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 64--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;even&#x00A0;<br /><span class="label"><a 
+ id="x1-11002r2"></a>2</span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;even&#x00A0;<br /><span class="label"><a 
  id="x1-11003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
  id="x1-11004r4"></a>4</span>&#x00A0;<br /><span class="label"><a 
  id="x1-11005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(10)&#x00A0;<br /><span class="label"><a 
@@ -314,13 +319,13 @@ class="content">Exercise R-1.2</span></div><!--tex4ht:label?: x1-110002 --><!--l
  id="x1-11012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
  id="x1-11013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(1025)&#x00A0;<br /><span class="label"><a 
  id="x1-11014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-11015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(&#8221;</span>test<!--l. 77--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
+ id="x1-11015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(&#8221;</span>test<!--l. 20--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
  id="x1-11016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Number&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
- id="x1-11017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 79--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-11017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 22--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
  id="x1-11018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;try:&#x00A0;<br /><span class="label"><a 
  id="x1-11019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;int(k)&#x00A0;&amp;&#x00A0;1&#x00A0;==&#x00A0;0&#x00A0;<br /><span class="label"><a 
  id="x1-11020r20"></a>20</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;ValueError:&#x00A0;<br /><span class="label"><a 
- id="x1-11021r21"></a>21</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 83--><span class="listings-nested">&#8221;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
+ id="x1-11021r21"></a>21</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 26--><span class="listings-nested">&#8221;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
    &#x00A0;<br /><span class="label"><a 
  id="x1-11022r22"></a>22</span></pre>
 <p></p></pre> 
@@ -328,10 +333,8 @@ class="content">Exercise R-1.2</span></div><!--tex4ht:label?: x1-110002 --><!--l
 </div> 
 </div> 
 </div> 
-
-</p> 
-<p>   <a 
- id="sssec:ex1_3"></a>  <table id="TBL-9" class="tabular" 
+<a 
+ id="sssec:ex1_3"></a><table id="TBL-9" class="tabular" 
 cellspacing="0" cellpadding="0"  
 ><colgroup id="TBL-9-1g"><col 
 id="TBL-9-1" /><col 
@@ -344,10 +347,10 @@ class="td11">
 </td><td  style="text-align:right; white-space:nowrap;" id="TBL-9-1-2"  
 class="td11"> <a 
 href="#chap:PythonPrimer">Go to Top</a>  </td>
- </tr><tr  
+</tr><tr  
  style="vertical-align:baseline;" id="TBL-9-2-"><td  style="text-align:left;" id="TBL-9-2-1"  
 class="td11"> <p>                                                       </p> 
-</td> </tr></table>
+</td></tr></table>
 <p>   Write a short Python function, <code>minmax(data)</code>, that takes a sequence of one or more numbers, and
 returns the smallest and largest numbers, in the form of a tuple of length two. Do not use the built-in
 functions <code>min</code> or <code>max</code> in implementing your solution.
@@ -368,40 +371,331 @@ functions <code>min</code> or <code>max</code> in implementing your solution.
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.3</span></div><!--tex4ht:label?: x1-140002 --><!--l. 90--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+class="content">Exercise R-1.3</span></div><!--tex4ht:label?: x1-140002 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
  id="x1-14001r1"></a>1</span>class&#x00A0;MinMax():&#x00A0;<br /><span class="label"><a 
- id="x1-14002r2"></a>2</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__init__(self,&#x00A0;field1,&#x00A0;field2):&#x00A0;<br /><span class="label"><a 
- id="x1-14003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.min&#x00A0;=&#x00A0;field1&#x00A0;<br /><span class="label"><a 
- id="x1-14004r4"></a>4</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.max&#x00A0;=&#x00A0;field2&#x00A0;<br /><span class="label"><a 
- id="x1-14005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__str__(self):&#x00A0;<br /><span class="label"><a 
- id="x1-14006r6"></a>6</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;<!--l. 96--><span class="listings-nested">&#8221;Min&#x00A0;{min}&#x00A0;-&#x00A0;&#8221;</span>&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-14007r7"></a>7</span><!--l. 97--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;Max&#x00A0;{max}&#8221;</span>.format(min=str(self.min),&#x00A0;<br /><span class="label"><a 
- id="x1-14008r8"></a>8</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max=str(self.max))&#x00A0;<br /><span class="label"><a 
- id="x1-14009r9"></a>9</span>&#x00A0;<br /><span class="label"><a 
- id="x1-14010r10"></a>10</span>def&#x00A0;minmax(data):&#x00A0;<br /><span class="label"><a 
- id="x1-14011r11"></a>11</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;=&#x00A0;0&#x00A0;<br /><span class="label"><a 
- id="x1-14012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm&#x00A0;=&#x00A0;MinMax(data[start],data[start])&#x00A0;<br /><span class="label"><a 
- id="x1-14013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;len(data)&#x00A0;&amp;&#x00A0;1&#x00A0;&#x00A0;==&#x00A0;1:&#x00A0;<br /><span class="label"><a 
- id="x1-14014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[start]&#x00A0;&#x003C;&#x00A0;data[start+1]:&#x00A0;<br /><span class="label"><a 
- id="x1-14015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;data[start+1]&#x00A0;<br /><span class="label"><a 
- id="x1-14016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;data[start]&#x00A0;<br /><span class="label"><a 
- id="x1-14017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;2&#x00A0;<br /><span class="label"><a 
- id="x1-14018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
- id="x1-14019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;1&#x00A0;<br /><span class="label"><a 
- id="x1-14020r20"></a>20</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;for&#x00A0;index&#x00A0;in&#x00A0;range(start,&#x00A0;len(data[start:]),&#x00A0;2):&#x00A0;<br /><span class="label"><a 
- id="x1-14021r21"></a>21</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[index]&#x00A0;&#x003C;&#x00A0;data[index+1]&#x00A0;:&#x00A0;<br /><span class="label"><a 
- id="x1-14022r22"></a>22</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
- id="x1-14023r23"></a>23</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
- id="x1-14024r24"></a>24</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
- id="x1-14025r25"></a>25</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
- id="x1-14026r26"></a>26</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
- id="x1-14027r27"></a>27</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.min&#x00A0;&#x003E;&#x00A0;l_min:&#x00A0;<br /><span class="label"><a 
- id="x1-14028r28"></a>28</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;l_min&#x00A0;<br /><span class="label"><a 
- id="x1-14029r29"></a>29</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.max&#x00A0;&#x003C;&#x00A0;l_max:&#x00A0;<br /><span class="label"><a 
- id="x1-14030r30"></a>30</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;l_max&#x00A0;<br /><span class="label"><a 
- id="x1-14031r31"></a>31</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;mm
+ id="x1-14002r2"></a>2</span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;MinMax&#x00A0;object&#x00A0;helper&#x00A0;<br /><span class="label"><a 
+ id="x1-14003r3"></a>3</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14004r4"></a>4</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Attributes:&#x00A0;<br /><span class="label"><a 
+ id="x1-14005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;min&#x00A0;(int):&#x00A0;Minimun&#x00A0;value&#x00A0;of&#x00A0;attributes&#x00A0;<br /><span class="label"><a 
+ id="x1-14006r6"></a>6</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max&#x00A0;(max):&#x00A0;Maximum&#x00A0;value&#x00A0;of&#x00A0;attributes&#x00A0;<br /><span class="label"><a 
+ id="x1-14007r7"></a>7</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14008r8"></a>8</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 13--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14009r9"></a>9</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__init__(self,&#x00A0;min,&#x00A0;max):&#x00A0;<br /><span class="label"><a 
+ id="x1-14010r10"></a>10</span><!--l. 15--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 15--><span class="listings-nested">&#8221;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-14011r11"></a>11</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;min&#x00A0;(int):&#x00A0;Number&#x00A0;with&#x00A0;lesser&#x00A0;value&#x00A0;<br /><span class="label"><a 
+ id="x1-14012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max&#x00A0;(int):&#x00A0;Number&#x00A0;with&#x00A0;higher&#x00A0;value&#x00A0;<br /><span class="label"><a 
+ id="x1-14013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 18--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.min&#x00A0;=&#x00A0;min&#x00A0;<br /><span class="label"><a 
+ id="x1-14015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.max&#x00A0;=&#x00A0;max&#x00A0;<br /><span class="label"><a 
+ id="x1-14016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__str__(self):&#x00A0;<br /><span class="label"><a 
+ id="x1-14017r17"></a>17</span><!--l. 22--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 22--><span class="listings-nested">&#8221;String&#x00A0;representation&#x00A0;overload&#x00A0;<br /><span class="label"><a 
+ id="x1-14018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 23--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;<!--l. 24--><span class="listings-nested">&#8221;Min&#x00A0;{min}&#x00A0;-&#x00A0;&#8221;</span>&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-14020r20"></a>20</span><!--l. 25--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;Max&#x00A0;{max}&#8221;</span>.format(min=str(self.min),&#x00A0;<br /><span class="label"><a 
+ id="x1-14021r21"></a>21</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max=str(self.max))&#x00A0;<br /><span class="label"><a 
+ id="x1-14022r22"></a>22</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14023r23"></a>23</span>def&#x00A0;minmax(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-14024r24"></a>24</span><!--l. 29--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 29--><span class="listings-nested">&#8221;This&#x00A0;is&#x00A0;the&#x00A0;algorithm&#x00A0;to&#x00A0;find&#x00A0;the&#x00A0;<br /><span class="label"><a 
+ id="x1-14025r25"></a>25</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;minimum&#x00A0;and&#x00A0;maximun&#x00A0;in&#x00A0;a&#x00A0;list.&#x00A0;<br /><span class="label"><a 
+ id="x1-14026r26"></a>26</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14027r27"></a>27</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-14028r28"></a>28</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;data&#x00A0;(list&#x00A0;of&#x00A0;int):&#x00A0;Simple&#x00A0;array&#x00A0;of&#x00A0;<br /><span class="label"><a 
+ id="x1-14029r29"></a>29</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Integers&#x00A0;<br /><span class="label"><a 
+ id="x1-14030r30"></a>30</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14031r31"></a>31</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Returns:&#x00A0;<br /><span class="label"><a 
+ id="x1-14032r32"></a>32</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;A&#x00A0;tuple&#x00A0;MinMax&#x00A0;that&#x00A0;holds&#x00A0;the&#x00A0;minimum&#x00A0;<br /><span class="label"><a 
+ id="x1-14033r33"></a>33</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;and&#x00A0;maximum&#x00A0;values&#x00A0;found&#x00A0;in&#x00A0;the&#x00A0;list&#x00A0;<br /><span class="label"><a 
+ id="x1-14034r34"></a>34</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14035r35"></a>35</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Examples:&#x00A0;<br /><span class="label"><a 
+ id="x1-14036r36"></a>36</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Here&#x00A0;are&#x00A0;some&#x00A0;examples!&#x00A0;<br /><span class="label"><a 
+ id="x1-14037r37"></a>37</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14038r38"></a>38</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]))&#x00A0;<br /><span class="label"><a 
+ id="x1-14039r39"></a>39</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Min&#x00A0;1&#x00A0;-&#x00A0;Max&#x00A0;11&#x00A0;<br /><span class="label"><a 
+ id="x1-14040r40"></a>40</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([50,200,300,3,78,19203,56]))&#x00A0;<br /><span class="label"><a 
+ id="x1-14041r41"></a>41</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Min&#x00A0;3&#x00A0;-&#x00A0;Max&#x00A0;19203&#x00A0;<br /><span class="label"><a 
+ id="x1-14042r42"></a>42</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([100,150,200,500]))&#x00A0;<br /><span class="label"><a 
+ id="x1-14043r43"></a>43</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Min&#x00A0;100&#x00A0;-&#x00A0;Max&#x00A0;500&#x00A0;<br /><span class="label"><a 
+ id="x1-14044r44"></a>44</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 49--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14045r45"></a>45</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;=&#x00A0;0&#x00A0;<br /><span class="label"><a 
+ id="x1-14046r46"></a>46</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm&#x00A0;=&#x00A0;MinMax(data[start],data[start])&#x00A0;<br /><span class="label"><a 
+ id="x1-14047r47"></a>47</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;len(data)&#x00A0;&amp;&#x00A0;1&#x00A0;&#x00A0;==&#x00A0;1:&#x00A0;<br /><span class="label"><a 
+ id="x1-14048r48"></a>48</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[start]&#x00A0;&#x003C;&#x00A0;data[start+1]:&#x00A0;<br /><span class="label"><a 
+ id="x1-14049r49"></a>49</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;data[start+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-14050r50"></a>50</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;data[start]&#x00A0;<br /><span class="label"><a 
+ id="x1-14051r51"></a>51</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;2&#x00A0;<br /><span class="label"><a 
+ id="x1-14052r52"></a>52</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
+ id="x1-14053r53"></a>53</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;1&#x00A0;<br /><span class="label"><a 
+ id="x1-14054r54"></a>54</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;for&#x00A0;index&#x00A0;in&#x00A0;range(start,&#x00A0;len(data[start:]),&#x00A0;2):&#x00A0;<br /><span class="label"><a 
+ id="x1-14055r55"></a>55</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[index]&#x00A0;&#x003C;&#x00A0;data[index+1]&#x00A0;:&#x00A0;<br /><span class="label"><a 
+ id="x1-14056r56"></a>56</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
+ id="x1-14057r57"></a>57</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-14058r58"></a>58</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
+ id="x1-14059r59"></a>59</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-14060r60"></a>60</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
+ id="x1-14061r61"></a>61</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.min&#x00A0;&#x003E;&#x00A0;l_min:&#x00A0;<br /><span class="label"><a 
+ id="x1-14062r62"></a>62</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;l_min&#x00A0;<br /><span class="label"><a 
+ id="x1-14063r63"></a>63</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.max&#x00A0;&#x003C;&#x00A0;l_max:&#x00A0;<br /><span class="label"><a 
+ id="x1-14064r64"></a>64</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;l_max&#x00A0;<br /><span class="label"><a 
+ id="x1-14065r65"></a>65</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;mm
    &#x00A0;<br /><span class="label"><a 
- id="x1-14032r32"></a>32</span></pre>
+ id="x1-14066r66"></a>66</span></pre>
+<p></p></pre> 
+</div> 
+</div> 
+</div> 
+</div> 
+<a 
+ id="sssec:ex1_41_5"></a><table id="TBL-12" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-12-1g"><col 
+id="TBL-12-1" /><col 
+id="TBL-12-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-12-1-"><td  style="text-align:left;" id="TBL-12-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-170001"></a><b>R-1.4 &amp; R-1.5</b></h5>
+ <p>                                                             </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-12-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-2-"><td  style="text-align:left;" id="TBL-12-2-1"  
+class="td11"> <p>                                                       </p> 
+</td></tr></table>
+<p>   Write a short Python function that takes a positive integer
+<!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>
+and returns the sum of the squares of all the positive integers smaller than
+<!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>.
+</p> 
+<p>   Give a single command that computes the sum from Exercise R-1.4, relying on Python&#8217;s
+comprehension syntax and the built-in sum function.
+</p> 
+<p>    <div class="panel-group" id="accordionx1-170001"> 
+<div class="panel panel-default"> 
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionx1-170001" href="#collapsex1-170001"> 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span> 
+</h4> 
+</div> 
+</a> 
+<div id="collapsex1-170001" class="panel-collapse collapse"> 
+<div class="panel-body"> 
+<pre class="prettyprint"><p> 
+
+<br /> </p> 
+<div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise R-1.4 &amp; R-1.5</span></div><!--tex4ht:label?: x1-170002 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-17001r1"></a>1</span>def&#x00A0;sum_of_squares(n):&#x00A0;<br /><span class="label"><a 
+ id="x1-17002r2"></a>2</span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;Sum&#x00A0;of&#x00A0;squares&#x00A0;of&#x00A0;postive&#x00A0;integers&#x00A0;<br /><span class="label"><a 
+ id="x1-17003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;smaller&#x00A0;than&#x00A0;n&#x00A0;<br /><span class="label"><a 
+ id="x1-17004r4"></a>4</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-17005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-17006r6"></a>6</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;n&#x00A0;(int):&#x00A0;Highest&#x00A0;number&#x00A0;<br /><span class="label"><a 
+ id="x1-17007r7"></a>7</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-17008r8"></a>8</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(10)&#x00A0;<br /><span class="label"><a 
+ id="x1-17009r9"></a>9</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;285&#x00A0;<br /><span class="label"><a 
+ id="x1-17010r10"></a>10</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(20)&#x00A0;<br /><span class="label"><a 
+ id="x1-17011r11"></a>11</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;2470&#x00A0;<br /><span class="label"><a 
+ id="x1-17012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(500)&#x00A0;<br /><span class="label"><a 
+ id="x1-17013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;41541750&#x00A0;<br /><span class="label"><a 
+ id="x1-17014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(37)&#x00A0;<br /><span class="label"><a 
+ id="x1-17015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;16206&#x00A0;<br /><span class="label"><a 
+ id="x1-17016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(-1)&#x00A0;<br /><span class="label"><a 
+ id="x1-17017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-17018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 25--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-17019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;sum([pow(x,2)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(n)])&#x00A0;if&#x00A0;n&#x00A0;&#x003E;&#x00A0;0&#x00A0;else&#x00A0;False
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-17020r20"></a>20</span></pre>
+<p></p></pre> 
+</div> 
+</div> 
+</div> 
+</div> 
+<a 
+ id="sssec:ex1_61_7"></a><table id="TBL-15" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-15-1g"><col 
+id="TBL-15-1" /><col 
+id="TBL-15-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-15-1-"><td  style="text-align:left;" id="TBL-15-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-200001"></a><b>R-1.6 &amp; R-1.7</b></h5>
+ <p>                                                             </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-15-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-2-"><td  style="text-align:left;" id="TBL-15-2-1"  
+class="td11"> <p>                                                       </p> 
+</td></tr></table>
+<p>   Write a short Python function that takes a positive integer
+<!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>
+and returns the sum of the squares of all the odd positive integers smaller than
+<!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>.
+</p> 
+<p>   Give a single command that computes the sum from Exercise R-1.6, relying on Python&#8217;s
+comprehension syntax and the built-in sum function.
+                                                                                              
+                                                                                              
+</p> 
+<p>    <div class="panel-group" id="accordionx1-200001"> 
+<div class="panel panel-default"> 
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionx1-200001" href="#collapsex1-200001"> 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span> 
+</h4> 
+</div> 
+</a> 
+<div id="collapsex1-200001" class="panel-collapse collapse"> 
+<div class="panel-body"> 
+<pre class="prettyprint"><p> 
+
+<br /> </p> 
+<div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise R-1.6 &amp; R-1.7</span></div><!--tex4ht:label?: x1-200002 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-20001r1"></a>1</span>def&#x00A0;sum_of_odd_squares(n):&#x00A0;<br /><span class="label"><a 
+ id="x1-20002r2"></a>2</span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;Sum&#x00A0;of&#x00A0;squares&#x00A0;of&#x00A0;odd&#x00A0;postive&#x00A0;integers&#x00A0;<br /><span class="label"><a 
+ id="x1-20003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;smaller&#x00A0;than&#x00A0;n&#x00A0;<br /><span class="label"><a 
+ id="x1-20004r4"></a>4</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-20005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-20006r6"></a>6</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;n&#x00A0;(int):&#x00A0;Highest&#x00A0;number&#x00A0;<br /><span class="label"><a 
+ id="x1-20007r7"></a>7</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-20008r8"></a>8</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(10)&#x00A0;<br /><span class="label"><a 
+ id="x1-20009r9"></a>9</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;165&#x00A0;<br /><span class="label"><a 
+ id="x1-20010r10"></a>10</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(20)&#x00A0;<br /><span class="label"><a 
+ id="x1-20011r11"></a>11</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1330&#x00A0;<br /><span class="label"><a 
+ id="x1-20012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(500)&#x00A0;<br /><span class="label"><a 
+ id="x1-20013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;20833250&#x00A0;<br /><span class="label"><a 
+ id="x1-20014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(37)&#x00A0;<br /><span class="label"><a 
+ id="x1-20015r15"></a>15</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;7770&#x00A0;<br /><span class="label"><a 
+ id="x1-20016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(-1)&#x00A0;<br /><span class="label"><a 
+ id="x1-20017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-20018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 25--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-20019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;sum([pow(x,2)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(1,&#x00A0;n,&#x00A0;2)])&#x00A0;if&#x00A0;n&#x00A0;&#x003E;&#x00A0;0&#x00A0;else&#x00A0;False
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-20020r20"></a>20</span></pre>
+<p></p></pre> 
+</div> 
+</div> 
+</div> 
+</div> 
+<a 
+ id="sssec:ex1_8"></a><table id="TBL-18" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-18-1g"><col 
+id="TBL-18-1" /><col 
+id="TBL-18-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-18-1-"><td  style="text-align:left;" id="TBL-18-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-230001"></a><b>R-1.8</b></h5>
+ <p>                                                             </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-18-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-2-"><td  style="text-align:left;" id="TBL-18-2-1"  
+class="td11"> <p>                                                       </p> 
+</td></tr></table>
+<p>   Python allows negative integers to be used as indices into a sequence, such as a string. If string
+<!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>s</mi></math> has length
+<!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>, and expression
+<!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>s</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>k</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow></math> is used for index
+<!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mo 
+class="MathClass-punc">?</mo><mi 
+>n</mi><mo 
+class="MathClass-punc">?</mo><mi 
+>k</mi> <mo 
+class="MathClass-rel">&#x003C;</mo> <mn>0</mn></math>, what is the
+equivalent index <!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>j</mi><mo 
+class="MathClass-punc">?</mo><mn>0</mn></math>
+such that <!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>s</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>j</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow></math>
+references the same element?
+</p> 
+<p>    <div class="panel-group" id="accordionx1-230001"> 
+<div class="panel panel-default"> 
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionx1-230001" href="#collapsex1-230001"> 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span> 
+</h4> 
+</div> 
+</a> 
+<div id="collapsex1-230001" class="panel-collapse collapse"> 
+<div class="panel-body"> 
+<pre class="prettyprint"><p> 
+
+<br /> </p> 
+<div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise R-1.8</span></div><!--tex4ht:label?: x1-230002 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-23001r1"></a>1</span>def&#x00A0;return_element(data,&#x00A0;k):&#x00A0;<br /><span class="label"><a 
+ id="x1-23002r2"></a>2</span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;Tells&#x00A0;you&#x00A0;the&#x00A0;equivalent&#x00A0;negative&#x00A0;index&#x00A0;<br /><span class="label"><a 
+ id="x1-23003r3"></a>3</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-23004r4"></a>4</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-23005r5"></a>5</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;data&#x00A0;(list&#x00A0;of&#x00A0;int):&#x00A0;Simple&#x00A0;array&#x00A0;<br /><span class="label"><a 
+ id="x1-23006r6"></a>6</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;k&#x00A0;(int):&#x00A0;index&#x00A0;you&#x00A0;want&#x00A0;to&#x00A0;know&#x00A0;<br /><span class="label"><a 
+ id="x1-23007r7"></a>7</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;the&#x00A0;equivalent&#x00A0;negative&#x00A0;index&#x00A0;<br /><span class="label"><a 
+ id="x1-23008r8"></a>8</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-23009r9"></a>9</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Returns:&#x00A0;<br /><span class="label"><a 
+ id="x1-23010r10"></a>10</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;(val,&#x00A0;index)&#x00A0;<br /><span class="label"><a 
+ id="x1-23011r11"></a>11</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;val&#x00A0;(object):&#x00A0;element&#x00A0;at&#x00A0;position&#x00A0;k&#x00A0;<br /><span class="label"><a 
+ id="x1-23012r12"></a>12</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;index:&#x00A0;negative&#x00A0;index&#x00A0;of&#x00A0;that&#x00A0;position&#x00A0;<br /><span class="label"><a 
+ id="x1-23013r13"></a>13</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Examples:&#x00A0;<br /><span class="label"><a 
+ id="x1-23014r14"></a>14</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Here&#x00A0;are&#x00A0;some&#x00A0;examples!&#x00A0;<br /><span class="label"><a 
+ id="x1-23015r15"></a>15</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-23016r16"></a>16</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;l&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-23017r17"></a>17</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;0)&#x00A0;<br /><span class="label"><a 
+ id="x1-23018r18"></a>18</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(2,&#x00A0;-20)&#x00A0;<br /><span class="label"><a 
+ id="x1-23019r19"></a>19</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;1)&#x00A0;<br /><span class="label"><a 
+ id="x1-23020r20"></a>20</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(3,&#x00A0;-19)&#x00A0;<br /><span class="label"><a 
+ id="x1-23021r21"></a>21</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;2)&#x00A0;<br /><span class="label"><a 
+ id="x1-23022r22"></a>22</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(4,&#x00A0;-18)&#x00A0;<br /><span class="label"><a 
+ id="x1-23023r23"></a>23</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 28--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-23024r24"></a>24</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;idx&#x00A0;=&#x00A0;k-len(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-23025r25"></a>25</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;data[idx],&#x00A0;idx&#x00A0;if&#x00A0;data&#x00A0;else&#x00A0;False
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-23026r26"></a>26</span></pre>
 <p></p></pre> 
 </div> 
 </div> 

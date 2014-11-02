@@ -1,0 +1,29 @@
+\blogsubsubsection{sssec:ex1_1}{R-1.1}{chap:PythonPrimer}{} \label{sssec:ex1_1}
+
+Write a short Python function, \texttt{is\_multiple(n, m)}, that takes two integer values and returns \texttt{True} if $n$ is a multiple of $m$, that is, $n = mi$ for some integer $i$, and \texttt{False} otherwise.
+
+\begin{lstlisting}[title=Exercise R-1.1]
+def is_multiple(n, m):
+    """Return True if n is multiple of m 
+		such that n = mi else returns False
+
+    >>> is_multiple(50,3)
+    False
+    >>> is_multiple(60,3)
+    True
+    >>> is_multiple(70,3)
+    False
+    >>> is_multiple(-50,2)
+    True
+    >>> is_multiple(-60,2)
+    True
+    >>> is_multiple("test",10)
+    Numbers must be Integer values
+    >>> is_multiple(-60,"test")
+    Numbers must be Integer values
+    """
+    try:
+        return True if (int(n) % int(m) == 0) else False
+    except ValueError:
+        print("Numbers must be Integer values")
+\end{lstlisting}

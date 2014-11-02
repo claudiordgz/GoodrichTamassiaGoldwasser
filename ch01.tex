@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
 This is just to try to keep it as simple as possible while adding how to run the code in your own work environment.
 
-\ProTip{JetBrains Pycharm is awesome, I really recommend it, plus they got a Community Edition if you are pennyless like me. The colors, the functionality it just rocks.}
+\ProTip{JetBrains Pycharm is awesome, I really recommend it, plus they got a Community Edition if you are pennyless like me. The colors, the functionality it just rocks. \textbf{Plus the IDE can run the examples without the need of using a main function.}}
 
 
 \ProTip{I like to use Anaconda for my Python distro, but the standalone Python $2.7$ or $>=3$ works too.}
@@ -25,98 +25,9 @@ The first chapter in the book is all about learning to handle Python syntax. Sub
 
 The exercises in the first chapter are fun, no joke. I've seen what's coming in chapter 2 and those exercises look terrible because they are open ended questions, but they are also important concepts.  
 
-\blogsubsubsection{sssec:ex1_1}{R-1.1}{chap:PythonPrimer}{} \label{sssec:ex1_1}
-
-Write a short Python function, \texttt{is\_multiple(n, m)}, that takes two integer values and returns \texttt{True} if $n$ is a multiple of $m$, that is, $n = mi$ for some integer $i$, and \texttt{False} otherwise.
-
-\begin{lstlisting}[title=Exercise R-1.1]
-def is_multiple(n, m):
-    """Return True if n is multiple of m 
-		such that n = mi else returns False
-
-    >>> is_multiple(50,3)
-    False
-    >>> is_multiple(60,3)
-    True
-    >>> is_multiple(70,3)
-    False
-    >>> is_multiple(-50,2)
-    True
-    >>> is_multiple(-60,2)
-    True
-    >>> is_multiple("test",10)
-    Numbers must be Integer values
-    >>> is_multiple(-60,"test")
-    Numbers must be Integer values
-    """
-    try:
-        return True if (int(n) % int(m) == 0) else False
-    except ValueError:
-        print("Numbers must be Integer values")
-\end{lstlisting}
-
-\blogsubsubsection{sssec:ex1_2}{R-1.2}{chap:PythonPrimer}{} \label{sssec:ex1_2}
-
-Write a short Python function, \texttt{is\_even(k)}, that takes an integer value and returns \texttt{True} if $k$ is even, and \texttt{False} otherwise. However, your function cannot use the multiplication, modulo, or division operators.
-
-\begin{lstlisting}[title=Exercise R-1.2]
-def is_even(k):
-    """Return True if n is even 
-		else returns False
-
-    >>> is_even(10)
-    True
-    >>> is_even(9)
-    False
-    >>> is_even(11)
-    False
-    >>> is_even(13)
-    False
-    >>> is_even(1025)
-    False
-    >>> is_even("test")
-    Number must be Integer values
-    """
-    try:
-        return int(k) & 1 == 0
-    except ValueError:
-        print("Numbers must be Integer values")
-\end{lstlisting}
-
-\blogsubsubsection{sssec:ex1_3}{R-1.3}{chap:PythonPrimer}{} \label{sssec:ex1_3}
-
-Write a short Python function, \texttt{minmax(data)}, that takes a sequence of one or more numbers, and returns the smallest and largest numbers, in the form of a tuple of length two. Do not use the built-in functions \texttt{min} or \texttt{max} in implementing your solution.
-
-\begin{lstlisting}[title=Exercise R-1.3]
-class MinMax():
-    def __init__(self, field1, field2):
-        self.min = field1
-        self.max = field2
-    def __str__(self):
-        return "Min {min} - " \
-               "Max {max}".format(min=str(self.min), 
-                                  max=str(self.max))
-
-def minmax(data):
-    start = 0
-    mm = MinMax(data[start],data[start])
-    if len(data) & 1  == 1:
-        if data[start] < data[start+1]:
-            mm.max = data[start+1]
-            mm.min = data[start]
-            start += 2
-        else:
-            start += 1
-    for index in range(start, len(data[start:]), 2):
-        if data[index] < data[index+1] :
-            l_min = data[index]
-            l_max = data[index+1]
-        else:
-            l_min = data[index+1]
-            l_max = data[index]
-        if mm.min > l_min:
-            mm.min = l_min
-        if mm.max < l_max:
-            mm.max = l_max
-    return mm
-\end{lstlisting}
+\input{ch01/r11.tex}
+\input{ch01/r12.tex}
+\input{ch01/r13.tex}
+\input{ch01/r14r15.tex}
+\input{ch01/r16r17.tex}
+\input{ch01/r18.tex}
