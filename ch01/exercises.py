@@ -2,20 +2,6 @@
 __author__ = 'Claudio'
 
 
-""" Write a short Python function, is multiple(n, m), that takes two integer
-values and returns True if n is a multiple of m, that is, n = mi for some
-integer i, and False otherwise.
-"""
-def is_multiple(n, m):
-    return True if (n % m == 0) else False
-
-"""Write a short Python function, is even(k), that takes an integer value and
-returns True if k is even, and False otherwise. However, your function
-cannot use the multiplication, modulo, or division operators
-"""
-def is_even(k):
-    return (k & 1 == 0)
-
 """ Write a short Python function, minmax(data), that takes a sequence of
 one or more numbers, and returns the smallest and largest numbers, in the
 form of a tuple of length two. Do not use the built-in functions min or
@@ -337,16 +323,8 @@ an array c of length n such that c[i] = a[i]·b[i], for i = 0,...,n−1.
 
 
 if __name__ == "__main__":
-    print(is_multiple(50,3))
-    print(is_multiple(60,3))
-    print(is_multiple(70,3))
-    print(is_multiple(50,2))
-    print(is_multiple(60,2))
-    print(is_multiple(70,2))
-    print(is_even(10))
-    print(is_even(9))
-    print(is_even(11))
-    print(is_even(13))
+
+
     l = [2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]
     print(minmax(l))
     print(sum_of_squares(10))
