@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <!-- html,xhtml,mathml, -css --> 
 <meta name="src" content="GoodrichTamassiaGoldwasserPages.tex" /> 
-<meta name="date" content="2014-11-02 16:23:00" /> 
+<meta name="date" content="2014-11-02 16:30:00" /> 
 <link rel="stylesheet" type="text/css" href="GoodrichTamassiaGoldwasserPages.css" /> 
 <meta charset="UTF-8" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
@@ -67,10 +67,10 @@ ga('send', 'pageview');
 </div> 
 <div class="tableofcontents">
    <span class="chapterToc" >1 <a 
-href="#x1-30001" id="QQ2-1-3">Format</a></span>
-<br />   <span class="chapterToc" >2 <a 
-href="#x1-40002" id="QQ2-1-4">Python Primer</a></span>
-<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.0.1 <a 
+href="#x1-30001" id="QQ2-1-3">Python Primer</a></span>
+<br />   &#x00A0;<span class="sectionToc" >1.1 <a 
+href="#x1-40001" id="QQ2-1-4">Format</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >1.1.1 <a 
 href="#x1-50001" id="QQ2-1-5">Exercises</a></span>
 <br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
 href="#x1-80001" id="QQ2-1-8"><b>R-1.1</b></a></span>
@@ -89,39 +89,52 @@ href="#x1-230001" id="QQ2-1-23"><b>R-1.8</b></a></span>
                                                                                               
                                                                                               
 <p>   <a 
- id="chap:Format"></a>
+ id="chap:PythonPrimer"></a>
                                                                                               
                                                                                               
    </p> 
 
    <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;1</span><br /><a 
- id="x1-30001"></a>Format</h2>
+ id="x1-30001"></a>Python Primer</h2>
+<p>The first chapter in the book is all about learning to handle Python syntax. Subjects include objects,
+control flow, functions, I/O operations, exceptions, iterators and generators, namespaces, modules, and
+scope. There is nothing regarding python packaging to redistribute your own module, which is a subject
+of its own.
+</p> 
+<p>   <a 
+ id="sec:Format"></a>
+<a 
+ id="x1-3001r1"></a>
+</p> 
+
+<h3 class="sectionHead"><span class="titlemark">1.1   </span> <a 
+ id="x1-40001"></a>Format</h3>
 <p>All exercises will be presented with their own Python Doctest documentation to allow testing. To run
 them in your own python package you can copy paste the text and add a main like the
 following:
 </p> 
-<p>    <div class="panel-group" id="accordionx1-30001"> 
+<p>    <div class="panel-group" id="accordionx1-40001"> 
 <div class="panel panel-default"> 
-<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionx1-30001" href="#collapsex1-30001"> 
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionx1-40001" href="#collapsex1-40001"> 
 <div class="panel-heading"> 
 <h4 class="panel-title"> 
 <FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span> 
 </h4> 
 </div> 
 </a> 
-<div id="collapsex1-30001" class="panel-collapse collapse"> 
+<div id="collapsex1-40001" class="panel-collapse collapse"> 
 <div class="panel-body"> 
 <pre class="prettyprint"><p> 
 
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Running Doctest</span></div><!--tex4ht:label?: x1-30001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-3001r1"></a>1</span>if&#x00A0;__name__&#x00A0;==&#x00A0;<!--l. 6--><span class="listings-nested">&#8221;__main__&#8221;</span>:&#x00A0;<br /><span class="label"><a 
- id="x1-3002r2"></a>2</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;import&#x00A0;doctest&#x00A0;<br /><span class="label"><a 
- id="x1-3003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;doctest.testmod()
+class="content">Running Doctest</span></div><!--tex4ht:label?: x1-40001 --><!--l. 9--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-4001r1"></a>1</span>if&#x00A0;__name__&#x00A0;==&#x00A0;<!--l. 10--><span class="listings-nested">&#8221;__main__&#8221;</span>:&#x00A0;<br /><span class="label"><a 
+ id="x1-4002r2"></a>2</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;import&#x00A0;doctest&#x00A0;<br /><span class="label"><a 
+ id="x1-4003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;doctest.testmod()
    &#x00A0;<br /><span class="label"><a 
- id="x1-3004r4"></a>4</span></pre>
+ id="x1-4004r4"></a>4</span></pre>
 <p></p></pre> 
 </div> 
 </div> 
@@ -137,11 +150,11 @@ if you are pennyless like me. The colors, the functionality it just rocks. <b>Pl
 examples without the need of using a main function.</b>
 </p> 
 <p>   <b>Pro-Tip</b>. I like to use Anaconda for my Python distro, but the standalone Python
-<!--l. 16--><math 
+<!--l. 20--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mn>2</mn><mo 
 class="MathClass-punc">.</mo><mn>7</mn></math> or
-<!--l. 16--><math 
+<!--l. 20--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" > <mo 
 class="MathClass-rel">&#x003E;</mo><mo 
@@ -149,27 +162,16 @@ class="MathClass-rel">=</mo> <mn>3</mn></math> works
 too.
 </p> 
 <p>   <a 
- id="chap:PythonPrimer"></a>
-                                                                                              
-                                                                                              
-   </p> 
-
-   <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;2</span><br /><a 
- id="x1-40002"></a>Python Primer</h2>
-<p>The first chapter in the book is all about learning to handle Python syntax. Subjects include objects,
-control flow, functions, I/O operations, exceptions, iterators and generators, namespaces, modules, and
-scope. There is nothing regarding python packaging to redistribute your own module, which is a subject
-of its own.
-</p> 
-<p>   <a 
  id="ssec:Exercises"></a>
 <a 
- id="x1-4001r1"></a>
+ id="x1-4005r1"></a>
 </p> 
 
-<h4 class="subsectionHead"><span class="titlemark">2.0.1   </span> <a 
+<h4 class="subsectionHead"><span class="titlemark">1.1.1   </span> <a 
  id="x1-50001"></a>Exercises</h4>
 <p>The exercises in the first chapter are fun, no joke. I&#8217;ve seen what&#8217;s coming in chapter 2 and those
+                                                                                              
+                                                                                              
 exercises look terrible because they are open ended questions, but they are also important
 concepts.
 </p> 
@@ -229,7 +231,7 @@ and <code>False</code> otherwise.
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.1</span></div><!--tex4ht:label?: x1-80002 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+class="content">Exercise R-1.1</span></div><!--tex4ht:label?: x1-80001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
  id="x1-8001r1"></a>1</span>def&#x00A0;is_multiple(n,&#x00A0;m):&#x00A0;<br /><span class="label"><a 
  id="x1-8002r2"></a>2</span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;multiple&#x00A0;of&#x00A0;m&#x00A0;<br /><span class="label"><a 
  id="x1-8003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;such&#x00A0;that&#x00A0;n&#x00A0;=&#x00A0;mi&#x00A0;else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
@@ -299,12 +301,10 @@ operators.
 <div class="panel-body"> 
 <pre class="prettyprint"><p> 
 
-                                                                                              
-                                                                                              
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.2</span></div><!--tex4ht:label?: x1-110002 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+class="content">Exercise R-1.2</span></div><!--tex4ht:label?: x1-110001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
  id="x1-11001r1"></a>1</span>def&#x00A0;is_even(k):&#x00A0;<br /><span class="label"><a 
  id="x1-11002r2"></a>2</span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;even&#x00A0;<br /><span class="label"><a 
  id="x1-11003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
@@ -371,7 +371,7 @@ functions <code>min</code> or <code>max</code> in implementing your solution.
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.3</span></div><!--tex4ht:label?: x1-140002 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+class="content">Exercise R-1.3</span></div><!--tex4ht:label?: x1-140001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
  id="x1-14001r1"></a>1</span>class&#x00A0;MinMax():&#x00A0;<br /><span class="label"><a 
  id="x1-14002r2"></a>2</span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;MinMax&#x00A0;object&#x00A0;helper&#x00A0;<br /><span class="label"><a 
  id="x1-14003r3"></a>3</span>&#x00A0;<br /><span class="label"><a 
@@ -437,6 +437,8 @@ class="content">Exercise R-1.3</span></div><!--tex4ht:label?: x1-140002 --><!--l
  id="x1-14063r63"></a>63</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.max&#x00A0;&#x003C;&#x00A0;l_max:&#x00A0;<br /><span class="label"><a 
  id="x1-14064r64"></a>64</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;l_max&#x00A0;<br /><span class="label"><a 
  id="x1-14065r65"></a>65</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;mm
+                                                                                              
+                                                                                              
    &#x00A0;<br /><span class="label"><a 
  id="x1-14066r66"></a>66</span></pre>
 <p></p></pre> 
@@ -492,7 +494,7 @@ comprehension syntax and the built-in sum function.
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.4 &amp; R-1.5</span></div><!--tex4ht:label?: x1-170002 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+class="content">Exercise R-1.4 &amp; R-1.5</span></div><!--tex4ht:label?: x1-170001 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
  id="x1-17001r1"></a>1</span>def&#x00A0;sum_of_squares(n):&#x00A0;<br /><span class="label"><a 
  id="x1-17002r2"></a>2</span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;Sum&#x00A0;of&#x00A0;squares&#x00A0;of&#x00A0;postive&#x00A0;integers&#x00A0;<br /><span class="label"><a 
  id="x1-17003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;smaller&#x00A0;than&#x00A0;n&#x00A0;<br /><span class="label"><a 
@@ -550,8 +552,6 @@ display="inline" ><mi
 </p> 
 <p>   Give a single command that computes the sum from Exercise R-1.6, relying on Python&#8217;s
 comprehension syntax and the built-in sum function.
-                                                                                              
-                                                                                              
 </p> 
 <p>    <div class="panel-group" id="accordionx1-200001"> 
 <div class="panel panel-default"> 
@@ -569,7 +569,7 @@ comprehension syntax and the built-in sum function.
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.6 &amp; R-1.7</span></div><!--tex4ht:label?: x1-200002 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+class="content">Exercise R-1.6 &amp; R-1.7</span></div><!--tex4ht:label?: x1-200001 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
  id="x1-20001r1"></a>1</span>def&#x00A0;sum_of_odd_squares(n):&#x00A0;<br /><span class="label"><a 
  id="x1-20002r2"></a>2</span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;Sum&#x00A0;of&#x00A0;squares&#x00A0;of&#x00A0;odd&#x00A0;postive&#x00A0;integers&#x00A0;<br /><span class="label"><a 
  id="x1-20003r3"></a>3</span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;smaller&#x00A0;than&#x00A0;n&#x00A0;<br /><span class="label"><a 
@@ -630,19 +630,21 @@ display="inline" ><mi
 class="MathClass-open">[</mo><mrow><mi 
 >k</mi></mrow><mo 
 class="MathClass-close">]</mo></mrow></math> is used for index
+                                                                                              
+                                                                                              
 <!--l. 3--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
-display="inline" ><mo 
-class="MathClass-punc">?</mo><mi 
->n</mi><mo 
-class="MathClass-punc">?</mo><mi 
+display="inline" > <mo 
+class="MathClass-bin">-</mo> <mi 
+>n</mi> <mo 
+class="MathClass-rel">&#x2264;</mo> <mi 
 >k</mi> <mo 
 class="MathClass-rel">&#x003C;</mo> <mn>0</mn></math>, what is the
 equivalent index <!--l. 3--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mi 
->j</mi><mo 
-class="MathClass-punc">?</mo><mn>0</mn></math>
+>j</mi> <mo 
+class="MathClass-rel">&#x2265;</mo> <mn>0</mn></math>
 such that <!--l. 3--><math 
  xmlns="http://www.w3.org/1998/Math/MathML"  
 display="inline" ><mi 
@@ -668,7 +670,7 @@ references the same element?
 <br /> </p> 
 <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.8</span></div><!--tex4ht:label?: x1-230002 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+class="content">Exercise R-1.8</span></div><!--tex4ht:label?: x1-230001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
  id="x1-23001r1"></a>1</span>def&#x00A0;return_element(data,&#x00A0;k):&#x00A0;<br /><span class="label"><a 
  id="x1-23002r2"></a>2</span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;Tells&#x00A0;you&#x00A0;the&#x00A0;equivalent&#x00A0;negative&#x00A0;index&#x00A0;<br /><span class="label"><a 
  id="x1-23003r3"></a>3</span>&#x00A0;<br /><span class="label"><a 
