@@ -182,6 +182,7 @@ div.lstinputlisting{ font-family: monospace; white-space: nowrap; }
  .likechapterHead { display:none !important; } 
  span.titlemark { display:none !important; } 
  .cmbx-12x-x-207 { font-size:inherit;}
+ ol.linenums { padding-left: 0px; } 
 div.lstlisting .cmtt-10 {font-family:monospace; color:DimGray}
 div.lstlisting .cmss-10 {font-family:monospace; color:Black}
 div.lstlisting .cmssbx-10 {font-family:monospace; color:Blue}

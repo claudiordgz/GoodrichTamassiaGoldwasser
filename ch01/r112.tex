@@ -1,0 +1,78 @@
+\blogsubsubsection{sssec:ex1_12}{R-1.12}{chap:PythonPrimer}{} \label{sssec:ex1_12}
+
+\textbf{This is a random method, I usually stress test anything that is random since I am always uneasy about it. Because the test is so long I placed it separately.}
+
+Python's random module includes a function choice(data) that returns a random element from a non-empty sequence. The random module includes a more basic function randrange, with parametrization similar to the built-in range function, that return a random choice from the given range. Using only the randrange function, implement your own version of the choice function.
+
+
+\begin{lstlisting}[title=Exercise R-1.12]
+def custom_choice(data):
+		""" Returns random element from a non-empty sequence
+		
+		:returns:
+				integer value of list
+		"""
+    import random
+    return data[random.randrange(0,len(data))]
+\end{lstlisting}
+
+\ProTip{Stress test your random functions}
+
+\textbf{Hereafter you can see the Doctest for this exercise. I separated it because it is hude.} In this case we are testing a random method that is part of a library, which is overkill. But the test is not really hard to make or design so it is not much of an investment in either time or money. 
+
+\begin{lstlisting}[title=Exercise R-1.12 Doctest]
+""" Python's random module includes a function choice(data) that returns a
+random element from a non-empty sequence. The random module includes
+a more basic function randrange, with parametrization similar to
+the built-in range function, that return a random choice from the given
+range. Using only the randrange function, implement your own version
+of the choice function.
+
+>>> data = [2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]
+>>> results = list()
+>>> for x in range(len(data)*20):
+...     val = custom_choice(data)
+...     results.append(val in data)
+>>> print(results)
+[True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True, \
+True, True, True, True, True, True, True, True, True, True]
+"""
+\end{lstlisting}
