@@ -4,24 +4,4 @@ Write a short Python function that takes a positive integer $n$ and returns the 
 
 Give a single command that computes the sum from Exercise R-1.4, relying on Python's comprehension syntax and the built-in sum function.
 
-\begin{lstlisting}[title=Exercise R-1.4 \& R-1.5]
-def sum_of_squares(n):
-    """Sum of squares of postive integers
-    smaller than n
-
-    Args:
-        n (int): Highest number
-
-    >>> sum_of_squares(10)
-    285
-    >>> sum_of_squares(20)
-    2470
-    >>> sum_of_squares(500)
-    41541750
-    >>> sum_of_squares(37)
-    16206
-    >>> sum_of_squares(-1)
-    False
-    """
-    return sum([pow(x,2) for x in range(n)]) if n > 0 else False
-\end{lstlisting}
+\lstinputlisting[title=Exercise R-1.4 \& R-1.5]{../../GoodrichTamassiaGoldwasser/ch01/r14r15.py}

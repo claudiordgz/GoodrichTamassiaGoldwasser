@@ -2,26 +2,4 @@
 
 Write a short Python function, \texttt{is\_even(k)}, that takes an integer value and returns \texttt{True} if $k$ is even, and \texttt{False} otherwise. However, your function cannot use the multiplication, modulo, or division operators.
 
-\begin{lstlisting}[title=Exercise R-1.2]
-def is_even(k):
-    """Return True if n is even 
-		else returns False
-
-    >>> is_even(10)
-    True
-    >>> is_even(9)
-    False
-    >>> is_even(11)
-    False
-    >>> is_even(13)
-    False
-    >>> is_even(1025)
-    False
-    >>> is_even("test")
-    Number must be Integer values
-    """
-    try:
-        return int(k) & 1 == 0
-    except ValueError:
-        print("Numbers must be Integer values")
-\end{lstlisting}
+\lstinputlisting[title=Exercise R-1.2]{../../GoodrichTamassiaGoldwasser/ch01/r12.py}

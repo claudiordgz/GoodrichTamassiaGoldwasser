@@ -3,6 +3,7 @@
 .cmex-10{font-size:83%;}
 .cmbx-12{ font-weight: bold;}
 .cmbx-12{ font-weight: bold;}
+.cmbx-12{ font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
 .cmbsy-10x-x-120{font-weight: bold;}
@@ -21,13 +22,32 @@
 .cmsy-6{font-size:50%;}
 .cmbx-12x-x-144{font-size:144%; font-weight: bold;}
 .cmbx-12x-x-144{ font-weight: bold;}
+.cmbx-12x-x-144{ font-weight: bold;}
 .pcrr7t-x-x-120{font-family: monospace;}
 .cmss-12{  font-family: sans-serif;}
 .cmss-12{  font-family: sans-serif;}
+.cmss-12{  font-family: sans-serif;}
+.cmss-12{  font-family: sans-serif;}
+.cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
+.cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
 .cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
 .cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
 .cmti-12{ font-style: italic;}
 .cmr-10x-x-109{font-size:90%;}
+.cmr-12x-x-120{font-size:120%;}
+.cmbx-12x-x-120{font-size:120%; font-weight: bold;}
+.cmbx-12x-x-120{ font-weight: bold;}
+.cmbx-12x-x-120{ font-weight: bold;}
+.cmmi-12x-x-120{font-size:120%;font-style: italic;}
+.cmsy-10x-x-144{font-size:120%;}
+.cmss-12x-x-120{font-size:120%;  font-family: sans-serif;}
+.cmss-12x-x-120{  font-family: sans-serif;}
+.cmss-12x-x-120{  font-family: sans-serif;}
+.cmss-12x-x-120{  font-family: sans-serif;}
+.cmssbx-10x-x-144{font-size:120%; font-family: sans-serif; font-weight: bold;}
+.cmssbx-10x-x-144{ font-family: sans-serif; font-weight: bold;}
+.cmssbx-10x-x-144{ font-family: sans-serif; font-weight: bold;}
+.cmssbx-10x-x-144{ font-family: sans-serif; font-weight: bold;}
 .small-caps{font-variant: small-caps; }
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }

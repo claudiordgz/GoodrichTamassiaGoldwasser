@@ -1,3 +1,4 @@
+<div class="stuffy"></div>
 <!doctype html> 
 <html lang="en"> 
 <head>
@@ -7,7 +8,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <!-- html,xhtml,mathml, -css --> 
 <meta name="src" content="GoodrichTamassiaGoldwasserPages.tex" /> 
-<meta name="date" content="2014-11-02 22:56:00" /> 
+<meta name="date" content="2014-11-06 22:50:00" /> 
 <link rel="stylesheet" type="text/css" href="GoodrichTamassiaGoldwasserPages.css" /> 
 <meta charset="UTF-8" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
@@ -92,6 +93,8 @@ href="#x1-130001" id="QQ2-1-13"><b>R-1.10</b></a></span>
 href="#x1-140001" id="QQ2-1-14"><b>R-1.11</b></a></span>
 <br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
 href="#x1-150001" id="QQ2-1-15"><b>R-1.12</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-160001" id="QQ2-1-16"><b>C-1.13</b></a></span>
    </div></div> </div> 
 <div class="col-md-7"><div class="well">
                                                                                                   
@@ -233,32 +236,40 @@ href="#collapse2" class="accordion-toggle" data-toggle="collapse" data-parent="#
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
 class="content">Exercise R-1.1</span></div><!--tex4ht:label?: x1-60001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-6001r1"></a></span>def&#x00A0;is_multiple(n,&#x00A0;m):&#x00A0;<br /><span class="label"><a 
- id="x1-6002r2"></a></span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;multiple&#x00A0;of&#x00A0;m&#x00A0;<br /><span class="label"><a 
- id="x1-6003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;such&#x00A0;that&#x00A0;n&#x00A0;=&#x00A0;mi&#x00A0;else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-6001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Write&#x00A0;a&#x00A0;short&#x00A0;Python&#x00A0;function,&#x00A0;is_multiple(n,&#x00A0;m),&#x00A0;that&#x00A0;takes&#x00A0;two&#x00A0;integer&#x00A0;<br /><span class="label"><a 
+ id="x1-6002r2"></a></span>values&#x00A0;and&#x00A0;returns&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;a&#x00A0;multiple&#x00A0;of&#x00A0;m,&#x00A0;that&#x00A0;is,&#x00A0;n&#x00A0;=&#x00A0;mi&#x00A0;for&#x00A0;some&#x00A0;<br /><span class="label"><a 
+ id="x1-6003r3"></a></span>integer&#x00A0;i,&#x00A0;and&#x00A0;False&#x00A0;otherwise.&#x00A0;<br /><span class="label"><a 
  id="x1-6004r4"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-6005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(50,3)&#x00A0;<br /><span class="label"><a 
- id="x1-6006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-6007r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(60,3)&#x00A0;<br /><span class="label"><a 
- id="x1-6008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
- id="x1-6009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(70,3)&#x00A0;<br /><span class="label"><a 
- id="x1-6010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-6011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-50,2)&#x00A0;<br /><span class="label"><a 
- id="x1-6012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
- id="x1-6013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-60,2)&#x00A0;<br /><span class="label"><a 
- id="x1-6014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
- id="x1-6015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(&#8221;</span>test<!--l. 20--><span class="listings-nested">&#8221;,10)&#x00A0;<br /><span class="label"><a 
- id="x1-6016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
- id="x1-6017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-60,&#8221;</span>test<!--l. 22--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
- id="x1-6018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
- id="x1-6019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 24--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-6020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;try:&#x00A0;<br /><span class="label"><a 
- id="x1-6021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;True&#x00A0;if&#x00A0;(int(n)&#x00A0;%&#x00A0;int(m)&#x00A0;==&#x00A0;0)&#x00A0;else&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-6022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;ValueError:&#x00A0;<br /><span class="label"><a 
- id="x1-6023r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 28--><span class="listings-nested">&#8221;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
+ id="x1-6005r5"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(50,3)&#x00A0;<br /><span class="label"><a 
+ id="x1-6006r6"></a></span>False&#x00A0;<br /><span class="label"><a 
+ id="x1-6007r7"></a></span>&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-6008r8"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-6009r9"></a></span>def&#x00A0;is_multiple(n,&#x00A0;m):&#x00A0;<br /><span class="label"><a 
+ id="x1-6010r10"></a></span><!--l. 10--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 10--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;multiple&#x00A0;of&#x00A0;m&#x00A0;such&#x00A0;that&#x00A0;n&#x00A0;=&#x00A0;mi&#x00A0;<br /><span class="label"><a 
+ id="x1-6011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-6012r12"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-6013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(50,3)&#x00A0;<br /><span class="label"><a 
+ id="x1-6014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-6015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(60,3)&#x00A0;<br /><span class="label"><a 
+ id="x1-6016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
+ id="x1-6017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(70,3)&#x00A0;<br /><span class="label"><a 
+ id="x1-6018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-6019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-50,2)&#x00A0;<br /><span class="label"><a 
+ id="x1-6020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
+ id="x1-6021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-60,2)&#x00A0;<br /><span class="label"><a 
+ id="x1-6022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
+ id="x1-6023r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(&#8221;</span>test<!--l. 23--><span class="listings-nested">&#8221;,10)&#x00A0;<br /><span class="label"><a 
+ id="x1-6024r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
+ id="x1-6025r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_multiple(-60,&#8221;</span>test<!--l. 25--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
+ id="x1-6026r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
+ id="x1-6027r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 27--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-6028r28"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;try:&#x00A0;<br /><span class="label"><a 
+ id="x1-6029r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;True&#x00A0;if&#x00A0;(int(n)&#x00A0;%&#x00A0;int(m)&#x00A0;==&#x00A0;0)&#x00A0;else&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-6030r30"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;ValueError:&#x00A0;<br /><span class="label"><a 
+ id="x1-6031r31"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 31--><span class="listings-nested">&#8221;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
    &#x00A0;<br /><span class="label"><a 
- id="x1-6024r24"></a></span></pre>
-</pre> </div> 
+ id="x1-6032r32"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
  </div> <a 
@@ -303,30 +314,39 @@ href="#collapse3" class="accordion-toggle" data-toggle="collapse" data-parent="#
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
 class="content">Exercise R-1.2</span></div><!--tex4ht:label?: x1-70001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-7001r1"></a></span>def&#x00A0;is_even(k):&#x00A0;<br /><span class="label"><a 
- id="x1-7002r2"></a></span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;even&#x00A0;<br /><span class="label"><a 
- id="x1-7003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-7001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Write&#x00A0;a&#x00A0;short&#x00A0;Python&#x00A0;function,&#x00A0;is_even(k),&#x00A0;that&#x00A0;takes&#x00A0;an&#x00A0;integer&#x00A0;value&#x00A0;and&#x00A0;<br /><span class="label"><a 
+ id="x1-7002r2"></a></span>returns&#x00A0;True&#x00A0;if&#x00A0;k&#x00A0;is&#x00A0;even,&#x00A0;and&#x00A0;False&#x00A0;otherwise.&#x00A0;However,&#x00A0;your&#x00A0;function&#x00A0;<br /><span class="label"><a 
+ id="x1-7003r3"></a></span>cannot&#x00A0;use&#x00A0;the&#x00A0;multiplication,&#x00A0;modulo,&#x00A0;or&#x00A0;division&#x00A0;operators&#x00A0;<br /><span class="label"><a 
  id="x1-7004r4"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-7005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(10)&#x00A0;<br /><span class="label"><a 
- id="x1-7006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
- id="x1-7007r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(9)&#x00A0;<br /><span class="label"><a 
- id="x1-7008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-7009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(11)&#x00A0;<br /><span class="label"><a 
- id="x1-7010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-7011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(13)&#x00A0;<br /><span class="label"><a 
- id="x1-7012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-7013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(1025)&#x00A0;<br /><span class="label"><a 
- id="x1-7014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-7015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(&#8221;</span>test<!--l. 20--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
- id="x1-7016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Number&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
- id="x1-7017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 22--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-7018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;try:&#x00A0;<br /><span class="label"><a 
- id="x1-7019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;int(k)&#x00A0;&amp;&#x00A0;1&#x00A0;==&#x00A0;0&#x00A0;<br /><span class="label"><a 
- id="x1-7020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;ValueError:&#x00A0;<br /><span class="label"><a 
- id="x1-7021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 26--><span class="listings-nested">&#8221;Numbers&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
+ id="x1-7005r5"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;is_even(127)&#x00A0;<br /><span class="label"><a 
+ id="x1-7006r6"></a></span>False&#x00A0;<br /><span class="label"><a 
+ id="x1-7007r7"></a></span>&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-7008r8"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-7009r9"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-7010r10"></a></span>def&#x00A0;is_even(k):&#x00A0;<br /><span class="label"><a 
+ id="x1-7011r11"></a></span><!--l. 11--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 11--><span class="listings-nested">&#8221;Return&#x00A0;True&#x00A0;if&#x00A0;n&#x00A0;is&#x00A0;even&#x00A0;<br /><span class="label"><a 
+ id="x1-7012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Else&#x00A0;returns&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-7013r13"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-7014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(10)&#x00A0;<br /><span class="label"><a 
+ id="x1-7015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;True&#x00A0;<br /><span class="label"><a 
+ id="x1-7016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(9)&#x00A0;<br /><span class="label"><a 
+ id="x1-7017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-7018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(11)&#x00A0;<br /><span class="label"><a 
+ id="x1-7019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-7020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(13)&#x00A0;<br /><span class="label"><a 
+ id="x1-7021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-7022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(1025)&#x00A0;<br /><span class="label"><a 
+ id="x1-7023r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-7024r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;is_even(&#8221;</span>test<!--l. 24--><span class="listings-nested">&#8221;)&#x00A0;<br /><span class="label"><a 
+ id="x1-7025r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Number&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#x00A0;<br /><span class="label"><a 
+ id="x1-7026r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 26--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-7027r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;try:&#x00A0;<br /><span class="label"><a 
+ id="x1-7028r28"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;int(k)&#x00A0;&amp;&#x00A0;1&#x00A0;==&#x00A0;0&#x00A0;<br /><span class="label"><a 
+ id="x1-7029r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;ValueError:&#x00A0;<br /><span class="label"><a 
+ id="x1-7030r30"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 30--><span class="listings-nested">&#8221;Number&#x00A0;must&#x00A0;be&#x00A0;Integer&#x00A0;values&#8221;</span>)
    &#x00A0;<br /><span class="label"><a 
- id="x1-7022r22"></a></span></pre>
-</pre> </div> 
+ id="x1-7031r31"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
  </div> <a 
@@ -367,83 +387,91 @@ href="#collapse4" class="accordion-toggle" data-toggle="collapse" data-parent="#
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
 class="content">Exercise R-1.3</span></div><!--tex4ht:label?: x1-80001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-8001r1"></a></span>class&#x00A0;MinMax():&#x00A0;<br /><span class="label"><a 
- id="x1-8002r2"></a></span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;MinMax&#x00A0;object&#x00A0;helper&#x00A0;<br /><span class="label"><a 
- id="x1-8003r3"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-8004r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Attributes:&#x00A0;<br /><span class="label"><a 
- id="x1-8005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;min&#x00A0;(int):&#x00A0;Minimun&#x00A0;value&#x00A0;of&#x00A0;attributes&#x00A0;<br /><span class="label"><a 
- id="x1-8006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max&#x00A0;(max):&#x00A0;Maximum&#x00A0;value&#x00A0;of&#x00A0;attributes&#x00A0;<br /><span class="label"><a 
- id="x1-8007r7"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-8008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 13--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-8009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__init__(self,&#x00A0;min,&#x00A0;max):&#x00A0;<br /><span class="label"><a 
- id="x1-8010r10"></a></span><!--l. 15--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 15--><span class="listings-nested">&#8221;Args:&#x00A0;<br /><span class="label"><a 
- id="x1-8011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;min&#x00A0;(int):&#x00A0;Number&#x00A0;with&#x00A0;lesser&#x00A0;value&#x00A0;<br /><span class="label"><a 
- id="x1-8012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max&#x00A0;(int):&#x00A0;Number&#x00A0;with&#x00A0;higher&#x00A0;value&#x00A0;<br /><span class="label"><a 
- id="x1-8013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 18--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-8014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.min&#x00A0;=&#x00A0;min&#x00A0;<br /><span class="label"><a 
- id="x1-8015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.max&#x00A0;=&#x00A0;max&#x00A0;<br /><span class="label"><a 
- id="x1-8016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__str__(self):&#x00A0;<br /><span class="label"><a 
- id="x1-8017r17"></a></span><!--l. 22--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 22--><span class="listings-nested">&#8221;String&#x00A0;representation&#x00A0;overload&#x00A0;<br /><span class="label"><a 
- id="x1-8018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 23--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-8019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;<!--l. 24--><span class="listings-nested">&#8221;Min&#x00A0;{min}&#x00A0;-&#x00A0;&#8221;</span>&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-8020r20"></a></span><!--l. 25--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;Max&#x00A0;{max}&#8221;</span>.format(min=str(self.min),&#x00A0;<br /><span class="label"><a 
- id="x1-8021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max=str(self.max))&#x00A0;<br /><span class="label"><a 
- id="x1-8022r22"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-8023r23"></a></span>def&#x00A0;minmax(data):&#x00A0;<br /><span class="label"><a 
- id="x1-8024r24"></a></span><!--l. 29--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 29--><span class="listings-nested">&#8221;This&#x00A0;is&#x00A0;the&#x00A0;algorithm&#x00A0;to&#x00A0;find&#x00A0;the&#x00A0;<br /><span class="label"><a 
- id="x1-8025r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;minimum&#x00A0;and&#x00A0;maximun&#x00A0;in&#x00A0;a&#x00A0;list.&#x00A0;<br /><span class="label"><a 
- id="x1-8026r26"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-8027r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
- id="x1-8028r28"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;data&#x00A0;(list&#x00A0;of&#x00A0;int):&#x00A0;Simple&#x00A0;array&#x00A0;of&#x00A0;<br /><span class="label"><a 
- id="x1-8029r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Integers&#x00A0;<br /><span class="label"><a 
- id="x1-8030r30"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-8031r31"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Returns:&#x00A0;<br /><span class="label"><a 
- id="x1-8032r32"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;A&#x00A0;tuple&#x00A0;MinMax&#x00A0;that&#x00A0;holds&#x00A0;the&#x00A0;minimum&#x00A0;<br /><span class="label"><a 
- id="x1-8033r33"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;and&#x00A0;maximum&#x00A0;values&#x00A0;found&#x00A0;in&#x00A0;the&#x00A0;list&#x00A0;<br /><span class="label"><a 
- id="x1-8034r34"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-8035r35"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Examples:&#x00A0;<br /><span class="label"><a 
- id="x1-8036r36"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Here&#x00A0;are&#x00A0;some&#x00A0;examples!&#x00A0;<br /><span class="label"><a 
+ id="x1-8001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;&#x00A0;Write&#x00A0;a&#x00A0;short&#x00A0;Python&#x00A0;function,&#x00A0;minmax(data),&#x00A0;that&#x00A0;takes&#x00A0;a&#x00A0;sequence&#x00A0;of&#x00A0;<br /><span class="label"><a 
+ id="x1-8002r2"></a></span>one&#x00A0;or&#x00A0;more&#x00A0;numbers,&#x00A0;and&#x00A0;returns&#x00A0;the&#x00A0;smallest&#x00A0;and&#x00A0;largest&#x00A0;numbers,&#x00A0;in&#x00A0;the&#x00A0;<br /><span class="label"><a 
+ id="x1-8003r3"></a></span>form&#x00A0;of&#x00A0;a&#x00A0;tuple&#x00A0;of&#x00A0;length&#x00A0;two.&#x00A0;Do&#x00A0;not&#x00A0;use&#x00A0;the&#x00A0;built-in&#x00A0;functions&#x00A0;min&#x00A0;or&#x00A0;<br /><span class="label"><a 
+ id="x1-8004r4"></a></span>max&#x00A0;in&#x00A0;implementing&#x00A0;your&#x00A0;solution.&#x00A0;<br /><span class="label"><a 
+ id="x1-8005r5"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8006r6"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]))&#x00A0;<br /><span class="label"><a 
+ id="x1-8007r7"></a></span>Min&#x00A0;1&#x00A0;-&#x00A0;Max&#x00A0;11&#x00A0;<br /><span class="label"><a 
+ id="x1-8008r8"></a></span>&#8221;</span><!--l. 8--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8009r9"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8010r10"></a></span>class&#x00A0;MinMax():&#x00A0;<br /><span class="label"><a 
+ id="x1-8011r11"></a></span><!--l. 11--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 11--><span class="listings-nested">&#8221;MinMax&#x00A0;object&#x00A0;helper&#x00A0;<br /><span class="label"><a 
+ id="x1-8012r12"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Attributes:&#x00A0;<br /><span class="label"><a 
+ id="x1-8014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;min&#x00A0;(int):&#x00A0;Minimun&#x00A0;value&#x00A0;of&#x00A0;attributes&#x00A0;<br /><span class="label"><a 
+ id="x1-8015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max&#x00A0;(max):&#x00A0;Maximum&#x00A0;value&#x00A0;of&#x00A0;attributes&#x00A0;<br /><span class="label"><a 
+ id="x1-8016r16"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 17--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__init__(self,&#x00A0;min,&#x00A0;max):&#x00A0;<br /><span class="label"><a 
+ id="x1-8019r19"></a></span><!--l. 19--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 19--><span class="listings-nested">&#8221;&#x00A0;Default&#x00A0;Constructor&#x00A0;<br /><span class="label"><a 
+ id="x1-8020r20"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-8022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;min&#x00A0;(int):&#x00A0;Number&#x00A0;with&#x00A0;lesser&#x00A0;value&#x00A0;<br /><span class="label"><a 
+ id="x1-8023r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max&#x00A0;(int):&#x00A0;Number&#x00A0;with&#x00A0;higher&#x00A0;value&#x00A0;<br /><span class="label"><a 
+ id="x1-8024r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 24--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8025r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.min&#x00A0;=&#x00A0;min&#x00A0;<br /><span class="label"><a 
+ id="x1-8026r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.max&#x00A0;=&#x00A0;max&#x00A0;<br /><span class="label"><a 
+ id="x1-8027r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__str__(self):&#x00A0;<br /><span class="label"><a 
+ id="x1-8028r28"></a></span><!--l. 28--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 28--><span class="listings-nested">&#8221;String&#x00A0;representation&#x00A0;overload&#x00A0;<br /><span class="label"><a 
+ id="x1-8029r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 29--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8030r30"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;<!--l. 30--><span class="listings-nested">&#8221;Min&#x00A0;{min}&#x00A0;-&#x00A0;&#8221;</span>&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-8031r31"></a></span><!--l. 31--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;Max&#x00A0;{max}&#8221;</span>.format(min=str(self.min),&#x00A0;<br /><span class="label"><a 
+ id="x1-8032r32"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;max=str(self.max))&#x00A0;<br /><span class="label"><a 
+ id="x1-8033r33"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8034r34"></a></span>def&#x00A0;minmax(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-8035r35"></a></span><!--l. 35--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 35--><span class="listings-nested">&#8221;This&#x00A0;is&#x00A0;the&#x00A0;algorithm&#x00A0;to&#x00A0;find&#x00A0;the&#x00A0;<br /><span class="label"><a 
+ id="x1-8036r36"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;minimum&#x00A0;and&#x00A0;maximun&#x00A0;in&#x00A0;a&#x00A0;list.&#x00A0;<br /><span class="label"><a 
  id="x1-8037r37"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-8038r38"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]))&#x00A0;<br /><span class="label"><a 
- id="x1-8039r39"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Min&#x00A0;1&#x00A0;-&#x00A0;Max&#x00A0;11&#x00A0;<br /><span class="label"><a 
- id="x1-8040r40"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([50,200,300,3,78,19203,56]))&#x00A0;<br /><span class="label"><a 
- id="x1-8041r41"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Min&#x00A0;3&#x00A0;-&#x00A0;Max&#x00A0;19203&#x00A0;<br /><span class="label"><a 
- id="x1-8042r42"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([100,150,200,500]))&#x00A0;<br /><span class="label"><a 
- id="x1-8043r43"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Min&#x00A0;100&#x00A0;-&#x00A0;Max&#x00A0;500&#x00A0;<br /><span class="label"><a 
- id="x1-8044r44"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 49--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-8045r45"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;=&#x00A0;0&#x00A0;<br /><span class="label"><a 
- id="x1-8046r46"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm&#x00A0;=&#x00A0;MinMax(data[start],data[start])&#x00A0;<br /><span class="label"><a 
- id="x1-8047r47"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;len(data)&#x00A0;&amp;&#x00A0;1&#x00A0;&#x00A0;==&#x00A0;1:&#x00A0;<br /><span class="label"><a 
- id="x1-8048r48"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[start]&#x00A0;&#x003C;&#x00A0;data[start+1]:&#x00A0;<br /><span class="label"><a 
- id="x1-8049r49"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;data[start+1]&#x00A0;<br /><span class="label"><a 
- id="x1-8050r50"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;data[start]&#x00A0;<br /><span class="label"><a 
- id="x1-8051r51"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;2&#x00A0;<br /><span class="label"><a 
- id="x1-8052r52"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
- id="x1-8053r53"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;1&#x00A0;<br /><span class="label"><a 
- id="x1-8054r54"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;for&#x00A0;index&#x00A0;in&#x00A0;range(start,&#x00A0;len(data[start:]),&#x00A0;2):&#x00A0;<br /><span class="label"><a 
- id="x1-8055r55"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[index]&#x00A0;&#x003C;&#x00A0;data[index+1]&#x00A0;:&#x00A0;<br /><span class="label"><a 
- id="x1-8056r56"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
- id="x1-8057r57"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
- id="x1-8058r58"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
- id="x1-8059r59"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
- id="x1-8060r60"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
- id="x1-8061r61"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.min&#x00A0;&#x003E;&#x00A0;l_min:&#x00A0;<br /><span class="label"><a 
- id="x1-8062r62"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;l_min&#x00A0;<br /><span class="label"><a 
- id="x1-8063r63"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.max&#x00A0;&#x003C;&#x00A0;l_max:&#x00A0;<br /><span class="label"><a 
- id="x1-8064r64"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;l_max&#x00A0;<br /><span class="label"><a 
- id="x1-8065r65"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;mm
+ id="x1-8038r38"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-8039r39"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;data&#x00A0;(list&#x00A0;of&#x00A0;int):&#x00A0;Simple&#x00A0;array&#x00A0;of&#x00A0;<br /><span class="label"><a 
+ id="x1-8040r40"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Integers&#x00A0;<br /><span class="label"><a 
+ id="x1-8041r41"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8042r42"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Returns:&#x00A0;<br /><span class="label"><a 
+ id="x1-8043r43"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;A&#x00A0;tuple&#x00A0;MinMax&#x00A0;that&#x00A0;holds&#x00A0;the&#x00A0;minimum&#x00A0;<br /><span class="label"><a 
+ id="x1-8044r44"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;and&#x00A0;maximum&#x00A0;values&#x00A0;found&#x00A0;in&#x00A0;the&#x00A0;list&#x00A0;<br /><span class="label"><a 
+ id="x1-8045r45"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8046r46"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Examples:&#x00A0;<br /><span class="label"><a 
+ id="x1-8047r47"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Here&#x00A0;are&#x00A0;some&#x00A0;examples!&#x00A0;<br /><span class="label"><a 
+ id="x1-8048r48"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8049r49"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]))&#x00A0;<br /><span class="label"><a 
+ id="x1-8050r50"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Min&#x00A0;1&#x00A0;-&#x00A0;Max&#x00A0;11&#x00A0;<br /><span class="label"><a 
+ id="x1-8051r51"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([50,200,300,3,78,19203,56]))&#x00A0;<br /><span class="label"><a 
+ id="x1-8052r52"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Min&#x00A0;3&#x00A0;-&#x00A0;Max&#x00A0;19203&#x00A0;<br /><span class="label"><a 
+ id="x1-8053r53"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;print(minmax([100,150,200,500]))&#x00A0;<br /><span class="label"><a 
+ id="x1-8054r54"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Min&#x00A0;100&#x00A0;-&#x00A0;Max&#x00A0;500&#x00A0;<br /><span class="label"><a 
+ id="x1-8055r55"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 55--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-8056r56"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;=&#x00A0;0&#x00A0;<br /><span class="label"><a 
+ id="x1-8057r57"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm&#x00A0;=&#x00A0;MinMax(data[start],data[start])&#x00A0;<br /><span class="label"><a 
+ id="x1-8058r58"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;len(data)&#x00A0;&amp;&#x00A0;1&#x00A0;&#x00A0;==&#x00A0;1:&#x00A0;<br /><span class="label"><a 
+ id="x1-8059r59"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[start]&#x00A0;&#x003C;&#x00A0;data[start+1]:&#x00A0;<br /><span class="label"><a 
+ id="x1-8060r60"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;data[start+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-8061r61"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;data[start]&#x00A0;<br /><span class="label"><a 
+ id="x1-8062r62"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;2&#x00A0;<br /><span class="label"><a 
+ id="x1-8063r63"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
+ id="x1-8064r64"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;start&#x00A0;+=&#x00A0;1&#x00A0;<br /><span class="label"><a 
+ id="x1-8065r65"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;for&#x00A0;index&#x00A0;in&#x00A0;range(start,&#x00A0;len(data[start:]),&#x00A0;2):&#x00A0;<br /><span class="label"><a 
+ id="x1-8066r66"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;data[index]&#x00A0;&#x003C;&#x00A0;data[index+1]&#x00A0;:&#x00A0;<br /><span class="label"><a 
+ id="x1-8067r67"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
+ id="x1-8068r68"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-8069r69"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
+ id="x1-8070r70"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_min&#x00A0;=&#x00A0;data[index+1]&#x00A0;<br /><span class="label"><a 
+ id="x1-8071r71"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;l_max&#x00A0;=&#x00A0;data[index]&#x00A0;<br /><span class="label"><a 
+ id="x1-8072r72"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.min&#x00A0;&#x003E;&#x00A0;l_min:&#x00A0;<br /><span class="label"><a 
+ id="x1-8073r73"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.min&#x00A0;=&#x00A0;l_min&#x00A0;<br /><span class="label"><a 
+ id="x1-8074r74"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;mm.max&#x00A0;&#x003C;&#x00A0;l_max:&#x00A0;<br /><span class="label"><a 
+ id="x1-8075r75"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;mm.max&#x00A0;=&#x00A0;l_max&#x00A0;<br /><span class="label"><a 
+ id="x1-8076r76"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;mm
    &#x00A0;<br /><span class="label"><a 
- id="x1-8066r66"></a></span></pre>
-</pre> </div> 
+ id="x1-8077r77"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
- </div>
-                                                                                                  
-                                                                                                  
-<p>   <a 
+ </div> <a 
  id="sssec:ex1_41_5"></a>
-</p> 
-
+                                                                                                  
+                                                                                                  
 <h5 class="subsubsectionHead"><a 
  id="x1-90001"></a><b>R-1.4 &amp; R-1.5</b></h5>
     <table id="TBL-12" class="tabular" 
@@ -488,28 +516,38 @@ href="#collapse5" class="accordion-toggle" data-toggle="collapse" data-parent="#
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
 class="content">Exercise R-1.4 &amp; R-1.5</span></div><!--tex4ht:label?: x1-90001 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-9001r1"></a></span>def&#x00A0;sum_of_squares(n):&#x00A0;<br /><span class="label"><a 
- id="x1-9002r2"></a></span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;Sum&#x00A0;of&#x00A0;squares&#x00A0;of&#x00A0;postive&#x00A0;integers&#x00A0;<br /><span class="label"><a 
- id="x1-9003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;smaller&#x00A0;than&#x00A0;n&#x00A0;<br /><span class="label"><a 
- id="x1-9004r4"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-9005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
- id="x1-9006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;n&#x00A0;(int):&#x00A0;Highest&#x00A0;number&#x00A0;<br /><span class="label"><a 
- id="x1-9007r7"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-9008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(10)&#x00A0;<br /><span class="label"><a 
- id="x1-9009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;285&#x00A0;<br /><span class="label"><a 
- id="x1-9010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(20)&#x00A0;<br /><span class="label"><a 
- id="x1-9011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;2470&#x00A0;<br /><span class="label"><a 
- id="x1-9012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(500)&#x00A0;<br /><span class="label"><a 
- id="x1-9013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;41541750&#x00A0;<br /><span class="label"><a 
- id="x1-9014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(37)&#x00A0;<br /><span class="label"><a 
- id="x1-9015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;16206&#x00A0;<br /><span class="label"><a 
- id="x1-9016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(-1)&#x00A0;<br /><span class="label"><a 
- id="x1-9017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-9018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 25--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-9019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;sum([pow(x,2)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(n)])&#x00A0;if&#x00A0;n&#x00A0;&#x003E;&#x00A0;0&#x00A0;else&#x00A0;False
+ id="x1-9001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;&#x00A0;Write&#x00A0;a&#x00A0;short&#x00A0;Python&#x00A0;function&#x00A0;that&#x00A0;takes&#x00A0;a&#x00A0;positive&#x00A0;integer&#x00A0;n&#x00A0;and&#x00A0;returns&#x00A0;<br /><span class="label"><a 
+ id="x1-9002r2"></a></span>the&#x00A0;sum&#x00A0;of&#x00A0;the&#x00A0;squares&#x00A0;of&#x00A0;all&#x00A0;the&#x00A0;positive&#x00A0;integers&#x00A0;smaller&#x00A0;than&#x00A0;n.&#x00A0;<br /><span class="label"><a 
+ id="x1-9003r3"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-9004r4"></a></span>Give&#x00A0;a&#x00A0;single&#x00A0;command&#x00A0;that&#x00A0;computes&#x00A0;the&#x00A0;sum&#x00A0;from&#x00A0;Exercise&#x00A0;R-1.4,&#x00A0;relying&#x00A0;<br /><span class="label"><a 
+ id="x1-9005r5"></a></span>on&#x00A0;Pythons&#x00A0;comprehension&#x00A0;syntax&#x00A0;and&#x00A0;the&#x00A0;built-in&#x00A0;sum&#x00A0;function.&#x00A0;<br /><span class="label"><a 
+ id="x1-9006r6"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-9007r7"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(10)&#x00A0;<br /><span class="label"><a 
+ id="x1-9008r8"></a></span>285&#x00A0;<br /><span class="label"><a 
+ id="x1-9009r9"></a></span>&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-9010r10"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-9011r11"></a></span>def&#x00A0;sum_of_squares(n):&#x00A0;<br /><span class="label"><a 
+ id="x1-9012r12"></a></span><!--l. 12--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 12--><span class="listings-nested">&#8221;Sum&#x00A0;of&#x00A0;squares&#x00A0;of&#x00A0;postive&#x00A0;integers&#x00A0;<br /><span class="label"><a 
+ id="x1-9013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;smaller&#x00A0;than&#x00A0;n&#x00A0;<br /><span class="label"><a 
+ id="x1-9014r14"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-9015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-9016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;n&#x00A0;(int):&#x00A0;Highest&#x00A0;number&#x00A0;<br /><span class="label"><a 
+ id="x1-9017r17"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-9018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(10)&#x00A0;<br /><span class="label"><a 
+ id="x1-9019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;285&#x00A0;<br /><span class="label"><a 
+ id="x1-9020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(20)&#x00A0;<br /><span class="label"><a 
+ id="x1-9021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;2470&#x00A0;<br /><span class="label"><a 
+ id="x1-9022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(500)&#x00A0;<br /><span class="label"><a 
+ id="x1-9023r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;41541750&#x00A0;<br /><span class="label"><a 
+ id="x1-9024r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(37)&#x00A0;<br /><span class="label"><a 
+ id="x1-9025r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;16206&#x00A0;<br /><span class="label"><a 
+ id="x1-9026r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_squares(-1)&#x00A0;<br /><span class="label"><a 
+ id="x1-9027r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-9028r28"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 28--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-9029r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;sum([pow(x,2)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(n)])&#x00A0;if&#x00A0;n&#x00A0;&#x003E;&#x00A0;0&#x00A0;else&#x00A0;False
    &#x00A0;<br /><span class="label"><a 
- id="x1-9020r20"></a></span></pre>
-</pre> </div> 
+ id="x1-9030r30"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
  </div> <a 
@@ -560,28 +598,36 @@ href="#collapse6" class="accordion-toggle" data-toggle="collapse" data-parent="#
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
 class="content">Exercise R-1.6 &amp; R-1.7</span></div><!--tex4ht:label?: x1-100001 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-10001r1"></a></span>def&#x00A0;sum_of_odd_squares(n):&#x00A0;<br /><span class="label"><a 
- id="x1-10002r2"></a></span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;Sum&#x00A0;of&#x00A0;squares&#x00A0;of&#x00A0;odd&#x00A0;postive&#x00A0;integers&#x00A0;<br /><span class="label"><a 
- id="x1-10003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;smaller&#x00A0;than&#x00A0;n&#x00A0;<br /><span class="label"><a 
- id="x1-10004r4"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-10005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
- id="x1-10006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;n&#x00A0;(int):&#x00A0;Highest&#x00A0;number&#x00A0;<br /><span class="label"><a 
- id="x1-10007r7"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-10008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(10)&#x00A0;<br /><span class="label"><a 
- id="x1-10009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;165&#x00A0;<br /><span class="label"><a 
- id="x1-10010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(20)&#x00A0;<br /><span class="label"><a 
- id="x1-10011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1330&#x00A0;<br /><span class="label"><a 
- id="x1-10012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(500)&#x00A0;<br /><span class="label"><a 
- id="x1-10013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;20833250&#x00A0;<br /><span class="label"><a 
- id="x1-10014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(37)&#x00A0;<br /><span class="label"><a 
- id="x1-10015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;7770&#x00A0;<br /><span class="label"><a 
- id="x1-10016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(-1)&#x00A0;<br /><span class="label"><a 
- id="x1-10017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
- id="x1-10018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 25--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-10019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;sum([pow(x,2)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(1,&#x00A0;n,&#x00A0;2)])&#x00A0;if&#x00A0;n&#x00A0;&#x003E;&#x00A0;0&#x00A0;else&#x00A0;False
+ id="x1-10001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Write&#x00A0;a&#x00A0;short&#x00A0;Python&#x00A0;function&#x00A0;that&#x00A0;takes&#x00A0;a&#x00A0;positive&#x00A0;integer&#x00A0;n&#x00A0;and&#x00A0;returns&#x00A0;<br /><span class="label"><a 
+ id="x1-10002r2"></a></span>the&#x00A0;sum&#x00A0;of&#x00A0;the&#x00A0;squares&#x00A0;of&#x00A0;all&#x00A0;the&#x00A0;odd&#x00A0;positive&#x00A0;integers&#x00A0;smaller&#x00A0;than&#x00A0;n.&#x00A0;<br /><span class="label"><a 
+ id="x1-10003r3"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-10004r4"></a></span>Give&#x00A0;a&#x00A0;single&#x00A0;command&#x00A0;that&#x00A0;computes&#x00A0;the&#x00A0;sum&#x00A0;from&#x00A0;Exercise&#x00A0;R-1.6,&#x00A0;rely-&#x00A0;<br /><span class="label"><a 
+ id="x1-10005r5"></a></span>ing&#x00A0;on&#x00A0;Python&#8217;s&#x00A0;comprehension&#x00A0;syntax&#x00A0;and&#x00A0;the&#x00A0;built-in&#x00A0;sum&#x00A0;function.&#x00A0;<br /><span class="label"><a 
+ id="x1-10006r6"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-10007r7"></a></span>&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-10008r8"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-10009r9"></a></span>def&#x00A0;sum_of_odd_squares(n):&#x00A0;<br /><span class="label"><a 
+ id="x1-10010r10"></a></span><!--l. 10--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 10--><span class="listings-nested">&#8221;Sum&#x00A0;of&#x00A0;squares&#x00A0;of&#x00A0;odd&#x00A0;postive&#x00A0;integers&#x00A0;<br /><span class="label"><a 
+ id="x1-10011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;smaller&#x00A0;than&#x00A0;n&#x00A0;<br /><span class="label"><a 
+ id="x1-10012r12"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-10013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-10014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;n&#x00A0;(int):&#x00A0;Highest&#x00A0;number&#x00A0;<br /><span class="label"><a 
+ id="x1-10015r15"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-10016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(10)&#x00A0;<br /><span class="label"><a 
+ id="x1-10017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;165&#x00A0;<br /><span class="label"><a 
+ id="x1-10018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(20)&#x00A0;<br /><span class="label"><a 
+ id="x1-10019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1330&#x00A0;<br /><span class="label"><a 
+ id="x1-10020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(500)&#x00A0;<br /><span class="label"><a 
+ id="x1-10021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;20833250&#x00A0;<br /><span class="label"><a 
+ id="x1-10022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(37)&#x00A0;<br /><span class="label"><a 
+ id="x1-10023r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;7770&#x00A0;<br /><span class="label"><a 
+ id="x1-10024r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;sum_of_odd_squares(-1)&#x00A0;<br /><span class="label"><a 
+ id="x1-10025r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-10026r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 26--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-10027r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;sum([pow(x,2)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(1,&#x00A0;n,&#x00A0;2)])&#x00A0;if&#x00A0;n&#x00A0;&#x003E;&#x00A0;0&#x00A0;else&#x00A0;False
    &#x00A0;<br /><span class="label"><a 
- id="x1-10020r20"></a></span></pre>
-</pre> </div> 
+ id="x1-10028r28"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
  </div> <a 
@@ -656,34 +702,49 @@ href="#collapse7" class="accordion-toggle" data-toggle="collapse" data-parent="#
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
 class="content">Exercise R-1.8</span></div><!--tex4ht:label?: x1-110001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-11001r1"></a></span>def&#x00A0;return_element(data,&#x00A0;k):&#x00A0;<br /><span class="label"><a 
- id="x1-11002r2"></a></span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;Tells&#x00A0;you&#x00A0;the&#x00A0;equivalent&#x00A0;negative&#x00A0;index&#x00A0;<br /><span class="label"><a 
- id="x1-11003r3"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-11004r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
- id="x1-11005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;data&#x00A0;(list&#x00A0;of&#x00A0;int):&#x00A0;Simple&#x00A0;array&#x00A0;<br /><span class="label"><a 
- id="x1-11006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;k&#x00A0;(int):&#x00A0;index&#x00A0;you&#x00A0;want&#x00A0;to&#x00A0;know&#x00A0;<br /><span class="label"><a 
- id="x1-11007r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;the&#x00A0;equivalent&#x00A0;negative&#x00A0;index&#x00A0;<br /><span class="label"><a 
- id="x1-11008r8"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-11009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Returns:&#x00A0;<br /><span class="label"><a 
- id="x1-11010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;(val,&#x00A0;index)&#x00A0;<br /><span class="label"><a 
- id="x1-11011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;val&#x00A0;(object):&#x00A0;element&#x00A0;at&#x00A0;position&#x00A0;k&#x00A0;<br /><span class="label"><a 
- id="x1-11012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;index:&#x00A0;negative&#x00A0;index&#x00A0;of&#x00A0;that&#x00A0;position&#x00A0;<br /><span class="label"><a 
- id="x1-11013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Examples:&#x00A0;<br /><span class="label"><a 
- id="x1-11014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Here&#x00A0;are&#x00A0;some&#x00A0;examples!&#x00A0;<br /><span class="label"><a 
+ id="x1-11001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Python&#x00A0;allows&#x00A0;negative&#x00A0;integers&#x00A0;to&#x00A0;be&#x00A0;used&#x00A0;as&#x00A0;indices&#x00A0;into&#x00A0;a&#x00A0;sequence,&#x00A0;<br /><span class="label"><a 
+ id="x1-11002r2"></a></span>such&#x00A0;as&#x00A0;a&#x00A0;string.&#x00A0;If&#x00A0;string&#x00A0;s&#x00A0;has&#x00A0;length&#x00A0;n,&#x00A0;and&#x00A0;expression&#x00A0;s[k]&#x00A0;is&#x00A0;used&#x00A0;for&#x00A0;in-&#x00A0;<br /><span class="label"><a 
+ id="x1-11003r3"></a></span>dex&#x00A0;-n&#x003C;=k&#x003C;0,&#x00A0;what&#x00A0;is&#x00A0;the&#x00A0;equivalent&#x00A0;index&#x00A0;j&#x003E;=0such&#x00A0;that&#x00A0;s[j]&#x00A0;references&#x00A0;<br /><span class="label"><a 
+ id="x1-11004r4"></a></span>the&#x00A0;same&#x00A0;element?&#x00A0;<br /><span class="label"><a 
+ id="x1-11005r5"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-11006r6"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;l&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-11007r7"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;0)&#x00A0;<br /><span class="label"><a 
+ id="x1-11008r8"></a></span>(2,&#x00A0;-20)&#x00A0;<br /><span class="label"><a 
+ id="x1-11009r9"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;1)&#x00A0;<br /><span class="label"><a 
+ id="x1-11010r10"></a></span>(3,&#x00A0;-19)&#x00A0;<br /><span class="label"><a 
+ id="x1-11011r11"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;2)&#x00A0;<br /><span class="label"><a 
+ id="x1-11012r12"></a></span>(4,&#x00A0;-18)&#x00A0;<br /><span class="label"><a 
+ id="x1-11013r13"></a></span>&#8221;</span><!--l. 13--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-11014r14"></a></span>&#x00A0;<br /><span class="label"><a 
  id="x1-11015r15"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-11016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;l&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
- id="x1-11017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;0)&#x00A0;<br /><span class="label"><a 
- id="x1-11018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(2,&#x00A0;-20)&#x00A0;<br /><span class="label"><a 
- id="x1-11019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;1)&#x00A0;<br /><span class="label"><a 
- id="x1-11020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(3,&#x00A0;-19)&#x00A0;<br /><span class="label"><a 
- id="x1-11021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;2)&#x00A0;<br /><span class="label"><a 
- id="x1-11022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(4,&#x00A0;-18)&#x00A0;<br /><span class="label"><a 
- id="x1-11023r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 28--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-11024r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;idx&#x00A0;=&#x00A0;k-len(data)&#x00A0;<br /><span class="label"><a 
- id="x1-11025r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;data[idx],&#x00A0;idx&#x00A0;if&#x00A0;data&#x00A0;else&#x00A0;False
+ id="x1-11016r16"></a></span>def&#x00A0;return_element(data,&#x00A0;k):&#x00A0;<br /><span class="label"><a 
+ id="x1-11017r17"></a></span><!--l. 17--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 17--><span class="listings-nested">&#8221;Tells&#x00A0;you&#x00A0;the&#x00A0;equivalent&#x00A0;negative&#x00A0;index&#x00A0;<br /><span class="label"><a 
+ id="x1-11018r18"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-11019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Args:&#x00A0;<br /><span class="label"><a 
+ id="x1-11020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;data&#x00A0;(list&#x00A0;of&#x00A0;int):&#x00A0;Simple&#x00A0;array&#x00A0;<br /><span class="label"><a 
+ id="x1-11021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;k&#x00A0;(int):&#x00A0;index&#x00A0;you&#x00A0;want&#x00A0;to&#x00A0;know&#x00A0;<br /><span class="label"><a 
+ id="x1-11022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;the&#x00A0;equivalent&#x00A0;negative&#x00A0;index&#x00A0;<br /><span class="label"><a 
+ id="x1-11023r23"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-11024r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Returns:&#x00A0;<br /><span class="label"><a 
+ id="x1-11025r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;(val,&#x00A0;index)&#x00A0;<br /><span class="label"><a 
+ id="x1-11026r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;val&#x00A0;(object):&#x00A0;element&#x00A0;at&#x00A0;position&#x00A0;k&#x00A0;<br /><span class="label"><a 
+ id="x1-11027r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;index:&#x00A0;negative&#x00A0;index&#x00A0;of&#x00A0;that&#x00A0;position&#x00A0;<br /><span class="label"><a 
+ id="x1-11028r28"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Examples:&#x00A0;<br /><span class="label"><a 
+ id="x1-11029r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Here&#x00A0;are&#x00A0;some&#x00A0;examples!&#x00A0;<br /><span class="label"><a 
+ id="x1-11030r30"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-11031r31"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;l&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-11032r32"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;0)&#x00A0;<br /><span class="label"><a 
+ id="x1-11033r33"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(2,&#x00A0;-20)&#x00A0;<br /><span class="label"><a 
+ id="x1-11034r34"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;1)&#x00A0;<br /><span class="label"><a 
+ id="x1-11035r35"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(3,&#x00A0;-19)&#x00A0;<br /><span class="label"><a 
+ id="x1-11036r36"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;return_element(l,&#x00A0;2)&#x00A0;<br /><span class="label"><a 
+ id="x1-11037r37"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;(4,&#x00A0;-18)&#x00A0;<br /><span class="label"><a 
+ id="x1-11038r38"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 38--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-11039r39"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;idx&#x00A0;=&#x00A0;k-len(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-11040r40"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;data[idx],&#x00A0;idx&#x00A0;if&#x00A0;data&#x00A0;else&#x00A0;False
    &#x00A0;<br /><span class="label"><a 
- id="x1-11026r26"></a></span></pre>
-</pre> </div> 
+ id="x1-11041r41"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
  </div> <a 
@@ -723,20 +784,27 @@ href="#collapse8" class="accordion-toggle" data-toggle="collapse" data-parent="#
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
 class="content">Exercise R-1.9</span></div><!--tex4ht:label?: x1-120001 --><!--l. 6--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-12001r1"></a></span>def&#x00A0;range_from_fifty():&#x00A0;<br /><span class="label"><a 
- id="x1-12002r2"></a></span><!--l. 8--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 8--><span class="listings-nested">&#8221;&#x00A0;Creates&#x00A0;a&#x00A0;list&#x00A0;<br /><span class="label"><a 
- id="x1-12003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;with&#x00A0;values&#x00A0;50,&#x00A0;60,&#x00A0;70,&#x00A0;80&#x00A0;<br /><span class="label"><a 
- id="x1-12004r4"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-12005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Returns:&#x00A0;<br /><span class="label"><a 
- id="x1-12006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;list:&#x00A0;[50,&#x00A0;60,&#x00A0;70,&#x00A0;80]&#x00A0;<br /><span class="label"><a 
+ id="x1-12001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;What&#x00A0;parameters&#x00A0;should&#x00A0;be&#x00A0;sent&#x00A0;to&#x00A0;the&#x00A0;range&#x00A0;constructor,&#x00A0;to&#x00A0;produce&#x00A0;a&#x00A0;<br /><span class="label"><a 
+ id="x1-12002r2"></a></span>range&#x00A0;with&#x00A0;values&#x00A0;50,&#x00A0;60,&#x00A0;70,&#x00A0;80?&#x00A0;<br /><span class="label"><a 
+ id="x1-12003r3"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-12004r4"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;range_from_fifty()&#x00A0;<br /><span class="label"><a 
+ id="x1-12005r5"></a></span>[50,&#x00A0;60,&#x00A0;70,&#x00A0;80]&#x00A0;<br /><span class="label"><a 
+ id="x1-12006r6"></a></span>&#8221;</span><!--l. 6--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
  id="x1-12007r7"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-12008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;range_from_fifty()&#x00A0;<br /><span class="label"><a 
- id="x1-12009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;[50,&#x00A0;60,&#x00A0;70,&#x00A0;80]&#x00A0;<br /><span class="label"><a 
- id="x1-12010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 16--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-12011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;range(50,81,10)
+ id="x1-12008r8"></a></span>def&#x00A0;range_from_fifty():&#x00A0;<br /><span class="label"><a 
+ id="x1-12009r9"></a></span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;&#x00A0;Creates&#x00A0;a&#x00A0;list&#x00A0;<br /><span class="label"><a 
+ id="x1-12010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;with&#x00A0;values&#x00A0;50,&#x00A0;60,&#x00A0;70,&#x00A0;80&#x00A0;<br /><span class="label"><a 
+ id="x1-12011r11"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-12012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Returns:&#x00A0;<br /><span class="label"><a 
+ id="x1-12013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;list:&#x00A0;[50,&#x00A0;60,&#x00A0;70,&#x00A0;80]&#x00A0;<br /><span class="label"><a 
+ id="x1-12014r14"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-12015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;range_from_fifty()&#x00A0;<br /><span class="label"><a 
+ id="x1-12016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;[50,&#x00A0;60,&#x00A0;70,&#x00A0;80]&#x00A0;<br /><span class="label"><a 
+ id="x1-12017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 17--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-12018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;range(50,81,10)
    &#x00A0;<br /><span class="label"><a 
- id="x1-12012r12"></a></span></pre>
-</pre> </div> 
+ id="x1-12019r19"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
  </div> <a 
@@ -776,17 +844,24 @@ href="#collapse9" class="accordion-toggle" data-toggle="collapse" data-parent="#
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
 class="content">Exercise R-1.10</span></div><!--tex4ht:label?: x1-130001 --><!--l. 6--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-13001r1"></a></span>def&#x00A0;range_from_eigth():&#x00A0;<br /><span class="label"><a 
- id="x1-13002r2"></a></span><!--l. 8--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 8--><span class="listings-nested">&#8221;&#x00A0;Return&#x00A0;the&#x00A0;list&#x00A0;[8,&#x00A0;6,&#x00A0;4,&#x00A0;2,&#x00A0;0,&#x00A0;-2,&#x00A0;-4,&#x00A0;-6,&#x00A0;-8]&#x00A0;<br /><span class="label"><a 
- id="x1-13003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;<br /><span class="label"><a 
- id="x1-13004r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;the&#x00A0;list&#x00A0;[8,&#x00A0;6,&#x00A0;4,&#x00A0;2,&#x00A0;0,&#x00A0;-2,&#x00A0;-4,&#x00A0;-6,&#x00A0;-8]&#x00A0;<br /><span class="label"><a 
- id="x1-13005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;range_from_eigth()&#x00A0;<br /><span class="label"><a 
- id="x1-13006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;[8,&#x00A0;6,&#x00A0;4,&#x00A0;2,&#x00A0;0,&#x00A0;-2,&#x00A0;-4,&#x00A0;-6,&#x00A0;-8]&#x00A0;<br /><span class="label"><a 
- id="x1-13007r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 13--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-13008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;range(8,&#x00A0;-9,&#x00A0;-2)
+ id="x1-13001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;&#x00A0;What&#x00A0;parameters&#x00A0;should&#x00A0;be&#x00A0;sent&#x00A0;to&#x00A0;the&#x00A0;range&#x00A0;constructor,&#x00A0;to&#x00A0;produce&#x00A0;a&#x00A0;<br /><span class="label"><a 
+ id="x1-13002r2"></a></span>range&#x00A0;with&#x00A0;values&#x00A0;8,&#x00A0;6,&#x00A0;4,&#x00A0;2,&#x00A0;0,&#x00A0;-2,&#x00A0;-4,&#x00A0;-6,&#x00A0;-8?&#x00A0;<br /><span class="label"><a 
+ id="x1-13003r3"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-13004r4"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;range_from_eigth()&#x00A0;<br /><span class="label"><a 
+ id="x1-13005r5"></a></span>[8,&#x00A0;6,&#x00A0;4,&#x00A0;2,&#x00A0;0,&#x00A0;-2,&#x00A0;-4,&#x00A0;-6,&#x00A0;-8]&#x00A0;<br /><span class="label"><a 
+ id="x1-13006r6"></a></span>&#8221;</span><!--l. 6--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-13007r7"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-13008r8"></a></span>def&#x00A0;range_from_eigth():&#x00A0;<br /><span class="label"><a 
+ id="x1-13009r9"></a></span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;&#x00A0;Return&#x00A0;the&#x00A0;list&#x00A0;[8,&#x00A0;6,&#x00A0;4,&#x00A0;2,&#x00A0;0,&#x00A0;-2,&#x00A0;-4,&#x00A0;-6,&#x00A0;-8]&#x00A0;<br /><span class="label"><a 
+ id="x1-13010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;<br /><span class="label"><a 
+ id="x1-13011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;the&#x00A0;list&#x00A0;[8,&#x00A0;6,&#x00A0;4,&#x00A0;2,&#x00A0;0,&#x00A0;-2,&#x00A0;-4,&#x00A0;-6,&#x00A0;-8]&#x00A0;<br /><span class="label"><a 
+ id="x1-13012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;range_from_eigth()&#x00A0;<br /><span class="label"><a 
+ id="x1-13013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;[8,&#x00A0;6,&#x00A0;4,&#x00A0;2,&#x00A0;0,&#x00A0;-2,&#x00A0;-4,&#x00A0;-6,&#x00A0;-8]&#x00A0;<br /><span class="label"><a 
+ id="x1-13014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 14--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-13015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;range(8,&#x00A0;-9,&#x00A0;-2)
    &#x00A0;<br /><span class="label"><a 
- id="x1-13009r9"></a></span></pre>
-</pre> </div> 
+ id="x1-13016r16"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
  </div> <a 
@@ -826,20 +901,27 @@ href="#collapse10" class="accordion-toggle" data-toggle="collapse" data-parent="
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
 class="content">Exercise R-1.11</span></div><!--tex4ht:label?: x1-140001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-14001r1"></a></span>def&#x00A0;list_comprehension_example():&#x00A0;<br /><span class="label"><a 
- id="x1-14002r2"></a></span><!--l. 7--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;&#x00A0;Return&#x00A0;list&#x00A0;<br /><span class="label"><a 
- id="x1-14003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;[1,&#x00A0;2,&#x00A0;4,&#x00A0;8,&#x00A0;16,&#x00A0;32,&#x00A0;64,&#x00A0;128,&#x00A0;256]&#x00A0;<br /><span class="label"><a 
+ id="x1-14001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Demonstrate&#x00A0;how&#x00A0;to&#x00A0;use&#x00A0;Python&#8217;s&#x00A0;list&#x00A0;<br /><span class="label"><a 
+ id="x1-14002r2"></a></span>comprehension&#x00A0;syntax&#x00A0;to&#x00A0;produce&#x00A0;the&#x00A0;list&#x00A0;<br /><span class="label"><a 
+ id="x1-14003r3"></a></span>[1,&#x00A0;2,&#x00A0;4,&#x00A0;8,&#x00A0;16,&#x00A0;32,&#x00A0;64,&#x00A0;128,&#x00A0;256].&#x00A0;<br /><span class="label"><a 
  id="x1-14004r4"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-14005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;<br /><span class="label"><a 
- id="x1-14006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;list:&#x00A0;[1,&#x00A0;2,&#x00A0;4,&#x00A0;8,&#x00A0;16,&#x00A0;32,&#x00A0;64,&#x00A0;128,&#x00A0;256]&#x00A0;<br /><span class="label"><a 
- id="x1-14007r7"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-14008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;list_comprehension_example()&#x00A0;<br /><span class="label"><a 
- id="x1-14009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;[1,&#x00A0;2,&#x00A0;4,&#x00A0;8,&#x00A0;16,&#x00A0;32,&#x00A0;64,&#x00A0;128,&#x00A0;256]&#x00A0;<br /><span class="label"><a 
- id="x1-14010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 15--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-14011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;[pow(2,x)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(9)]
+ id="x1-14005r5"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;list_comprehension_example()&#x00A0;<br /><span class="label"><a 
+ id="x1-14006r6"></a></span>[1,&#x00A0;2,&#x00A0;4,&#x00A0;8,&#x00A0;16,&#x00A0;32,&#x00A0;64,&#x00A0;128,&#x00A0;256]&#x00A0;<br /><span class="label"><a 
+ id="x1-14007r7"></a></span>&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14008r8"></a></span>def&#x00A0;list_comprehension_example():&#x00A0;<br /><span class="label"><a 
+ id="x1-14009r9"></a></span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;&#x00A0;Return&#x00A0;list&#x00A0;<br /><span class="label"><a 
+ id="x1-14010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;[1,&#x00A0;2,&#x00A0;4,&#x00A0;8,&#x00A0;16,&#x00A0;32,&#x00A0;64,&#x00A0;128,&#x00A0;256]&#x00A0;<br /><span class="label"><a 
+ id="x1-14011r11"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;<br /><span class="label"><a 
+ id="x1-14013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;list:&#x00A0;[1,&#x00A0;2,&#x00A0;4,&#x00A0;8,&#x00A0;16,&#x00A0;32,&#x00A0;64,&#x00A0;128,&#x00A0;256]&#x00A0;<br /><span class="label"><a 
+ id="x1-14014r14"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;list_comprehension_example()&#x00A0;<br /><span class="label"><a 
+ id="x1-14016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;[1,&#x00A0;2,&#x00A0;4,&#x00A0;8,&#x00A0;16,&#x00A0;32,&#x00A0;64,&#x00A0;128,&#x00A0;256]&#x00A0;<br /><span class="label"><a 
+ id="x1-14017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 17--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-14018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;[pow(2,x)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(9)]
    &#x00A0;<br /><span class="label"><a 
- id="x1-14012r12"></a></span></pre>
-</pre> </div> 
+ id="x1-14021r21"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
  </div> <a 
@@ -863,7 +945,7 @@ href="#chap:PythonPrimer">Go to Top</a>  </td>
 class="td11"> <p>                                                          </p> 
 </td></tr></table>
 <p><b>This is a random method, I usually stress test anything that is random since I am always
-uneasy about it. Because the test is so long I placed it separately.</b>
+uneasy about it.</b>
 </p> 
 <p>   Python&#8217;s random module includes a function choice(data) that returns a random element
 from a non-empty sequence. The random module includes a more basic function randrange,
@@ -884,27 +966,97 @@ href="#collapse11" class="accordion-toggle" data-toggle="collapse" data-parent="
 <div class="panel-body"><pre class="prettyprint"> 
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.12</span></div><!--tex4ht:label?: x1-150001 --><!--l. 8--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-15001r1"></a></span>def&#x00A0;custom_choice(data):&#x00A0;<br /><span class="label"><a 
- id="x1-15002r2"></a></span><!--l. 10--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 10--><span class="listings-nested">&#8221;&#x00A0;Returns&#x00A0;random&#x00A0;element&#x00A0;from&#x00A0;a&#x00A0;non-empty&#x00A0;sequence&#x00A0;<br /><span class="label"><a 
- id="x1-15003r3"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-15004r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:returns:&#x00A0;<br /><span class="label"><a 
- id="x1-15005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;integer&#x00A0;value&#x00A0;of&#x00A0;list&#x00A0;<br /><span class="label"><a 
- id="x1-15006r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 14--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
- id="x1-15007r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;import&#x00A0;random&#x00A0;<br /><span class="label"><a 
- id="x1-15008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;data[random.randrange(0,len(data))]
+class="content">Exercise R-1.12</span></div><!--tex4ht:label?: x1-150001 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-15001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;&#x00A0;Python&#8217;s&#x00A0;random&#x00A0;module&#x00A0;includes&#x00A0;a&#x00A0;function&#x00A0;choice(data)&#x00A0;that&#x00A0;returns&#x00A0;a&#x00A0;<br /><span class="label"><a 
+ id="x1-15002r2"></a></span>random&#x00A0;element&#x00A0;from&#x00A0;a&#x00A0;non-empty&#x00A0;sequence.&#x00A0;The&#x00A0;random&#x00A0;module&#x00A0;includes&#x00A0;<br /><span class="label"><a 
+ id="x1-15003r3"></a></span>a&#x00A0;more&#x00A0;basic&#x00A0;function&#x00A0;randrange,&#x00A0;with&#x00A0;parametrization&#x00A0;similar&#x00A0;to&#x00A0;<br /><span class="label"><a 
+ id="x1-15004r4"></a></span>the&#x00A0;built-in&#x00A0;range&#x00A0;function,&#x00A0;that&#x00A0;return&#x00A0;a&#x00A0;random&#x00A0;choice&#x00A0;from&#x00A0;the&#x00A0;given&#x00A0;<br /><span class="label"><a 
+ id="x1-15005r5"></a></span>range.&#x00A0;Using&#x00A0;only&#x00A0;the&#x00A0;randrange&#x00A0;function,&#x00A0;implement&#x00A0;your&#x00A0;own&#x00A0;version&#x00A0;<br /><span class="label"><a 
+ id="x1-15006r6"></a></span>of&#x00A0;the&#x00A0;choice&#x00A0;function.&#x00A0;<br /><span class="label"><a 
+ id="x1-15007r7"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-15008r8"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;data&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-15009r9"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;results&#x00A0;=&#x00A0;list()&#x00A0;<br /><span class="label"><a 
+ id="x1-15010r10"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(len(data)*20):&#x00A0;<br /><span class="label"><a 
+ id="x1-15011r11"></a></span>...&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;val&#x00A0;=&#x00A0;custom_choice(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-15012r12"></a></span>...&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;results.append(val&#x00A0;in&#x00A0;data)&#x00A0;<br /><span class="label"><a 
+ id="x1-15013r13"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;print(results)&#x00A0;<br /><span class="label"><a 
+ id="x1-15014r14"></a></span>[True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15015r15"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15016r16"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15017r17"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15018r18"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15019r19"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15020r20"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15021r21"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15022r22"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15023r23"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15024r24"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15025r25"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15026r26"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15027r27"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15028r28"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15029r29"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15030r30"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15031r31"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15032r32"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15033r33"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15034r34"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15035r35"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15036r36"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15037r37"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15038r38"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15039r39"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15040r40"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15041r41"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15042r42"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15043r43"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15044r44"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15045r45"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15046r46"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15047r47"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15048r48"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15049r49"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15050r50"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15051r51"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15052r52"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
+ id="x1-15053r53"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True]&#x00A0;<br /><span class="label"><a 
+ id="x1-15054r54"></a></span>&#8221;</span><!--l. 54--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-15055r55"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-15056r56"></a></span>def&#x00A0;custom_choice(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-15057r57"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;import&#x00A0;random&#x00A0;<br /><span class="label"><a 
+ id="x1-15058r58"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;data[random.randrange(0,len(data))]
    &#x00A0;<br /><span class="label"><a 
- id="x1-15009r9"></a></span></pre>
-</pre> </div> 
+ id="x1-15059r59"></a></span></pre>
+   </pre> </div> 
 </div> 
 </div> 
- </div>
-<p>   <b>Pro-Tip</b>. Stress test your random functions
-</p> 
-<p>   <b>Hereafter you can see the Doctest for this exercise. I separated it because it is hude.</b> In
-this case we are testing a random method that is part of a library, which is overkill. But the
-test is not really hard to make or design so it is not much of an investment in either time or
-money.
+ </div> <a 
+ id="sssec:ex1_13"></a>
+                                                                                                  
+                                                                                                  
+<h5 class="subsubsectionHead"><a 
+ id="x1-160001"></a><b>C-1.13</b></h5>
+    <table id="TBL-33" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-33-1g"><col 
+id="TBL-33-1" /><col 
+id="TBL-33-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-33-1-"><td  style="text-align:left;" id="TBL-33-1-1"  
+class="td11"> <p>                                                         </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-33-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+   </tr><tr  
+ style="vertical-align:baseline;" id="TBL-33-2-"><td  style="text-align:left;" id="TBL-33-2-1"  
+class="td11"> <p>                                                          </p> 
+</td></tr></table>
+<p>Write a pseudo-code description of a function that reverses a list of
+<!--l. 3--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>n</mi></math>
+integers, so that the numbers are listed in the opposite order than they were before, and compare this
+method to an equivalent Python function for doing the same thing.
    </p> 
 <div 
   id="accordion12" class="panel-group"  ><div class="panel panel-default"> 
@@ -919,63 +1071,101 @@ href="#collapse12" class="accordion-toggle" data-toggle="collapse" data-parent="
 <div class="panel-body"><pre class="prettyprint"> 
 <br /> <div class="caption" 
 ><span class="id">: </span><span  
-class="content">Exercise R-1.12 Doctest</span></div><!--tex4ht:label?: x1-150001 --><!--l. 23--><pre class="listings">&#x00A0;<br /><span class="label"><a 
- id="x1-15010r1"></a></span><!--l. 24--><span class="listings-nested">&#8221;&#8221;</span><!--l. 24--><span class="listings-nested">&#8221;&#x00A0;Python&#8217;s&#x00A0;random&#x00A0;module&#x00A0;includes&#x00A0;a&#x00A0;function&#x00A0;choice(data)&#x00A0;that&#x00A0;returns&#x00A0;a&#x00A0;<br /><span class="label"><a 
- id="x1-15011r2"></a></span>random&#x00A0;element&#x00A0;from&#x00A0;a&#x00A0;non-empty&#x00A0;sequence.&#x00A0;The&#x00A0;random&#x00A0;module&#x00A0;includes&#x00A0;<br /><span class="label"><a 
- id="x1-15012r3"></a></span>a&#x00A0;more&#x00A0;basic&#x00A0;function&#x00A0;randrange,&#x00A0;with&#x00A0;parametrization&#x00A0;similar&#x00A0;to&#x00A0;<br /><span class="label"><a 
- id="x1-15013r4"></a></span>the&#x00A0;built-in&#x00A0;range&#x00A0;function,&#x00A0;that&#x00A0;return&#x00A0;a&#x00A0;random&#x00A0;choice&#x00A0;from&#x00A0;the&#x00A0;given&#x00A0;<br /><span class="label"><a 
- id="x1-15014r5"></a></span>range.&#x00A0;Using&#x00A0;only&#x00A0;the&#x00A0;randrange&#x00A0;function,&#x00A0;implement&#x00A0;your&#x00A0;own&#x00A0;version&#x00A0;<br /><span class="label"><a 
- id="x1-15015r6"></a></span>of&#x00A0;the&#x00A0;choice&#x00A0;function.&#x00A0;<br /><span class="label"><a 
- id="x1-15016r7"></a></span>&#x00A0;<br /><span class="label"><a 
- id="x1-15017r8"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;data&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
- id="x1-15018r9"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;results&#x00A0;=&#x00A0;list()&#x00A0;<br /><span class="label"><a 
- id="x1-15019r10"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(len(data)*20):&#x00A0;<br /><span class="label"><a 
- id="x1-15020r11"></a></span>...&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;val&#x00A0;=&#x00A0;custom_choice(data)&#x00A0;<br /><span class="label"><a 
- id="x1-15021r12"></a></span>...&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;results.append(val&#x00A0;in&#x00A0;data)&#x00A0;<br /><span class="label"><a 
- id="x1-15022r13"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;print(results)&#x00A0;<br /><span class="label"><a 
- id="x1-15023r14"></a></span>[True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15024r15"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15025r16"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15026r17"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15027r18"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15028r19"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15029r20"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15030r21"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15031r22"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15032r23"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15033r24"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15034r25"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15035r26"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15036r27"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15037r28"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15038r29"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15039r30"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15040r31"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15041r32"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15042r33"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15043r34"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15044r35"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15045r36"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15046r37"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15047r38"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15048r39"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15049r40"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15050r41"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15051r42"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15052r43"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15053r44"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15054r45"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15055r46"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15056r47"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15057r48"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15058r49"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15059r50"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15060r51"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15061r52"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;\&#x00A0;<br /><span class="label"><a 
- id="x1-15062r53"></a></span>True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True,&#x00A0;True]&#x00A0;<br /><span class="label"><a 
- id="x1-15063r54"></a></span>&#8221;</span><!--l. 77--><span class="listings-nested">&#8221;&#8221;</span>
+class="content">Exercise C-1.13</span></div><!--tex4ht:label?: x1-160001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-16001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Write&#x00A0;a&#x00A0;pseudo-code&#x00A0;description&#x00A0;of&#x00A0;a&#x00A0;function&#x00A0;that&#x00A0;reverses&#x00A0;a&#x00A0;list&#x00A0;of&#x00A0;n&#x00A0;<br /><span class="label"><a 
+ id="x1-16002r2"></a></span>integers,&#x00A0;so&#x00A0;that&#x00A0;the&#x00A0;numbers&#x00A0;are&#x00A0;listed&#x00A0;in&#x00A0;the&#x00A0;opposite&#x00A0;order&#x00A0;than&#x00A0;they&#x00A0;<br /><span class="label"><a 
+ id="x1-16003r3"></a></span>were&#x00A0;before,&#x00A0;and&#x00A0;compare&#x00A0;this&#x00A0;method&#x00A0;to&#x00A0;an&#x00A0;equivalent&#x00A0;Python&#x00A0;function&#x00A0;<br /><span class="label"><a 
+ id="x1-16004r4"></a></span>for&#x00A0;doing&#x00A0;the&#x00A0;same&#x00A0;thing.&#x00A0;<br /><span class="label"><a 
+ id="x1-16005r5"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16006r6"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16007r7"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;l1&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-16008r8"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;custom_reverse(l1)&#x00A0;<br /><span class="label"><a 
+ id="x1-16009r9"></a></span>[1,&#x00A0;2,&#x00A0;3,&#x00A0;4,&#x00A0;5,&#x00A0;6,&#x00A0;7,&#x00A0;8,&#x00A0;9,&#x00A0;10,&#x00A0;11,&#x00A0;10,&#x00A0;9,&#x00A0;8,&#x00A0;7,&#x00A0;6,&#x00A0;5,&#x00A0;4,&#x00A0;3,&#x00A0;2]&#x00A0;<br /><span class="label"><a 
+ id="x1-16010r10"></a></span>&#8221;</span><!--l. 10--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16011r11"></a></span>import&#x00A0;cProfile&#x00A0;<br /><span class="label"><a 
+ id="x1-16012r12"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16013r13"></a></span>def&#x00A0;custom_reverse(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-16014r14"></a></span><!--l. 14--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 14--><span class="listings-nested">&#8221;&#x00A0;Reverse&#x00A0;the&#x00A0;data&#x00A0;array&#x00A0;<br /><span class="label"><a 
+ id="x1-16015r15"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:param&#x00A0;data:&#x00A0;a&#x00A0;list&#x00A0;of&#x00A0;elements&#x00A0;<br /><span class="label"><a 
+ id="x1-16017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;reverse&#x00A0;list&#x00A0;<br /><span class="label"><a 
+ id="x1-16018r18"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;l1&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-16020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003E;&#x003E;&#x003E;&#x00A0;custom_reverse(l1)&#x00A0;<br /><span class="label"><a 
+ id="x1-16021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;[1,&#x00A0;2,&#x00A0;3,&#x00A0;4,&#x00A0;5,&#x00A0;6,&#x00A0;7,&#x00A0;8,&#x00A0;9,&#x00A0;10,&#x00A0;11,&#x00A0;10,&#x00A0;9,&#x00A0;8,&#x00A0;7,&#x00A0;6,&#x00A0;5,&#x00A0;4,&#x00A0;3,&#x00A0;2]&#x00A0;<br /><span class="label"><a 
+ id="x1-16022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 22--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16023r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;[data[len(data)-x-1]&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(len(data))]&#x00A0;<br /><span class="label"><a 
+ id="x1-16024r24"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16025r25"></a></span>def&#x00A0;standard_reverse(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-16026r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;reversed(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-16027r27"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16028r28"></a></span>def&#x00A0;other_reverse(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-16029r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;data[::-1]&#x00A0;<br /><span class="label"><a 
+ id="x1-16030r30"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16031r31"></a></span>if&#x00A0;__name__&#x00A0;==&#x00A0;<!--l. 31--><span class="listings-nested">&#8221;__main__&#8221;</span>:&#x00A0;<br /><span class="label"><a 
+ id="x1-16032r32"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;l1&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-16033r33"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;l2&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-16034r34"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;l3&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-16035r35"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;cProfile.run(&#8217;custom_reverse(l1)&#8217;)&#x00A0;<br /><span class="label"><a 
+ id="x1-16036r36"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;cProfile.run(&#8217;standard_reverse(l2)&#8217;)&#x00A0;<br /><span class="label"><a 
+ id="x1-16037r37"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;cProfile.run(&#8217;other_reverse(l3)&#8217;)
    &#x00A0;<br /><span class="label"><a 
- id="x1-15064r55"></a></span></pre>
+ id="x1-16038r38"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div>
+<p>   <b>cProfile Results</b>
+</p> 
+<p>   Here is a simple cProfile with the results. Time shows as
+<!--l. 9--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mn>0</mn><mo 
+class="MathClass-punc">.</mo><mn>0</mn><mn>0</mn><mn>0</mn></math> but
+the number of function calls tell us our implementation is not that good.
+   </p> 
+<div 
+  id="accordion13" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse13" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion13" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse13" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+   <!--l. 11--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-16039r1"></a></span>25&#x00A0;function&#x00A0;calls&#x00A0;in&#x00A0;0.000&#x00A0;seconds&#x00A0;<br /><span class="label"><a 
+ id="x1-16040r2"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16041r3"></a></span>Ordered&#x00A0;by:&#x00A0;custom_reverse&#x00A0;<br /><span class="label"><a 
+ id="x1-16042r4"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16043r5"></a></span>ncalls&#x00A0;&#x00A0;tottime&#x00A0;&#x00A0;percall&#x00A0;&#x00A0;cumtime&#x00A0;&#x00A0;percall&#x00A0;filename:lineno(function)&#x00A0;<br /><span class="label"><a 
+ id="x1-16044r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x003C;string&#x003E;:1(&#x003C;module&#x003E;)&#x00A0;<br /><span class="label"><a 
+ id="x1-16045r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;c113.py:14(custom_reverse)&#x00A0;<br /><span class="label"><a 
+ id="x1-16046r8"></a></span>&#x00A0;&#x00A0;&#x00A0;21&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;{len}&#x00A0;<br /><span class="label"><a 
+ id="x1-16047r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;{method&#x00A0;&#8217;disable&#8217;&#x00A0;of&#x00A0;&#8217;_lsprof.Profiler&#8217;&#x00A0;objects}&#x00A0;<br /><span class="label"><a 
+ id="x1-16048r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;{range}&#x00A0;<br /><span class="label"><a 
+ id="x1-16049r11"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16050r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;3&#x00A0;function&#x00A0;calls&#x00A0;in&#x00A0;0.000&#x00A0;seconds&#x00A0;<br /><span class="label"><a 
+ id="x1-16051r13"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16052r14"></a></span>Ordered&#x00A0;by:&#x00A0;standard_reverse&#x00A0;<br /><span class="label"><a 
+ id="x1-16053r15"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16054r16"></a></span>ncalls&#x00A0;&#x00A0;tottime&#x00A0;&#x00A0;percall&#x00A0;&#x00A0;cumtime&#x00A0;&#x00A0;percall&#x00A0;filename:lineno(function)&#x00A0;<br /><span class="label"><a 
+ id="x1-16055r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x003C;string&#x003E;:1(&#x003C;module&#x003E;)&#x00A0;<br /><span class="label"><a 
+ id="x1-16056r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;c113.py:26(standard_reverse)&#x00A0;<br /><span class="label"><a 
+ id="x1-16057r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;{method&#x00A0;&#8217;disable&#8217;&#x00A0;of&#x00A0;&#8217;_lsprof.Profiler&#8217;&#x00A0;objects}&#x00A0;<br /><span class="label"><a 
+ id="x1-16058r20"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16059r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;3&#x00A0;function&#x00A0;calls&#x00A0;in&#x00A0;0.000&#x00A0;seconds&#x00A0;<br /><span class="label"><a 
+ id="x1-16060r22"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16061r23"></a></span>Ordered&#x00A0;by:&#x00A0;other_reverse&#x00A0;<br /><span class="label"><a 
+ id="x1-16062r24"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-16063r25"></a></span>ncalls&#x00A0;&#x00A0;tottime&#x00A0;&#x00A0;percall&#x00A0;&#x00A0;cumtime&#x00A0;&#x00A0;percall&#x00A0;filename:lineno(function)&#x00A0;<br /><span class="label"><a 
+ id="x1-16064r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x003C;string&#x003E;:1(&#x003C;module&#x003E;)&#x00A0;<br /><span class="label"><a 
+ id="x1-16065r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;c113.py:29(other_reverse)&#x00A0;<br /><span class="label"><a 
+ id="x1-16066r28"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;1&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;&#x00A0;&#x00A0;&#x00A0;0.000&#x00A0;{method&#x00A0;&#8217;disable&#8217;&#x00A0;of&#x00A0;&#8217;_lsprof.Profiler&#8217;&#x00A0;objects}
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-16067r29"></a></span></pre>
 </pre> </div> 
 </div> 
 </div> 
@@ -995,7 +1185,7 @@ data-ad-slot="7397143883"></ins>
 </p> 
 </div> 
 </div> 
-<div class="col-md-3"> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd01 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="6939485480"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd02 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="8416218688"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd03 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="9892951887"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd04 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="3846418287"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd05 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="5323151489"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd06 --> <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="6799884686"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p> 
+<div class="col-md-3"> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd01 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="6939485480"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd02 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="8416218688"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd03 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="9892951887"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- GithubRightAd04 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8374950284869319" data-ad-slot="3846418287"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></p> <p> 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
 <!-- GithubRightPlacedAds --> 
 <ins class="adsbygoogle" 
