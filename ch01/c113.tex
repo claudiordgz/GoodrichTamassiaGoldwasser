@@ -8,34 +8,42 @@ Write a pseudo-code description of a function that reverses a list of $n$ intege
 
 Here is a simple cProfile with the results. Time shows as $0.000$ but the number of function calls tell us our implementation is not that good. 
 
-\begin{lstlisting}
-25 function calls in 0.000 seconds
+\texttt{25 function calls in 0.000 seconds}
 
-Ordered by: custom_reverse
+\texttt{Ordered by: custom\_reverse}
 
-ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-		1    0.000    0.000    0.000    0.000 <string>:1(<module>)
-		1    0.000    0.000    0.000    0.000 c113.py:14(custom_reverse)
-	 21    0.000    0.000    0.000    0.000 {len}
-		1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
-		1    0.000    0.000    0.000    0.000 {range}
+\begin{tabular}{cccccl}
+ncalls & tottime & percall & cumtime & percall & filename:lineno(function) \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$ &  $<$string$>$:1($<$module$>$) \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$ &  c113.py:14(custom\_reverse) \\
+	 $21$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$ &  len \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$ & method 'disable' of '\_lsprof.Profiler' objects \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$ & range \\
+		&&&&&\\
+\end{tabular}
 
-		 3 function calls in 0.000 seconds
+\texttt{3 function calls in 0.000 seconds}
 
-Ordered by: standard_reverse
+\texttt{Ordered by: standard\_reverse}
 
-ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-		1    0.000    0.000    0.000    0.000 <string>:1(<module>)
-		1    0.000    0.000    0.000    0.000 c113.py:26(standard_reverse)
-		1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+\begin{tabular}{cccccl} 
+ncalls & tottime & percall & cumtime & percall & filename:lineno(function) \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$  & $<$string$>$:1($<$module$>$) \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$  & c113.py:26(standard\_reverse) \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$  & method 'disable' of '\_lsprof.Profiler' objects \\ 
+		&&&&&\\
+\end{tabular}
 
-		 3 function calls in 0.000 seconds
+\texttt{3 function calls in 0.000 seconds}
 
-Ordered by: other_reverse
+\texttt{Ordered by: other\_reverse}
 
-ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-		1    0.000    0.000    0.000    0.000 <string>:1(<module>)
-		1    0.000    0.000    0.000    0.000 c113.py:29(other_reverse)
-		1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
-\end{lstlisting}
+\begin{tabular}{cccccl} 
+ncalls & tottime & percall & cumtime & percall & filename:lineno(function) \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$  & $<$string$>$:1($<$module$>$) \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$  & c113.py:29(other\_reverse) \\
+		$1$  &  $0.000$  &  $0.000$  &  $0.000$  &  $0.000$  & method 'disable' of '\_lsprof.Profiler' objects \\
+		&&&&&\\
+\end{tabular}
+
 

@@ -26,10 +26,6 @@
 .pcrr7t-x-x-120{font-family: monospace;}
 .cmss-12{  font-family: sans-serif;}
 .cmss-12{  font-family: sans-serif;}
-.cmss-12{  font-family: sans-serif;}
-.cmss-12{  font-family: sans-serif;}
-.cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
-.cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
 .cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
 .cmssbx-10x-x-120{ font-family: sans-serif; font-weight: bold;}
 .cmti-12{ font-style: italic;}
@@ -39,15 +35,7 @@
 .cmbx-12x-x-120{ font-weight: bold;}
 .cmbx-12x-x-120{ font-weight: bold;}
 .cmmi-12x-x-120{font-size:120%;font-style: italic;}
-.cmsy-10x-x-144{font-size:120%;}
-.cmss-12x-x-120{font-size:120%;  font-family: sans-serif;}
-.cmss-12x-x-120{  font-family: sans-serif;}
-.cmss-12x-x-120{  font-family: sans-serif;}
-.cmss-12x-x-120{  font-family: sans-serif;}
-.cmssbx-10x-x-144{font-size:120%; font-family: sans-serif; font-weight: bold;}
-.cmssbx-10x-x-144{ font-family: sans-serif; font-weight: bold;}
-.cmssbx-10x-x-144{ font-family: sans-serif; font-weight: bold;}
-.cmssbx-10x-x-144{ font-family: sans-serif; font-weight: bold;}
+.pcrr7t-x-x-144{font-size:120%;font-family: monospace;}
 .small-caps{font-variant: small-caps; }
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
@@ -203,6 +191,7 @@ div.lstinputlisting{ font-family: monospace; white-space: nowrap; }
  span.titlemark { display:none !important; } 
  .cmbx-12x-x-207 { font-size:inherit;}
  ol.linenums { padding-left: 0px; } 
+ div.td11{ font-size: 60%; } 
 div.lstlisting .cmtt-10 {font-family:monospace; color:DimGray}
 div.lstlisting .cmss-10 {font-family:monospace; color:Black}
 div.lstlisting .cmssbx-10 {font-family:monospace; color:Blue}
