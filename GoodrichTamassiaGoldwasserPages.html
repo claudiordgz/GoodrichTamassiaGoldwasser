@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <!-- html,xhtml,mathml, -css --> 
 <meta name="src" content="GoodrichTamassiaGoldwasserPages.tex" /> 
-<meta name="date" content="2014-11-11 12:14:00" /> 
+<meta name="date" content="2014-11-11 22:17:00" /> 
 <link rel="stylesheet" type="text/css" href="GoodrichTamassiaGoldwasserPages.css" /> 
 <meta charset="UTF-8" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
@@ -93,10 +93,16 @@ href="#x1-320001" id="QQ2-1-32"><b>R-1.11</b></a></span>
 href="#x1-350001" id="QQ2-1-35"><b>R-1.12</b></a></span>
 <br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
 href="#x1-380001" id="QQ2-1-38"><b>C-1.13</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-410001" id="QQ2-1-41"><b>C-1.14</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-440001" id="QQ2-1-44"><b>C-1.15</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-470001" id="QQ2-1-47"><b>C-1.16 &amp; C-1.17</b></a></span>
 <br />   <span class="chapterToc" >2 <a 
-href="#x1-390002" id="QQ2-1-39">Object-Oriented Programming</a></span>
+href="#x1-480002" id="QQ2-1-48">Object-Oriented Programming</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.0.2 <a 
-href="#x1-400002" id="QQ2-1-40">Exercises</a></span>
+href="#x1-490002" id="QQ2-1-49">Exercises</a></span>
    </div></div> </div> 
 <div class="col-md-7" id="docBody"><div class="well">
                                                                                                               
@@ -1498,23 +1504,472 @@ class="td11"> </td> </tr></table>
                                                                                                               
                                                                                                               
 <p>   <a 
+ id="sssec:ex1_14"></a> <table id="TBL-39" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-39-1g"><col 
+id="TBL-39-1" /><col 
+id="TBL-39-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-39-1-"><td  style="text-align:left;" id="TBL-39-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-410001"></a><b>C-1.14</b></h5>
+ <p>                                                                         </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-39-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-39-2-"><td  style="text-align:left;" id="TBL-39-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+<p>   Write a short Python function that takes a sequence of integer values and determines if there is a
+distinct pair of numbers in the sequence whose product is odd.
+</p> 
+<p>   In this method what we do first is remove all the repeated elements, then we just extract all the
+odd numbers. Multiply any of the odd numbers and you get an odd number. Any even number
+multiplied by an odd number returns an even number.
+   </p> 
+<div 
+  id="accordion13" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse13" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion13" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse13" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise C-1.14</span></div><!--tex4ht:label?: x1-410001 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-41001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;&#x00A0;Write&#x00A0;a&#x00A0;short&#x00A0;Python&#x00A0;function&#x00A0;that&#x00A0;takes&#x00A0;a&#x00A0;sequence&#x00A0;of&#x00A0;integer&#x00A0;values&#x00A0;and&#x00A0;<br /><span class="label"><a 
+ id="x1-41002r2"></a></span>determines&#x00A0;if&#x00A0;there&#x00A0;is&#x00A0;a&#x00A0;distinct&#x00A0;pair&#x00A0;of&#x00A0;numbers&#x00A0;in&#x00A0;the&#x00A0;sequence&#x00A0;whose&#x00A0;<br /><span class="label"><a 
+ id="x1-41003r3"></a></span>product&#x00A0;is&#x00A0;odd.&#x00A0;<br /><span class="label"><a 
+ id="x1-41004r4"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-41005r5"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;data&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-41006r6"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;get_odd_numbers(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-41007r7"></a></span>[1,&#x00A0;3,&#x00A0;5,&#x00A0;7,&#x00A0;9,&#x00A0;11]&#x00A0;<br /><span class="label"><a 
+ id="x1-41008r8"></a></span>&#8221;</span><!--l. 8--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-41009r9"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-41010r10"></a></span>def&#x00A0;get_odd_numbers(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-41011r11"></a></span><!--l. 11--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 11--><span class="listings-nested">&#8221;&#x00A0;Returns&#x00A0;all&#x00A0;the&#x00A0;numbers&#x00A0;whose&#x00A0;product&#x00A0;is&#x00A0;odd&#x00A0;<br /><span class="label"><a 
+ id="x1-41012r12"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-41013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:param&#x00A0;data:&#x00A0;A&#x00A0;list&#x00A0;of&#x00A0;integers&#x00A0;<br /><span class="label"><a 
+ id="x1-41014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;numbers&#x00A0;whose&#x00A0;product&#x00A0;is&#x00A0;odd&#x00A0;<br /><span class="label"><a 
+ id="x1-41015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 15--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-41016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;s&#x00A0;=&#x00A0;set(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-41017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;[k&#x00A0;for&#x00A0;k&#x00A0;in&#x00A0;s&#x00A0;if&#x00A0;(k&#x00A0;&amp;&#x00A0;1&#x00A0;==&#x00A0;1)]
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-41018r18"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div>
+                                                                                                              
+                                                                                                              
+<p>   <a 
+ id="sssec:ex1_15"></a>   <table id="TBL-42" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-42-1g"><col 
+id="TBL-42-1" /><col 
+id="TBL-42-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-42-1-"><td  style="text-align:left;" id="TBL-42-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-440001"></a><b>C-1.15</b></h5>
+ <p>                                                                         </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-42-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-42-2-"><td  style="text-align:left;" id="TBL-42-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+<p>   Write a Python function that takes a sequence of numbers and determines if all the numbers are
+different from each other (that is, they are distinct).
+</p> 
+<p>   We just build a set from the original list, if the length of the set is smaller, we have
+repeated numbers. Besides this, we could also sort the elements and look for a repeated
+element.
+   </p> 
+<div 
+  id="accordion14" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse14" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse14" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise C-1.15</span></div><!--tex4ht:label?: x1-440001 --><!--l. 7--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-44001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;&#x00A0;Write&#x00A0;a&#x00A0;Python&#x00A0;function&#x00A0;that&#x00A0;takes&#x00A0;a&#x00A0;sequence&#x00A0;of&#x00A0;numbers&#x00A0;and&#x00A0;determines&#x00A0;<br /><span class="label"><a 
+ id="x1-44002r2"></a></span>if&#x00A0;all&#x00A0;the&#x00A0;numbers&#x00A0;are&#x00A0;different&#x00A0;from&#x00A0;each&#x00A0;other&#x00A0;(that&#x00A0;is,&#x00A0;they&#x00A0;are&#x00A0;distinct).&#x00A0;<br /><span class="label"><a 
+ id="x1-44003r3"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-44004r4"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;data&#x00A0;=&#x00A0;[2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1]&#x00A0;<br /><span class="label"><a 
+ id="x1-44005r5"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;check_if_unique(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-44006r6"></a></span>False&#x00A0;<br /><span class="label"><a 
+ id="x1-44007r7"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;check_if_unique(data[:9])&#x00A0;<br /><span class="label"><a 
+ id="x1-44008r8"></a></span>True&#x00A0;<br /><span class="label"><a 
+ id="x1-44009r9"></a></span>&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-44010r10"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-44011r11"></a></span>def&#x00A0;check_if_unique(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-44012r12"></a></span><!--l. 12--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 12--><span class="listings-nested">&#8221;&#x00A0;Check&#x00A0;if&#x00A0;all&#x00A0;elements&#x00A0;in&#x00A0;list&#x00A0;are&#x00A0;unique&#x00A0;<br /><span class="label"><a 
+ id="x1-44013r13"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-44014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:param&#x00A0;data:&#x00A0;list&#x00A0;of&#x00A0;integers&#x00A0;<br /><span class="label"><a 
+ id="x1-44015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;True&#x00A0;if&#x00A0;all&#x00A0;unique,&#x00A0;else&#x00A0;False&#x00A0;<br /><span class="label"><a 
+ id="x1-44016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 16--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-44017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;s&#x00A0;=&#x00A0;set(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-44018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;len(s)&#x00A0;==&#x00A0;len(data)
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-44021r21"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div>
+                                                                                                              
+                                                                                                              
+<p>   <a 
+ id="sssec:ex1_161_17"></a>   <table id="TBL-45" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-45-1g"><col 
+id="TBL-45-1" /><col 
+id="TBL-45-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-45-1-"><td  style="text-align:left;" id="TBL-45-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-470001"></a><b>C-1.16 &amp; C-1.17</b></h5>
+ <p>                                                                         </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-45-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-45-2-"><td  style="text-align:left;" id="TBL-45-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+<p>   In our implementation of the scale function (page 25), the body of the loop executes the command
+<code>data[j] &#x22C6;= factor</code>. We have discussed that numeric types are immutable, and that use of the
+<code>&#x22C6;=</code> operator in this context causes the creation of a new instance (not the mutation of an existing
+instance). How is it still possible, then, that our implementation of scale changes the actual
+parameter sent by the caller?
+</p> 
+<p>   Had we implemented the scale function (page 25) as follows, does it work properly?
+   </p> 
+<div 
+  id="accordion15" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse15" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion15" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse15" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">The incorrect_way</span></div><!--tex4ht:label?: x1-470001 --><!--l. 8--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-47001r1"></a></span>def&#x00A0;scale(data,&#x00A0;factor):&#x00A0;<br /><span class="label"><a 
+ id="x1-47002r2"></a></span>&#x00A0;&#x00A0;for&#x00A0;val&#x00A0;in&#x00A0;data:&#x00A0;<br /><span class="label"><a 
+ id="x1-47003r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;val&#x00A0;*=&#x00A0;factor
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-47004r4"></a></span></pre>
+</pre> </div> 
+</div> 
+</div> 
+ </div>
+<p>   Explain why or why not.
+</p> 
+<p>   Well... here are some inmutable types in Python.
+   </p> 
+
+      <ul class="itemize1">
+      <li class="itemize">numerical types
+      </li>
+      <li class="itemize">string types
+      </li>
+      <li class="itemize">types</li></ul>
+<p>   And here are some mutable types.
+   </p> 
+
+      <ul class="itemize1">
+      <li class="itemize">lists
+      </li>
+                                                                                                              
+                                                                                                              
+      <li class="itemize">dicts
+      </li>
+      <li class="itemize">classes</li></ul>
+<p>   So taken by that premise, if we want a function that modifies numeric values in place, we would
+need a <code>class</code> that wraps that numeric value. This is not trivial. So we are going to take respectfully
+a class done by The Edwards Research group (http://www.edwards-research.com/), this class is
+presented here: http://blog.edwards-research.com/2013/09/mutable-numeric-types-in-python/.
+</p> 
+<p>   It is everything you dreamed of, I give you, a mutable numeric.
+   </p> 
+<div 
+  id="accordion16" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse16" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion16" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse16" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Mutable Numeric</span></div><!--tex4ht:label?: x1-470001 --><!--l. 36--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-47005r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;&#x00A0;<br /><span class="label"><a 
+ id="x1-47006r2"></a></span>MutableNum&#x00A0;class&#x00A0;from:&#x00A0;http://blog.edwards-research.com/2013/09/mutable-numeric-types-in-python/&#x00A0;<br /><span class="label"><a 
+ id="x1-47007r3"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47008r4"></a></span>Allows&#x00A0;you&#x00A0;to&#x00A0;pass&#x00A0;the&#x00A0;instance&#x00A0;to&#x00A0;a&#x00A0;function,&#x00A0;and&#x00A0;with&#x00A0;proper&#x00A0;coding,&#x00A0;allows&#x00A0;you&#x00A0;to&#x00A0;modify&#x00A0;the&#x00A0;<br /><span class="label"><a 
+ id="x1-47009r5"></a></span>value&#x00A0;of&#x00A0;the&#x00A0;instance&#x00A0;inside&#x00A0;the&#x00A0;function&#x00A0;and&#x00A0;have&#x00A0;the&#x00A0;modifications&#x00A0;persist.&#x00A0;<br /><span class="label"><a 
+ id="x1-47010r6"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47011r7"></a></span>For&#x00A0;example,&#x00A0;consider:&#x00A0;<br /><span class="label"><a 
+ id="x1-47012r8"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47013r9"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;foo(x):&#x00A0;x&#x00A0;*=&#x00A0;2&#x00A0;<br /><span class="label"><a 
+ id="x1-47014r10"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;x&#x00A0;=&#x00A0;5&#x00A0;<br /><span class="label"><a 
+ id="x1-47015r11"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;foo(x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47016r12"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;print(x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47017r13"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47018r14"></a></span>This&#x00A0;will&#x00A0;print&#x00A0;5,&#x00A0;not&#x00A0;10&#x00A0;like&#x00A0;you&#x00A0;may&#x00A0;have&#x00A0;hoped.&#x00A0;&#x00A0;Now&#x00A0;using&#x00A0;the&#x00A0;MutableNum&#x00A0;class:&#x00A0;<br /><span class="label"><a 
+ id="x1-47019r15"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47020r16"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;foo(x):&#x00A0;x&#x00A0;*=&#x00A0;2&#x00A0;<br /><span class="label"><a 
+ id="x1-47021r17"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;x&#x00A0;=&#x00A0;MutableNum(5)&#x00A0;<br /><span class="label"><a 
+ id="x1-47022r18"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;foo(x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47023r19"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;print(x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47024r20"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47025r21"></a></span>This&#x00A0;*will*&#x00A0;print&#x00A0;10,&#x00A0;as&#x00A0;the&#x00A0;modifications&#x00A0;you&#x00A0;made&#x00A0;to&#x00A0;x&#x00A0;inside&#x00A0;of&#x00A0;the&#x00A0;function&#x00A0;foo&#x00A0;will&#x00A0;persist.&#x00A0;<br /><span class="label"><a 
+ id="x1-47026r22"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47027r23"></a></span>Note,&#x00A0;however,&#x00A0;that&#x00A0;the&#x00A0;following&#x00A0;*will&#x00A0;not*&#x00A0;work:&#x00A0;<br /><span class="label"><a 
+ id="x1-47028r24"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47029r25"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;bar(x):&#x00A0;x&#x00A0;=&#x00A0;x&#x00A0;*&#x00A0;2&#x00A0;<br /><span class="label"><a 
+ id="x1-47030r26"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;x&#x00A0;=&#x00A0;MutableNum(5)&#x00A0;<br /><span class="label"><a 
+ id="x1-47031r27"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;bar(x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47032r28"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;print(x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47033r29"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47034r30"></a></span>The&#x00A0;difference&#x00A0;being&#x00A0;that&#x00A0;[x&#x00A0;*=&#x00A0;2]&#x00A0;modifies&#x00A0;the&#x00A0;current&#x00A0;variable&#x00A0;x,&#x00A0;while&#x00A0;[x&#x00A0;=&#x00A0;x&#x00A0;*&#x00A0;2]&#x00A0;creates&#x00A0;a&#x00A0;new&#x00A0;<br /><span class="label"><a 
+ id="x1-47035r31"></a></span>variable&#x00A0;x&#x00A0;and&#x00A0;assigns&#x00A0;the&#x00A0;result&#x00A0;of&#x00A0;the&#x00A0;multiplication&#x00A0;to&#x00A0;it.&#x00A0;<br /><span class="label"><a 
+ id="x1-47036r32"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47037r33"></a></span>If,&#x00A0;for&#x00A0;some&#x00A0;reason&#x00A0;you&#x00A0;can&#8217;t&#x00A0;use&#x00A0;the&#x00A0;compound&#x00A0;operators&#x00A0;(&#x00A0;+=,&#x00A0;-=,&#x00A0;*=,&#x00A0;etc.),&#x00A0;you&#x00A0;can&#x00A0;do&#x00A0;something&#x00A0;<br /><span class="label"><a 
+ id="x1-47038r34"></a></span>like&#x00A0;the&#x00A0;following:&#x00A0;<br /><span class="label"><a 
+ id="x1-47039r35"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47040r36"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;better(x):&#x00A0;<br /><span class="label"><a 
+ id="x1-47041r37"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;t&#x00A0;=&#x00A0;x&#x00A0;<br /><span class="label"><a 
+ id="x1-47042r38"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;t&#x00A0;=&#x00A0;t&#x00A0;*&#x00A0;2&#x00A0;<br /><span class="label"><a 
+ id="x1-47043r39"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;...&#x00A0;(Some&#x00A0;operations&#x00A0;on&#x00A0;t)&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x1-47044r40"></a></span>&#x003E;&#x00A0;<br /><span class="label"><a 
+ id="x1-47045r41"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;End&#x00A0;your&#x00A0;function&#x00A0;with&#x00A0;a&#x00A0;call&#x00A0;to&#x00A0;x.set()&#x00A0;<br /><span class="label"><a 
+ id="x1-47046r42"></a></span>&#x003E;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;x.set(t)&#x00A0;<br /><span class="label"><a 
+ id="x1-47047r43"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47048r44"></a></span>&#8221;</span><!--l. 44--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47049r45"></a></span>class&#x00A0;MutableNum(object):&#x00A0;<br /><span class="label"><a 
+ id="x1-47050r46"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;__val__&#x00A0;=&#x00A0;None&#x00A0;<br /><span class="label"><a 
+ id="x1-47051r47"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__init__(self,&#x00A0;v):&#x00A0;self.__val__&#x00A0;=&#x00A0;v&#x00A0;<br /><span class="label"><a 
+ id="x1-47052r48"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Comparison&#x00A0;Methods&#x00A0;<br /><span class="label"><a 
+ id="x1-47053r49"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__eq__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__&#x00A0;==&#x00A0;x&#x00A0;<br /><span class="label"><a 
+ id="x1-47054r50"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__ne__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__&#x00A0;!=&#x00A0;x&#x00A0;<br /><span class="label"><a 
+ id="x1-47055r51"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__lt__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__&#x00A0;&#x003C;&#x00A0;&#x00A0;x&#x00A0;<br /><span class="label"><a 
+ id="x1-47056r52"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__gt__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__&#x00A0;&#x003E;&#x00A0;&#x00A0;x&#x00A0;<br /><span class="label"><a 
+ id="x1-47057r53"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__le__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__&#x00A0;&#x003C;=&#x00A0;x&#x00A0;<br /><span class="label"><a 
+ id="x1-47058r54"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__ge__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__&#x00A0;&#x003E;=&#x00A0;x&#x00A0;<br /><span class="label"><a 
+ id="x1-47059r55"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__cmp__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;0&#x00A0;if&#x00A0;self.__val__&#x00A0;==&#x00A0;x&#x00A0;else&#x00A0;1&#x00A0;if&#x00A0;self.__val__&#x00A0;&#x003E;&#x00A0;0&#x00A0;else&#x00A0;-1&#x00A0;<br /><span class="label"><a 
+ id="x1-47060r56"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Unary&#x00A0;Ops&#x00A0;<br /><span class="label"><a 
+ id="x1-47061r57"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__pos__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(+self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47062r58"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__neg__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(-self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47063r59"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__abs__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(abs(self.__val__))&#x00A0;<br /><span class="label"><a 
+ id="x1-47064r60"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Bitwise&#x00A0;Unary&#x00A0;Ops&#x00A0;<br /><span class="label"><a 
+ id="x1-47065r61"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__invert__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(&#x02DC;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47066r62"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Arithmetic&#x00A0;Binary&#x00A0;Ops&#x00A0;<br /><span class="label"><a 
+ id="x1-47067r63"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__add__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;+&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47068r64"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__sub__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;-&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47069r65"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__mul__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;*&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47070r66"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__div__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;/&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47071r67"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__mod__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;%&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47072r68"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__pow__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;**&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47073r69"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__floordiv__(self,&#x00A0;x):&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;<!--l. 69--><span class="listings-nested">//&#x00A0;x)</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47074r70"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__divmod__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(divmod(self.__val__,&#x00A0;x))&#x00A0;<br /><span class="label"><a 
+ id="x1-47075r71"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__truediv__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__.__truediv__(x))&#x00A0;<br /><span class="label"><a 
+ id="x1-47076r72"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Reflected&#x00A0;Arithmetic&#x00A0;Binary&#x00A0;Ops&#x00A0;<br /><span class="label"><a 
+ id="x1-47077r73"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__radd__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;+&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47078r74"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rsub__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;-&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47079r75"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rmul__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;*&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47080r76"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rdiv__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;/&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47081r77"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rmod__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;%&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47082r78"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rpow__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;**&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47083r79"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rfloordiv__(self,&#x00A0;x):&#x00A0;return&#x00A0;self.__class__(x&#x00A0;<!--l. 79--><span class="listings-nested">//&#x00A0;self.__val__)</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47084r80"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rdivmod__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(divmod(x,&#x00A0;self.__val__))&#x00A0;<br /><span class="label"><a 
+ id="x1-47085r81"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rtruediv__(self,&#x00A0;x):&#x00A0;&#x00A0;return&#x00A0;self.__class__(x.__truediv__(self.__val__))&#x00A0;<br /><span class="label"><a 
+ id="x1-47086r82"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Bitwise&#x00A0;Binary&#x00A0;Ops&#x00A0;<br /><span class="label"><a 
+ id="x1-47087r83"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__and__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;&amp;&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47088r84"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__or__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;|&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47089r85"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__xor__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;&#x02C6;&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47090r86"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__lshift__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;&#x003C;&#x003C;&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47091r87"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rshift__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(self.__val__&#x00A0;&#x003E;&#x003E;&#x00A0;x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47092r88"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Reflected&#x00A0;Bitwise&#x00A0;Binary&#x00A0;Ops&#x00A0;<br /><span class="label"><a 
+ id="x1-47093r89"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rand__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;&amp;&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47094r90"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__ror__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;|&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47095r91"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rxor__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;&#x02C6;&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47096r92"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rlshift__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;&#x003C;&#x003C;&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47097r93"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__rrshift__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__class__(x&#x00A0;&#x003E;&#x003E;&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47098r94"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Compound&#x00A0;Assignment&#x00A0;<br /><span class="label"><a 
+ id="x1-47099r95"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__iadd__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.__val__&#x00A0;+=&#x00A0;x;&#x00A0;return&#x00A0;self&#x00A0;<br /><span class="label"><a 
+ id="x1-47100r96"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__isub__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.__val__&#x00A0;-=&#x00A0;x;&#x00A0;return&#x00A0;self&#x00A0;<br /><span class="label"><a 
+ id="x1-47101r97"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__imul__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.__val__&#x00A0;*=&#x00A0;x;&#x00A0;return&#x00A0;self&#x00A0;<br /><span class="label"><a 
+ id="x1-47102r98"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__idiv__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.__val__&#x00A0;/=&#x00A0;x;&#x00A0;return&#x00A0;self&#x00A0;<br /><span class="label"><a 
+ id="x1-47103r99"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__imod__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.__val__&#x00A0;%=&#x00A0;x;&#x00A0;return&#x00A0;self&#x00A0;<br /><span class="label"><a 
+ id="x1-47104r100"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__ipow__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;self.__val__&#x00A0;**=&#x00A0;x;&#x00A0;return&#x00A0;self&#x00A0;<br /><span class="label"><a 
+ id="x1-47105r101"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Casts&#x00A0;<br /><span class="label"><a 
+ id="x1-47106r102"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__nonzero__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__&#x00A0;!=&#x00A0;0&#x00A0;<br /><span class="label"><a 
+ id="x1-47107r103"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__int__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__.__int__()&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;XXX&#x00A0;<br /><span class="label"><a 
+ id="x1-47108r104"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__float__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__.__float__()&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;XXX&#x00A0;<br /><span class="label"><a 
+ id="x1-47109r105"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__long__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__.__long__()&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;XXX&#x00A0;<br /><span class="label"><a 
+ id="x1-47110r106"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Conversions&#x00A0;<br /><span class="label"><a 
+ id="x1-47111r107"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__oct__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__.__oct__()&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;XXX&#x00A0;<br /><span class="label"><a 
+ id="x1-47112r108"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__hex__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__.__hex__()&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;XXX&#x00A0;<br /><span class="label"><a 
+ id="x1-47113r109"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__str__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__.__str__()&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;XXX&#x00A0;<br /><span class="label"><a 
+ id="x1-47114r110"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Random&#x00A0;Ops&#x00A0;<br /><span class="label"><a 
+ id="x1-47115r111"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__index__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__.__index__()&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;XXX&#x00A0;<br /><span class="label"><a 
+ id="x1-47116r112"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__trunc__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__.__trunc__()&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;XXX&#x00A0;<br /><span class="label"><a 
+ id="x1-47117r113"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__coerce__(self,&#x00A0;x):&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;self.__val__.__coerce__(x)&#x00A0;<br /><span class="label"><a 
+ id="x1-47118r114"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Represenation&#x00A0;<br /><span class="label"><a 
+ id="x1-47119r115"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__repr__(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;<!--l. 115--><span class="listings-nested">&#8221;%s(%d)&#8221;</span>&#x00A0;%&#x00A0;(self.__class__.__name__,&#x00A0;self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47120r116"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Define&#x00A0;innertype,&#x00A0;a&#x00A0;function&#x00A0;that&#x00A0;returns&#x00A0;the&#x00A0;type&#x00A0;of&#x00A0;the&#x00A0;inner&#x00A0;value&#x00A0;self.__val__&#x00A0;<br /><span class="label"><a 
+ id="x1-47121r117"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;innertype(self):&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;type(self.__val__)&#x00A0;<br /><span class="label"><a 
+ id="x1-47122r118"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Define&#x00A0;set,&#x00A0;a&#x00A0;function&#x00A0;that&#x00A0;you&#x00A0;can&#x00A0;use&#x00A0;to&#x00A0;set&#x00A0;the&#x00A0;value&#x00A0;of&#x00A0;the&#x00A0;instance&#x00A0;<br /><span class="label"><a 
+ id="x1-47123r119"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;set(self,&#x00A0;x):&#x00A0;<br /><span class="label"><a 
+ id="x1-47124r120"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;&#x00A0;&#x00A0;isinstance(x,&#x00A0;(int,&#x00A0;long,&#x00A0;float)):&#x00A0;self.__val__&#x00A0;=&#x00A0;x&#x00A0;<br /><span class="label"><a 
+ id="x1-47125r121"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;elif&#x00A0;isinstance(x,&#x00A0;self.__class__):&#x00A0;self.__val__&#x00A0;=&#x00A0;x.__val__&#x00A0;<br /><span class="label"><a 
+ id="x1-47126r122"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;raise&#x00A0;TypeError(<!--l. 122--><span class="listings-nested">&#8221;expected&#x00A0;a&#x00A0;numeric&#x00A0;type&#8221;</span>)&#x00A0;<br /><span class="label"><a 
+ id="x1-47127r123"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;#&#x00A0;Pass&#x00A0;anything&#x00A0;else&#x00A0;along&#x00A0;to&#x00A0;self.__val__&#x00A0;<br /><span class="label"><a 
+ id="x1-47128r124"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;def&#x00A0;__getattr__(self,&#x00A0;attr):&#x00A0;<br /><span class="label"><a 
+ id="x1-47129r125"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(<!--l. 125--><span class="listings-nested">&#8221;getattr:&#x00A0;&#8221;</span>&#x00A0;+&#x00A0;attr)&#x00A0;<br /><span class="label"><a 
+ id="x1-47130r126"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;getattr(self.__val__,&#x00A0;attr)
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-47131r127"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div>
+<p>   Now onto the second question... if numeric types are not valid then of course that method is not
+going to work. You would need to do something <b>radical</b> like returning a <b>new list</b>. As
+follows:
+   </p> 
+<div 
+  id="accordion17" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse17" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion17" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse17" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Returning new_list</span></div><!--tex4ht:label?: x1-470001 --><!--l. 40--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-47132r1"></a></span>def&#x00A0;scale(data,&#x00A0;factor):&#x00A0;<br /><span class="label"><a 
+ id="x1-47133r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;[x*factor&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;data]
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-47134r3"></a></span></pre>
+</pre> </div> 
+</div> 
+</div> 
+ </div>
+<p>   We can also change the list number by replacing the value in the list, remember that lists are
+mutable, so we can change that, we just can&#8217;t change the number.
+   </p> 
+<div 
+  id="accordion18" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse18" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion18" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse18" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise C-1.16 &amp; C-1.17</span></div><!--tex4ht:label?: x1-470001 --><!--l. 47--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-47135r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;&#x00A0;In&#x00A0;our&#x00A0;implementation&#x00A0;of&#x00A0;the&#x00A0;scale&#x00A0;function&#x00A0;(page&#x00A0;25),&#x00A0;the&#x00A0;body&#x00A0;of&#x00A0;the&#x00A0;loop&#x00A0;<br /><span class="label"><a 
+ id="x1-47136r2"></a></span>executes&#x00A0;the&#x00A0;command&#x00A0;data[j]&#x00A0;*=&#x00A0;factor.&#x00A0;We&#x00A0;have&#x00A0;discussed&#x00A0;that&#x00A0;numeric&#x00A0;<br /><span class="label"><a 
+ id="x1-47137r3"></a></span>types&#x00A0;are&#x00A0;immutable,&#x00A0;and&#x00A0;that&#x00A0;use&#x00A0;of&#x00A0;the&#x00A0;*=&#x00A0;operator&#x00A0;in&#x00A0;this&#x00A0;context&#x00A0;causes&#x00A0;<br /><span class="label"><a 
+ id="x1-47138r4"></a></span>the&#x00A0;creation&#x00A0;of&#x00A0;a&#x00A0;new&#x00A0;instance&#x00A0;(not&#x00A0;the&#x00A0;mutation&#x00A0;of&#x00A0;an&#x00A0;existing&#x00A0;instance).&#x00A0;<br /><span class="label"><a 
+ id="x1-47139r5"></a></span>How&#x00A0;is&#x00A0;it&#x00A0;still&#x00A0;possible,&#x00A0;then,&#x00A0;that&#x00A0;our&#x00A0;implementation&#x00A0;of&#x00A0;scale&#x00A0;changes&#x00A0;the&#x00A0;<br /><span class="label"><a 
+ id="x1-47140r6"></a></span>actual&#x00A0;parameter&#x00A0;sent&#x00A0;by&#x00A0;the&#x00A0;caller?&#x00A0;<br /><span class="label"><a 
+ id="x1-47141r7"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47142r8"></a></span>Had&#x00A0;we&#x00A0;implemented&#x00A0;the&#x00A0;scale&#x00A0;function&#x00A0;(page&#x00A0;25)&#x00A0;as&#x00A0;follows,&#x00A0;does&#x00A0;it&#x00A0;work&#x00A0;<br /><span class="label"><a 
+ id="x1-47143r9"></a></span>properly?&#x00A0;<br /><span class="label"><a 
+ id="x1-47144r10"></a></span>def&#x00A0;scale(data,&#x00A0;factor):&#x00A0;<br /><span class="label"><a 
+ id="x1-47145r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;for&#x00A0;val&#x00A0;in&#x00A0;data:&#x00A0;<br /><span class="label"><a 
+ id="x1-47146r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;val&#x00A0;*=&#x00A0;factor&#x00A0;<br /><span class="label"><a 
+ id="x1-47147r13"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47148r14"></a></span>Explain&#x00A0;why&#x00A0;or&#x00A0;why&#x00A0;not.&#x00A0;<br /><span class="label"><a 
+ id="x1-47149r15"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47150r16"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;import&#x00A0;MutableNum&#x00A0;<br /><span class="label"><a 
+ id="x1-47151r17"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;l&#x00A0;=&#x00A0;[2,3,4,5,6]&#x00A0;<br /><span class="label"><a 
+ id="x1-47152r18"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;e&#x00A0;=&#x00A0;[MutableNum.MutableNum(x)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;l]&#x00A0;<br /><span class="label"><a 
+ id="x1-47153r19"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;scale(e,&#x00A0;5)&#x00A0;<br /><span class="label"><a 
+ id="x1-47154r20"></a></span>[MutableNum(10),&#x00A0;MutableNum(15),&#x00A0;MutableNum(20),&#x00A0;MutableNum(25),&#x00A0;MutableNum(30)]&#x00A0;<br /><span class="label"><a 
+ id="x1-47155r21"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;scale_in_place(e,0.2)&#x00A0;<br /><span class="label"><a 
+ id="x1-47156r22"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;print(e)&#x00A0;<br /><span class="label"><a 
+ id="x1-47157r23"></a></span>[MutableNum(2),&#x00A0;MutableNum(3),&#x00A0;MutableNum(4),&#x00A0;MutableNum(5),&#x00A0;MutableNum(6)]&#x00A0;<br /><span class="label"><a 
+ id="x1-47158r24"></a></span>&#8221;</span><!--l. 24--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47159r25"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47160r26"></a></span>def&#x00A0;scale_in_place(data,&#x00A0;factor):&#x00A0;<br /><span class="label"><a 
+ id="x1-47161r27"></a></span><!--l. 27--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 27--><span class="listings-nested">&#8221;scales&#x00A0;list&#x00A0;to&#x00A0;factor&#x00A0;in&#x00A0;place&#x00A0;<br /><span class="label"><a 
+ id="x1-47162r28"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47163r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:param&#x00A0;data:&#x00A0;the&#x00A0;input&#x00A0;list&#x00A0;of&#x00A0;numbers&#x00A0;<br /><span class="label"><a 
+ id="x1-47164r30"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:param&#x00A0;factor:&#x00A0;product&#x00A0;factor&#x00A0;<br /><span class="label"><a 
+ id="x1-47165r31"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;list&#x00A0;with&#x00A0;modified&#x00A0;values&#x00A0;<br /><span class="label"><a 
+ id="x1-47166r32"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 32--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47167r33"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;for&#x00A0;j&#x00A0;in&#x00A0;range(len(data)):&#x00A0;<br /><span class="label"><a 
+ id="x1-47168r34"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;data[j]&#x00A0;*=&#x00A0;factor&#x00A0;<br /><span class="label"><a 
+ id="x1-47169r35"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47170r36"></a></span>def&#x00A0;scale(data,&#x00A0;factor):&#x00A0;<br /><span class="label"><a 
+ id="x1-47171r37"></a></span><!--l. 37--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 37--><span class="listings-nested">&#8221;scales&#x00A0;list&#x00A0;to&#x00A0;factor&#x00A0;<br /><span class="label"><a 
+ id="x1-47172r38"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47173r39"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:param&#x00A0;data:&#x00A0;the&#x00A0;input&#x00A0;list&#x00A0;of&#x00A0;numbers&#x00A0;<br /><span class="label"><a 
+ id="x1-47174r40"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:param&#x00A0;factor:&#x00A0;product&#x00A0;factor&#x00A0;<br /><span class="label"><a 
+ id="x1-47175r41"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;list&#x00A0;with&#x00A0;modified&#x00A0;values&#x00A0;<br /><span class="label"><a 
+ id="x1-47176r42"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 42--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-47177r43"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;for&#x00A0;j&#x00A0;in&#x00A0;range(len(data)):&#x00A0;<br /><span class="label"><a 
+ id="x1-47178r44"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;data[j]&#x00A0;*=&#x00A0;factor&#x00A0;<br /><span class="label"><a 
+ id="x1-47179r45"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;data
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-47180r46"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div>
+                                                                                                              
+                                                                                                              
+<p>   <a 
  id="chap:OOP"></a>
                                                                                                               
                                                                                                               
    </p> 
 
    <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;2</span><br /><a 
- id="x1-390002"></a>Object-Oriented Programming</h2>
+ id="x1-480002"></a>Object-Oriented Programming</h2>
 <p>The second chapter looks to provide a generic foundation on Object Orientation.
 </p> 
 <p>   <a 
  id="ssec:Exercises"></a>
 <a 
- id="x1-39001r5"></a>
+ id="x1-48001r5"></a>
 </p> 
 
 <h4 class="subsectionHead"><span class="titlemark">2.0.2   </span> <a 
- id="x1-400002"></a>Exercises</h4>
+ id="x1-490002"></a>Exercises</h4>
 <p>The exercises in the first chapter mostly open questions.
                                                                                                               
                                                                                                               

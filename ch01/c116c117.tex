@@ -1,0 +1,48 @@
+\blogsubsubsection{sssec:ex1_161_17}{C-1.16 \& C-1.17}{chap:PythonPrimer}{} \label{sssec:ex1_161_17}
+
+In our implementation of the scale function (page 25), the body of the loop executes the command \texttt{data[j] *= factor}. We have discussed that numeric types are immutable, and that use of the \texttt{*=} operator in this context causes the creation of a new instance (not the mutation of an existing instance).
+How is it still possible, then, that our implementation of scale changes the actual parameter sent by the caller?
+
+Had we implemented the scale function (page 25) as follows, does it work properly?
+
+\begin{lstlisting}[title=The incorrect\_way]
+def scale(data, factor):
+	for val in data:
+		val *= factor
+\end{lstlisting}
+
+Explain why or why not.
+
+Well... here are some inmutable types in Python.
+
+\begin{itemize}
+	\item numerical types
+	\item string types
+	\item types
+\end{itemize}
+
+And here are some mutable types.
+
+\begin{itemize}
+	\item lists
+	\item dicts
+	\item classes
+\end{itemize}
+
+So taken by that premise, if we want a function that modifies numeric values in place, we would need a \texttt{class} that wraps that numeric value. This is not trivial. So we are going to take respectfully a class done by The Edwards Research group (http://www.edwards-research.com/), this class is presented here: http://blog.edwards-research.com/2013/09/mutable-numeric-types-in-python/.
+
+It is everything you dreamed of, I give you, a mutable numeric. 
+
+\lstinputlisting[title=Mutable Numeric]{../../GoodrichTamassiaGoldwasser/ch01/MutableNum.py}
+
+Now onto the second question... if numeric types are not valid then of course that method is not going to work. You would need to do something \textbf{radical} like returning a \textbf{new list}. As follows:
+
+\begin{lstlisting}[title=Returning new\_list]
+def scale(data, factor):
+    return [x*factor for x in data]
+\end{lstlisting}
+
+We can also change the list number by replacing the value in the list, remember that lists are mutable, so we can change that, we just can't change the number.
+
+\lstinputlisting[title=Exercise C-1.16 \& C-1.17]{../../GoodrichTamassiaGoldwasser/ch01/c116c117.py}
+

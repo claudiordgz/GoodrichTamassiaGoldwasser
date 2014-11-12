@@ -4,8 +4,14 @@
 #include <iterator>
 #include <memory>
 
+/*! @brief Code to make a collapsable chapter in the TableOfContents */
 struct tocElement {
-  std::string header = R"(<div class="panel-group" id="accordionToc">
+  std::string globalHeaderBegin = R"(<div class="panel-group" id="accordionToc">)";
+  std::string globalHeaderEnd = R"(</div>)";
+  /// @brief the preamble, replace the markup {{}} elements. 
+  /// idx with a unique number
+  /// headerMarkup with the previous header markup
+  std::string header = R"(
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -16,7 +22,8 @@ struct tocElement {
     </div>
     <div id="collapseToc{{idx}}" class="panel-collapse collapse">
       <div class="panel-body">)";
-  std::string bodyEnd = R"(</div>
+  /// @brief closing tags for the preamble
+  std::string bodyEnd = R"(
     </div>
   </div>
 </div>)";
@@ -160,21 +167,25 @@ std::string fixToc(std::string const &tableOfContents){
   size_t beginPos = 0, counter = 1;
   std::string content(tableOfContents);
   std::string findStr = R"(<span class="chapterToc")", endStr = R"(</span>)";
-  std::string insertStr;
+  tocElement instance;
+  std::string insertStr(instance.bodyEnd);
   while ((beginPos = content.find(findStr, beginPos)) != std::string::npos) {
-    tocElement instance;
     if (counter > 1){
-      insertStr = instance.bodyEnd;
       content.insert(beginPos, insertStr);
       beginPos += insertStr.length();
     }
+    else {
+      content.insert(beginPos, instance.globalHeaderBegin);
+      beginPos += instance.globalHeaderBegin.length();
+    }
     size_t endingPos = content.find(endStr, beginPos);
     if (endingPos != std::string::npos) {
+      std::string localHeader = instance.header;
       std::string title(content.begin() + beginPos, content.begin() + endingPos + endStr.length());
-      instance.header = replaceAll(instance.header, "{{idx}}", std::to_string(counter));
-      instance.header = replaceFirst(instance.header, "{{headerMarkup}}", title);
-      content = replaceFirst(content, title, instance.header);
-      beginPos = content.find(instance.header) + instance.header.length();
+      localHeader = replaceAll(localHeader, "{{idx}}", std::to_string(counter));
+      localHeader = replaceFirst(localHeader, "{{headerMarkup}}", title);
+      content = replaceFirst(content, title, localHeader);
+      beginPos = content.find(localHeader) + localHeader.length();
       counter++;
     }
     else {
@@ -182,6 +193,7 @@ std::string fixToc(std::string const &tableOfContents){
     }
   }
   content.append(insertStr);
+  content.append(instance.globalHeaderEnd);
   return content;
 }
 std::string replaceTableWithReponsive(std::string const &fileContents) {
