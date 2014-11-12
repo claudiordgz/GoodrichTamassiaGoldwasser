@@ -7,7 +7,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
 <!-- html,xhtml,mathml, -css --> 
 <meta name="src" content="GoodrichTamassiaGoldwasserPages.tex" /> 
-<meta name="date" content="2014-11-11 22:26:00" /> 
+<meta name="date" content="2014-11-12 00:40:00" /> 
 <link rel="stylesheet" type="text/css" href="GoodrichTamassiaGoldwasserPages.css" /> 
 <meta charset="UTF-8" /> 
 <meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
@@ -99,10 +99,20 @@ href="#x1-410001" id="QQ2-1-41"><b>C-1.14</b></a></span>
 href="#x1-440001" id="QQ2-1-44"><b>C-1.15</b></a></span>
 <br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
 href="#x1-470001" id="QQ2-1-47"><b>C-1.16 &amp; C-1.17</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-500001" id="QQ2-1-50"><b>C-1.18</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-530001" id="QQ2-1-53"><b>C-1.19</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-560001" id="QQ2-1-56"><b>C-1.20</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-590001" id="QQ2-1-59"><b>C-1.21</b></a></span>
+<br />   &#x00A0;&#x00A0;&#x00A0;<span class="subsubsectionToc" ><a 
+href="#x1-620001" id="QQ2-1-62"><b>C-1.22</b></a></span>
 <br />   <span class="chapterToc" >2 <a 
-href="#x1-480002" id="QQ2-1-48">Object-Oriented Programming</a></span>
+href="#x1-630002" id="QQ2-1-63">Object-Oriented Programming</a></span>
 <br />   &#x00A0;&#x00A0;<span class="subsectionToc" >2.0.2 <a 
-href="#x1-490002" id="QQ2-1-49">Exercises</a></span>
+href="#x1-640002" id="QQ2-1-64">Exercises</a></span>
    </div></div> </div> 
 <div class="col-md-7" id="docBody"><div class="well">
                                                                                                               
@@ -1955,23 +1965,345 @@ class="content">Exercise C-1.16 &amp; C-1.17</span></div><!--tex4ht:label?: x1-4
                                                                                                               
                                                                                                               
 <p>   <a 
+ id="sssec:ex1_18"></a>   <table id="TBL-48" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-48-1g"><col 
+id="TBL-48-1" /><col 
+id="TBL-48-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-48-1-"><td  style="text-align:left;" id="TBL-48-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-500001"></a><b>C-1.18</b></h5>
+ <p>                                                                         </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-48-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-48-2-"><td  style="text-align:left;" id="TBL-48-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+<p>   Demonstrate how to use Python&#8217;s list comprehension syntax to produce the list
+   </p> 
+<div 
+  id="accordion19" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse19" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion19" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse19" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise C-1.18</span></div><!--tex4ht:label?: x1-500001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-50001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Demonstrate&#x00A0;how&#x00A0;to&#x00A0;use&#x00A0;Python&#8217;s&#x00A0;list&#x00A0;comprehension&#x00A0;<br /><span class="label"><a 
+ id="x1-50002r2"></a></span>syntax&#x00A0;to&#x00A0;produce&#x00A0;the&#x00A0;list&#x00A0;<br /><span class="label"><a 
+ id="x1-50003r3"></a></span>[0,&#x00A0;2,&#x00A0;6,&#x00A0;12,&#x00A0;20,&#x00A0;30,&#x00A0;42,&#x00A0;56,&#x00A0;72,&#x00A0;90].&#x00A0;<br /><span class="label"><a 
+ id="x1-50004r4"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-50005r5"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;demonstration_list_comprehension()&#x00A0;<br /><span class="label"><a 
+ id="x1-50006r6"></a></span>[0,&#x00A0;2,&#x00A0;6,&#x00A0;12,&#x00A0;20,&#x00A0;30,&#x00A0;42,&#x00A0;56,&#x00A0;72,&#x00A0;90]&#x00A0;<br /><span class="label"><a 
+ id="x1-50007r7"></a></span>&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-50008r8"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-50009r9"></a></span>def&#x00A0;demonstration_list_comprehension():&#x00A0;<br /><span class="label"><a 
+ id="x1-50010r10"></a></span><!--l. 10--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 10--><span class="listings-nested">&#8221;Python&#x00A0;List&#x00A0;comprehension&#x00A0;demonstration&#x00A0;<br /><span class="label"><a 
+ id="x1-50011r11"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-50012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;[0,&#x00A0;2,&#x00A0;6,&#x00A0;12,&#x00A0;20,&#x00A0;30,&#x00A0;42,&#x00A0;56,&#x00A0;72,&#x00A0;90]&#x00A0;<br /><span class="label"><a 
+ id="x1-50013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 13--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-50014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;[idx*x&#x00A0;for&#x00A0;idx,&#x00A0;x&#x00A0;in&#x00A0;enumerate(range(1,11))]
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-50015r15"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div>
+                                                                                                              
+                                                                                                              
+<p>   <a 
+ id="sssec:ex1_19"></a>   <table id="TBL-51" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-51-1g"><col 
+id="TBL-51-1" /><col 
+id="TBL-51-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-51-1-"><td  style="text-align:left;" id="TBL-51-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-530001"></a><b>C-1.19</b></h5>
+ <p>                                                                         </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-51-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-51-2-"><td  style="text-align:left;" id="TBL-51-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+<p>   Demonstrate how to use Python&#8217;s list comprehension syntax to produce the list [ a , b , c , ..., z ],
+but without having to type all 26 such characters literally.
+   </p> 
+<div 
+  id="accordion20" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse20" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion20" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse20" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise C-1.19</span></div><!--tex4ht:label?: x1-530001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-53001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Demonstrate&#x00A0;how&#x00A0;to&#x00A0;use&#x00A0;Python&#8217;s&#x00A0;list&#x00A0;comprehension&#x00A0;syntax&#x00A0;to&#x00A0;produce&#x00A0;<br /><span class="label"><a 
+ id="x1-53002r2"></a></span>the&#x00A0;list&#x00A0;[&#x00A0;a&#x00A0;,&#x00A0;b&#x00A0;,&#x00A0;c&#x00A0;,&#x00A0;...,&#x00A0;z&#x00A0;],&#x00A0;but&#x00A0;without&#x00A0;having&#x00A0;to&#x00A0;type&#x00A0;all&#x00A0;26&#x00A0;such&#x00A0;<br /><span class="label"><a 
+ id="x1-53003r3"></a></span>characters&#x00A0;literally.&#x00A0;<br /><span class="label"><a 
+ id="x1-53004r4"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-53005r5"></a></span>&#x003E;&#x003E;&#x003E;&#x00A0;demonstration_list_comprehension_abc()&#x00A0;<br /><span class="label"><a 
+ id="x1-53006r6"></a></span>[&#8217;a&#8217;,&#x00A0;&#8217;b&#8217;,&#x00A0;&#8217;c&#8217;,&#x00A0;&#8217;d&#8217;,&#x00A0;&#8217;e&#8217;,&#x00A0;&#8217;f&#8217;,&#x00A0;&#8217;g&#8217;,&#x00A0;&#8217;h&#8217;,&#x00A0;&#8217;i&#8217;,&#x00A0;&#8217;j&#8217;,&#x00A0;&#8217;k&#8217;,&#x00A0;&#8217;l&#8217;,&#x00A0;&#8217;m&#8217;,&#x00A0;&#8217;n&#8217;,&#x00A0;&#8217;o&#8217;,&#x00A0;&#8217;p&#8217;,&#x00A0;&#8217;q&#8217;,&#x00A0;&#8217;r&#8217;,&#x00A0;&#8217;s&#8217;,&#x00A0;&#8217;t&#8217;,&#x00A0;&#8217;u&#8217;,&#x00A0;&#8217;v&#8217;,&#x00A0;&#8217;w&#8217;,&#x00A0;&#8217;x&#8217;,&#x00A0;&#8217;y&#8217;,&#x00A0;&#8217;z&#8217;]&#x00A0;<br /><span class="label"><a 
+ id="x1-53007r7"></a></span>&#8221;</span><!--l. 7--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-53008r8"></a></span>def&#x00A0;demonstration_list_comprehension_abc():&#x00A0;<br /><span class="label"><a 
+ id="x1-53009r9"></a></span><!--l. 9--><span class="listings-nested">&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;&#8221;</span><!--l. 9--><span class="listings-nested">&#8221;&#x00A0;Python&#x00A0;list&#x00A0;comprehension&#x00A0;demonstration&#x00A0;<br /><span class="label"><a 
+ id="x1-53010r10"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-53011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;:return:&#x00A0;<br /><span class="label"><a 
+ id="x1-53012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;[&#8217;a&#8217;,&#x00A0;&#8217;b&#8217;,&#x00A0;&#8217;c&#8217;,&#x00A0;&#8217;d&#8217;,&#x00A0;&#8217;e&#8217;,&#x00A0;&#8217;f&#8217;,&#x00A0;&#8217;g&#8217;,&#x00A0;&#8217;h&#8217;,&#x00A0;<br /><span class="label"><a 
+ id="x1-53013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8217;i&#8217;,&#x00A0;&#8217;j&#8217;,&#x00A0;&#8217;k&#8217;,&#x00A0;&#8217;l&#8217;,&#x00A0;&#8217;m&#8217;,&#x00A0;&#8217;n&#8217;,&#x00A0;&#8217;o&#8217;,&#x00A0;&#8217;p&#8217;,&#x00A0;<br /><span class="label"><a 
+ id="x1-53014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8217;q&#8217;,&#x00A0;&#8217;r&#8217;,&#x00A0;&#8217;s&#8217;,&#x00A0;&#8217;t&#8217;,&#x00A0;&#8217;u&#8217;,&#x00A0;&#8217;v&#8217;,&#x00A0;&#8217;w&#8217;,&#x00A0;&#8217;x&#8217;,&#x00A0;<br /><span class="label"><a 
+ id="x1-53015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8217;y&#8217;,&#x00A0;&#8217;z&#8217;]&#x00A0;<br /><span class="label"><a 
+ id="x1-53016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#8221;</span><!--l. 16--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-53017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;[chr(x)&#x00A0;for&#x00A0;x&#x00A0;in&#x00A0;range(ord(&#8217;a&#8217;),&#x00A0;ord(&#8217;z&#8217;)+1)]
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-53018r18"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div> <a 
+ id="sssec:ex1_20"></a>   <table id="TBL-54" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-54-1g"><col 
+id="TBL-54-1" /><col 
+id="TBL-54-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-54-1-"><td  style="text-align:left;" id="TBL-54-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-560001"></a><b>C-1.20</b></h5>
+ <p>                                                                         </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-54-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-54-2-"><td  style="text-align:left;" id="TBL-54-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+                                                                                                              
+                                                                                                              
+<p>   Python&#8217;s random module includes a function <code>shuffle(data)</code> that accepts a list of elements and
+randomly reorders the elements so that each possible order occurs with equal probability. The
+random module includes a more basic function <code>randint(a, b)</code> that returns a uniformly random
+integer from a to b (including both endpoints). Using only the <code>randint</code> function, implement your
+own version of the shuffle function.
+   </p> 
+<div 
+  id="accordion21" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse21" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion21" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse21" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise C-1.20</span></div><!--tex4ht:label?: x1-560001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-56001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Python&#8217;s&#x00A0;random&#x00A0;module&#x00A0;includes&#x00A0;a&#x00A0;function&#x00A0;shuffle(data)&#x00A0;that&#x00A0;accepts&#x00A0;a&#x00A0;<br /><span class="label"><a 
+ id="x1-56002r2"></a></span>list&#x00A0;of&#x00A0;elements&#x00A0;and&#x00A0;randomly&#x00A0;reorders&#x00A0;the&#x00A0;elements&#x00A0;so&#x00A0;that&#x00A0;each&#x00A0;possi-&#x00A0;<br /><span class="label"><a 
+ id="x1-56003r3"></a></span>ble&#x00A0;order&#x00A0;occurs&#x00A0;with&#x00A0;equal&#x00A0;probability.&#x00A0;The&#x00A0;random&#x00A0;module&#x00A0;includes&#x00A0;a&#x00A0;<br /><span class="label"><a 
+ id="x1-56004r4"></a></span>more&#x00A0;basic&#x00A0;function&#x00A0;randint(a,&#x00A0;b)&#x00A0;that&#x00A0;returns&#x00A0;a&#x00A0;uniformly&#x00A0;random&#x00A0;integer&#x00A0;<br /><span class="label"><a 
+ id="x1-56005r5"></a></span>from&#x00A0;a&#x00A0;to&#x00A0;b&#x00A0;(including&#x00A0;both&#x00A0;endpoints).&#x00A0;Using&#x00A0;only&#x00A0;the&#x00A0;randint&#x00A0;function,&#x00A0;<br /><span class="label"><a 
+ id="x1-56006r6"></a></span>implement&#x00A0;your&#x00A0;own&#x00A0;version&#x00A0;of&#x00A0;the&#x00A0;shuffle&#x00A0;function.&#x00A0;<br /><span class="label"><a 
+ id="x1-56007r7"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-56008r8"></a></span>&#8221;</span><!--l. 8--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-56009r9"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-56010r10"></a></span>def&#x00A0;sub_shuffle(data,&#x00A0;indexlist):&#x00A0;<br /><span class="label"><a 
+ id="x1-56011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;import&#x00A0;random&#x00A0;<br /><span class="label"><a 
+ id="x1-56012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;index&#x00A0;=&#x00A0;random.randint(0,&#x00A0;len(indexlist)-1)&#x00A0;<br /><span class="label"><a 
+ id="x1-56013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;rElement&#x00A0;=&#x00A0;data[indexlist[index]]&#x00A0;<br /><span class="label"><a 
+ id="x1-56014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;indexlist.pop(index)&#x00A0;<br /><span class="label"><a 
+ id="x1-56015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;rElement&#x00A0;<br /><span class="label"><a 
+ id="x1-56016r16"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-56017r17"></a></span>def&#x00A0;custome_shuffle(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-56018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;indexes_of_data&#x00A0;=&#x00A0;range(len(data))&#x00A0;<br /><span class="label"><a 
+ id="x1-56019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;return&#x00A0;[sub_shuffle(data,&#x00A0;indexes_of_data)&#x00A0;for&#x00A0;e&#x00A0;in&#x00A0;range(len(data))]
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-56020r20"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div> <a 
+ id="sssec:ex1_21"></a>   <table id="TBL-57" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-57-1g"><col 
+id="TBL-57-1" /><col 
+id="TBL-57-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-57-1-"><td  style="text-align:left;" id="TBL-57-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-590001"></a><b>C-1.21</b></h5>
+ <p>                                                                         </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-57-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-57-2-"><td  style="text-align:left;" id="TBL-57-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+                                                                                                              
+                                                                                                              
+<p>   Write a Python program that repeatedly reads lines from standard input until an <code>EOFError</code> is
+raised, and then outputs those lines in reverse order (a user can indicate end of input by typing
+ctrl-D).
+   </p> 
+<div 
+  id="accordion22" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse22" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion22" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse22" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise C-1.21</span></div><!--tex4ht:label?: x1-590001 --><!--l. 5--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-59001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;&#x00A0;Write&#x00A0;a&#x00A0;Python&#x00A0;program&#x00A0;that&#x00A0;repeatedly&#x00A0;reads&#x00A0;lines&#x00A0;from&#x00A0;standard&#x00A0;input&#x00A0;<br /><span class="label"><a 
+ id="x1-59002r2"></a></span>until&#x00A0;an&#x00A0;EOFError&#x00A0;is&#x00A0;raised,&#x00A0;and&#x00A0;then&#x00A0;outputs&#x00A0;those&#x00A0;lines&#x00A0;in&#x00A0;reverse&#x00A0;order&#x00A0;<br /><span class="label"><a 
+ id="x1-59003r3"></a></span>(a&#x00A0;user&#x00A0;can&#x00A0;indicate&#x00A0;end&#x00A0;of&#x00A0;input&#x00A0;by&#x00A0;typing&#x00A0;ctrl-D).&#x00A0;<br /><span class="label"><a 
+ id="x1-59004r4"></a></span>&#8221;</span><!--l. 4--><span class="listings-nested">&#8221;&#8221;</span>&#x00A0;<br /><span class="label"><a 
+ id="x1-59005r5"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-59006r6"></a></span>def&#x00A0;read_sdin(data):&#x00A0;<br /><span class="label"><a 
+ id="x1-59007r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;age&#x00A0;=&#x00A0;1&#x00A0;<br /><span class="label"><a 
+ id="x1-59008r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;age&#x00A0;&#x003E;&#x00A0;0:&#x00A0;<br /><span class="label"><a 
+ id="x1-59009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;try:&#x00A0;<br /><span class="label"><a 
+ id="x1-59010r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;age&#x00A0;=&#x00A0;int(input(&#x00A0;<!--l. 10--><span class="listings-nested">&#8221;Enter&#x00A0;other&#x00A0;person&#8217;s&#x00A0;age:&#8221;</span>&#x00A0;))&#x00A0;<br /><span class="label"><a 
+ id="x1-59011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;data.append(age)&#x00A0;<br /><span class="label"><a 
+ id="x1-59012r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;if&#x00A0;age&#x00A0;&#x003C;=&#x00A0;0:&#x00A0;<br /><span class="label"><a 
+ id="x1-59013r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(&#x00A0;<!--l. 13--><span class="listings-nested">&#8221;Your&#x00A0;age&#x00A0;must&#x00A0;be&#x00A0;positive&#8221;</span>&#x00A0;)&#x00A0;<br /><span class="label"><a 
+ id="x1-59014r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;read_sdin(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-59015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;ValueError:&#x00A0;<br /><span class="label"><a 
+ id="x1-59016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(&#x00A0;<!--l. 16--><span class="listings-nested">&#8221;That&#x00A0;is&#x00A0;an&#x00A0;invalid&#x00A0;age&#x00A0;specification&#8221;</span>&#x00A0;)&#x00A0;<br /><span class="label"><a 
+ id="x1-59017r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;read_sdin(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-59018r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;except&#x00A0;EOFError:&#x00A0;<br /><span class="label"><a 
+ id="x1-59019r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-59020r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;print(&#x00A0;<!--l. 20--><span class="listings-nested">&#8221;There&#x00A0;was&#x00A0;an&#x00A0;unexpected&#x00A0;error&#x00A0;reading&#x00A0;input.&#8221;</span>&#x00A0;)&#x00A0;<br /><span class="label"><a 
+ id="x1-59021r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;raise&#x00A0;<br /><span class="label"><a 
+ id="x1-59022r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;else:&#x00A0;<br /><span class="label"><a 
+ id="x1-59023r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;read_sdin(data)&#x00A0;<br /><span class="label"><a 
+ id="x1-59024r24"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x1-59025r25"></a></span>if&#x00A0;__name__&#x00A0;==&#x00A0;<!--l. 25--><span class="listings-nested">&#8221;__main__&#8221;</span>:&#x00A0;<br /><span class="label"><a 
+ id="x1-59026r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;data&#x00A0;=&#x00A0;[2,3,4]&#x00A0;<br /><span class="label"><a 
+ id="x1-59027r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;read_sdin(data)
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-59028r28"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div> <a 
+ id="sssec:ex1_22"></a>   <table id="TBL-60" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-60-1g"><col 
+id="TBL-60-1" /><col 
+id="TBL-60-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-60-1-"><td  style="text-align:left;" id="TBL-60-1-1"  
+class="td11">
+ <h5 class="subsubsectionHead"><a 
+ id="x1-620001"></a><b>C-1.22</b></h5>
+ <p>                                                                         </p> 
+</td><td  style="text-align:right; white-space:nowrap;" id="TBL-60-1-2"  
+class="td11"> <a 
+href="#chap:PythonPrimer">Go to Top</a>  </td>
+ </tr><tr  
+ style="vertical-align:baseline;" id="TBL-60-2-"><td  style="text-align:left;" id="TBL-60-2-1"  
+class="td11"> <p>                                                       </p> 
+</td> </tr></table>
+                                                                                                              
+                                                                                                              
+<p>   Write a short Python program that takes two arrays a and b of length n storing int values, and
+returns the dot product ofa and b. That is, it returns an array c of length n such that
+<!--l. 4--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>c</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>i</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>i</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow> <mo 
+class="MathClass-bin">&#x22C5;</mo> <mi 
+>b</mi><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mi 
+>i</mi></mrow><mo 
+class="MathClass-close">]</mo></mrow></math>, for
+<!--l. 4--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mi 
+>i</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-punc">.</mo><mo 
+class="MathClass-punc">.</mo><mo 
+class="MathClass-punc">.</mo><mo 
+class="MathClass-punc">,</mo><mi 
+>n</mi> <mo 
+class="MathClass-bin">-</mo> <mn>1</mn></math>.
+   </p> 
+<div 
+  id="accordion23" class="panel-group"  ><div class="panel panel-default"> 
+ <a 
+href="#collapse23" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion23" > 
+<div class="panel-heading"> 
+<h4 class="panel-title"> 
+<FONT style="font-size:15px" COLOR="#FE2E2E">View Code</FONT> <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span></h4> 
+</div> 
+</a> 
+<div id="collapse23" class="panel-collapse collapse"> 
+<div class="panel-body"><pre class="prettyprint"> 
+<br /> <div class="caption" 
+><span class="id">: </span><span  
+class="content">Exercise C-1.22</span></div><!--tex4ht:label?: x1-620001 --><!--l. 6--><pre class="listings">&#x00A0;<br /><span class="label"><a 
+ id="x1-62001r1"></a></span><!--l. 1--><span class="listings-nested">&#8221;&#8221;</span><!--l. 1--><span class="listings-nested">&#8221;Write&#x00A0;a&#x00A0;short&#x00A0;Python&#x00A0;program&#x00A0;that&#x00A0;takes&#x00A0;two&#x00A0;arrays&#x00A0;a&#x00A0;and&#x00A0;b&#x00A0;of&#x00A0;length&#x00A0;n&#x00A0;<br /><span class="label"><a 
+ id="x1-62002r2"></a></span>storing&#x00A0;int&#x00A0;values,&#x00A0;and&#x00A0;returns&#x00A0;the&#x00A0;dot&#x00A0;product&#x00A0;ofa&#x00A0;and&#x00A0;b.&#x00A0;That&#x00A0;is,&#x00A0;it&#x00A0;returns&#x00A0;<br /><span class="label"><a 
+ id="x1-62003r3"></a></span>an&#x00A0;array&#x00A0;c&#x00A0;of&#x00A0;length&#x00A0;n&#x00A0;such&#x00A0;that&#x00A0;c[i]&#x00A0;=&#x00A0;a[i]&#x00A0;*&#x00A0;b[i],&#x00A0;for&#x00A0;i&#x00A0;=&#x00A0;0,...,n-1.&#x00A0;<br /><span class="label"><a 
+ id="x1-62004r4"></a></span>&#8221;</span><!--l. 4--><span class="listings-nested">&#8221;&#8221;</span>
+   &#x00A0;<br /><span class="label"><a 
+ id="x1-62005r5"></a></span></pre>
+   </pre> </div> 
+</div> 
+</div> 
+ </div>   <a 
  id="chap:OOP"></a>
                                                                                                               
                                                                                                               
-   </p> 
-
+                                                                                                              
+                                                                                                              
    <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;2</span><br /><a 
- id="x1-480002"></a>Object-Oriented Programming</h2>
+ id="x1-630002"></a>Object-Oriented Programming</h2>
 <p>The second chapter looks to provide a generic foundation on Object Orientation.
 </p> 
 <p>   <a 
  id="ssec:Exercises"></a>
 <a 
- id="x1-48001r5"></a>
+ id="x1-63001r5"></a>
 </p> 
 
 <h4 class="subsectionHead"><span class="titlemark">2.0.2   </span> <a 
- id="x1-490002"></a>Exercises</h4>
+ id="x1-640002"></a>Exercises</h4>
 <p>The exercises in the first chapter mostly open questions.
                                                                                                               
                                                                                                               
