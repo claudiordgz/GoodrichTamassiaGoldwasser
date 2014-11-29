@@ -6,7 +6,7 @@ Version=4
 MainFile=GoodrichTamassiaGoldwasserPages.tex
 UseBibTeX=0
 UseMakeIndex=0
-ActiveProfile=XeLaTeX ⇨ PDF
+ActiveProfile=HTXeLaTeX ⇨ HTML
 ProjectLanguage=en
 ProjectDialect=US
 

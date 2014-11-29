@@ -16,7 +16,7 @@ echo.
 echo  			Bootstrapify done...
 echo.
 echo.
-START /b /wait "Tidy2" %SolutionDirectory%\..\tools\tidy2\tidy.exe "index.html"
+START /b /wait "Tidy2" %SolutionDirectory%\..\tools\tidy2\tidy.exe "-config tidy_config.txt" "-o file.html" "index.html"
 echo.
 echo.
 echo  			Tidy2 done...
