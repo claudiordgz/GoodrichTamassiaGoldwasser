@@ -9,7 +9,7 @@
       <meta content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" name="originator"/>
       <!-- html,xhtml,mathml, -css -->
       <meta content="GoodrichTamassiaGoldwasserPages.tex" name="src"/>
-      <meta content="2014-11-29 01:13:00" name="date"/>
+      <meta content="2014-11-29 04:50:00" name="date"/>
       <link href="GoodrichTamassiaGoldwasserPages.css" rel="stylesheet" type="text/css"/>
       <meta charset="utf-8"/>
       <meta content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" name="generator"/>
@@ -309,6 +309,30 @@ ga('send', 'pageview');
                                     </a>
                                  </span>
                                  <br/>
+                                 <span class="subsubsectionToc">
+                                    <a href="#x1-740001" id="QQ2-1-74">
+                                       <b>
+                                          C-1.26
+                                       </b>
+                                    </a>
+                                 </span>
+                                 <br/>
+                                 <span class="subsubsectionToc">
+                                    <a href="#x1-770001" id="QQ2-1-77">
+                                       <b>
+                                          C-1.27
+                                       </b>
+                                    </a>
+                                 </span>
+                                 <br/>
+                                 <span class="subsubsectionToc">
+                                    <a href="#x1-800001" id="QQ2-1-80">
+                                       <b>
+                                          C-1.28
+                                       </b>
+                                    </a>
+                                 </span>
+                                 <br/>
                               </div>
                            </div>
                         </div>
@@ -322,7 +346,7 @@ ga('send', 'pageview');
                                     </span>
                                     <span class="chapterToc">
                                        2
-                                       <a href="#x1-720002" id="QQ2-1-72">
+                                       <a href="#x1-810002" id="QQ2-1-81">
                                           Object-Oriented Programming
                                        </a>
                                     </span>
@@ -334,7 +358,7 @@ ga('send', 'pageview');
                                  <br/>
                                  <span class="subsectionToc">
                                     2.0.2
-                                    <a href="#x1-730002" id="QQ2-1-73">
+                                    <a href="#x1-820002" id="QQ2-1-82">
                                        Exercises
                                     </a>
                                  </span>
@@ -3800,8 +3824,656 @@ function would return:
                         <div class="panel-collapse collapse" id="collapse26">
                            <div class="panel-body">
                               <pre class="prettyprint"> 
-<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise C-1.24</span></div><!--tex4ht:label?: x1-710001 --><!--l. 6--><pre class="listings"> <br/><span class="label"><a id="x1-71001r1"></a></span><!--l. 1--><span class="listings-nested">””</span><!--l. 1--><span class="listings-nested">” <br/><span class="label"><a id="x1-71002r2"></a></span> Write a short Python function that takes a strings, representing a sentence, <br/><span class="label"><a id="x1-71003r3"></a></span>and returns a copy of the string with all punctuation removed. For exam- <br/><span class="label"><a id="x1-71004r4"></a></span>ple, if given the string ”</span>Let s try, Mike.<!--l. 4--><span class="listings-nested">”, this function would return <br/><span class="label"><a id="x1-71005r5"></a></span>”</span>Lets try Mike<!--l. 5--><span class="listings-nested">”. <br/><span class="label"><a id="x1-71006r6"></a></span> <br/><span class="label"><a id="x1-71007r7"></a></span>&gt;&gt;&gt; strip_string(”</span>The litte, small, tiny, cupcake... tasted delicious!<!--l. 7--><span class="listings-nested">”) <br/><span class="label"><a id="x1-71008r8"></a></span>’The litte small tiny cupcake tasted delicious’ <br/><span class="label"><a id="x1-71009r9"></a></span> <br/><span class="label"><a id="x1-71010r10"></a></span>&gt;&gt;&gt; strip_string(”</span>struct CustomerConfig {<!--l. 10--><span class="listings-nested">” <br/><span class="label"><a id="x1-71011r11"></a></span>...”</span>std::string hashKey; <!--l. 11--><span class="listings-nested">” <br/><span class="label"><a id="x1-71012r12"></a></span>...”</span>std::string productLine; <!--l. 12--><span class="listings-nested">” <br/><span class="label"><a id="x1-71013r13"></a></span>...”</span>std::string customerNumber;<!--l. 13--><span class="listings-nested">”) <br/><span class="label"><a id="x1-71014r14"></a></span>’struct CustomerConfig stdstring hashKey stdstring productLine stdstring customerNumber’ <br/><span class="label"><a id="x1-71015r15"></a></span> <br/><span class="label"><a id="x1-71016r16"></a></span>&gt;&gt;&gt; strip_string(r’&lt;td valign=”</span>top<!--l. 16--><span class="listings-nested">” bgcolor=”</span>#FFFFCC<!--l. 16--><span class="listings-nested">”&gt;00-03&lt;/td&gt; &lt;td valign=”</span>top<!--l. 16--><span class="listings-nested">”&gt;.50&lt;/td&gt;&lt;td valign=”</span>top<!--l. 16--><span class="listings-nested">”&gt;.50&lt;/td&gt;’) <br/><span class="label"><a id="x1-71017r17"></a></span>’td valigntop bgcolorFFFFCC0003td td valigntop50tdtd valigntop50td’ <br/><span class="label"><a id="x1-71018r18"></a></span> <br/><span class="label"><a id="x1-71019r19"></a></span>&gt;&gt;&gt; strip_string(”</span>Let’s try, Mike.<!--l. 19--><span class="listings-nested">”) <br/><span class="label"><a id="x1-71020r20"></a></span>’Lets try Mike’ <br/><span class="label"><a id="x1-71021r21"></a></span>”</span><!--l. 21--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-71022r22"></a></span> <br/><span class="label"><a id="x1-71023r23"></a></span>def strip_string(sentence): <br/><span class="label"><a id="x1-71024r24"></a></span><!--l. 24--><span class="listings-nested">    ””</span><!--l. 24--><span class="listings-nested">” <br/><span class="label"><a id="x1-71025r25"></a></span> <br/><span class="label"><a id="x1-71026r26"></a></span>    :param sentence: <br/><span class="label"><a id="x1-71027r27"></a></span>    :return:for c in bad_chars: s = s.replace(c, ”</span><!--l. 27--><span class="listings-nested">”) <br/><span class="label"><a id="x1-71028r28"></a></span>    ”</span><!--l. 28--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-71029r29"></a></span>    punctuation_marks = r’,.;:?!-_()[]\’\<!--l. 29--><span class="listings-nested">”‘/&lt;&gt;{}#=’ <br/><span class="label"><a id="x1-71030r30"></a></span>    for punctuation in punctuation_marks: <br/><span class="label"><a id="x1-71031r31"></a></span>        sentence = sentence.replace(punctuation, ”</span><!--l. 31--><span class="listings-nested">”) <br/><span class="label"><a id="x1-71032r32"></a></span>    return sentence
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise C-1.25</span></div><!--tex4ht:label?: x1-710001 --><!--l. 6--><pre class="listings"> <br/><span class="label"><a id="x1-71001r1"></a></span><!--l. 1--><span class="listings-nested">””</span><!--l. 1--><span class="listings-nested">” <br/><span class="label"><a id="x1-71002r2"></a></span> Write a short Python function that takes a strings, representing a sentence, <br/><span class="label"><a id="x1-71003r3"></a></span>and returns a copy of the string with all punctuation removed. For exam- <br/><span class="label"><a id="x1-71004r4"></a></span>ple, if given the string ”</span>Let s try, Mike.<!--l. 4--><span class="listings-nested">”, this function would return <br/><span class="label"><a id="x1-71005r5"></a></span>”</span>Lets try Mike<!--l. 5--><span class="listings-nested">”. <br/><span class="label"><a id="x1-71006r6"></a></span> <br/><span class="label"><a id="x1-71007r7"></a></span>&gt;&gt;&gt; strip_string(”</span>The litte, small, tiny, cupcake... tasted delicious!<!--l. 7--><span class="listings-nested">”) <br/><span class="label"><a id="x1-71008r8"></a></span>’The litte small tiny cupcake tasted delicious’ <br/><span class="label"><a id="x1-71009r9"></a></span> <br/><span class="label"><a id="x1-71010r10"></a></span>&gt;&gt;&gt; strip_string(”</span>struct CustomerConfig {<!--l. 10--><span class="listings-nested">” <br/><span class="label"><a id="x1-71011r11"></a></span>...”</span>std::string hashKey; <!--l. 11--><span class="listings-nested">” <br/><span class="label"><a id="x1-71012r12"></a></span>...”</span>std::string productLine; <!--l. 12--><span class="listings-nested">” <br/><span class="label"><a id="x1-71013r13"></a></span>...”</span>std::string customerNumber;<!--l. 13--><span class="listings-nested">”) <br/><span class="label"><a id="x1-71014r14"></a></span>’struct CustomerConfig stdstring hashKey stdstring productLine stdstring customerNumber’ <br/><span class="label"><a id="x1-71015r15"></a></span> <br/><span class="label"><a id="x1-71016r16"></a></span>&gt;&gt;&gt; strip_string(r’&lt;td valign=”</span>top<!--l. 16--><span class="listings-nested">” bgcolor=”</span>#FFFFCC<!--l. 16--><span class="listings-nested">”&gt;00-03&lt;/td&gt; &lt;td valign=”</span>top<!--l. 16--><span class="listings-nested">”&gt;.50&lt;/td&gt;&lt;td valign=”</span>top<!--l. 16--><span class="listings-nested">”&gt;.50&lt;/td&gt;’) <br/><span class="label"><a id="x1-71017r17"></a></span>’td valigntop bgcolorFFFFCC0003td td valigntop50tdtd valigntop50td’ <br/><span class="label"><a id="x1-71018r18"></a></span> <br/><span class="label"><a id="x1-71019r19"></a></span>&gt;&gt;&gt; strip_string(”</span>Let’s try, Mike.<!--l. 19--><span class="listings-nested">”) <br/><span class="label"><a id="x1-71020r20"></a></span>’Lets try Mike’ <br/><span class="label"><a id="x1-71021r21"></a></span>”</span><!--l. 21--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-71022r22"></a></span> <br/><span class="label"><a id="x1-71023r23"></a></span>def strip_string(sentence): <br/><span class="label"><a id="x1-71024r24"></a></span><!--l. 24--><span class="listings-nested">    ””</span><!--l. 24--><span class="listings-nested">”returns a copy of the string with all punctuation removed <br/><span class="label"><a id="x1-71025r25"></a></span> <br/><span class="label"><a id="x1-71026r26"></a></span>    :param sentence: source sentence in string form <br/><span class="label"><a id="x1-71027r27"></a></span>    :return: string without ’,.;:?!-_()[]\’\”‘/&lt;&gt;{}#=’ <br/><span class="label"><a id="x1-71028r28"></a></span>    ”</span><!--l. 28--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-71029r29"></a></span>    punctuation_marks = r’,.;:?!-_()[]\’\<!--l. 29--><span class="listings-nested">”‘/&lt;&gt;{}#=’ <br/><span class="label"><a id="x1-71030r30"></a></span>    for punctuation in punctuation_marks: <br/><span class="label"><a id="x1-71031r31"></a></span>        sentence = sentence.replace(punctuation, ”</span><!--l. 31--><span class="listings-nested">”) <br/><span class="label"><a id="x1-71032r32"></a></span>    return sentence
           <br/><span class="label"><a id="x1-71033r33"></a></span></span></pre>
+         </pre>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a id="sssec:ex1_26">
+                  </a>
+                  <div class="table-responsive">
+                     <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-72">
+                        <colgroup id="TBL-72-1g">
+                           <col id="TBL-72-1">
+                           </col>
+                           <col id="TBL-72-2">
+                           </col>
+                        </colgroup>
+                        <tr id="TBL-72-1-" style="vertical-align:baseline;">
+                           <td class="td11" id="TBL-72-1-1" style="text-align:left;">
+                              <h5 class="subsubsectionHead">
+                                 <a id="x1-740001">
+                                 </a>
+                                 <b>
+                                    C-1.26
+                                 </b>
+                              </h5>
+                              <p>
+                              </p>
+                           </td>
+                           <td class="td11" id="TBL-72-1-2" style="text-align:right; white-space:nowrap;">
+                              <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                                 <span class="glyphicon glyphicon-arrow-up">
+                                 </span>
+                                 Go to Top
+                              </a>
+                           </td>
+                        </tr>
+                        <tr id="TBL-72-2-" style="vertical-align:baseline;">
+                           <td class="td11" id="TBL-72-2-1" style="text-align:left;">
+                              <p>
+                              </p>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+                  <p>
+                     Write a short program that takes as input three integers,
+                     <!--l. 3-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           a
+                        </mi>
+                     </math>
+                     ,
+                     <!--l. 3-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           b
+                        </mi>
+                     </math>
+                     , and
+                     <!--l. 3-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           c
+                        </mi>
+                     </math>
+                     , from
+the console and determines if they can be used in a correct arithmetic formula (in the given order),
+like ”
+                     <!--l. 3-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           a
+                        </mi>
+                        <mo class="MathClass-bin">
+                           +
+                        </mo>
+                        <mi>
+                           b
+                        </mi>
+                        <mo class="MathClass-rel">
+                           =
+                        </mo>
+                        <mi>
+                           c
+                        </mi>
+                     </math>
+                     ,”
+”
+                     <!--l. 3-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           a
+                        </mi>
+                        <mo class="MathClass-rel">
+                           =
+                        </mo>
+                        <mi>
+                           b
+                        </mi>
+                        <mo class="MathClass-bin">
+                           -
+                        </mo>
+                        <mi>
+                           c
+                        </mi>
+                     </math>
+                     ,” or
+”
+                     <!--l. 3-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           a
+                        </mi>
+                        <mo class="MathClass-bin">
+                           *
+                        </mo>
+                        <mi>
+                           b
+                        </mi>
+                        <mo class="MathClass-rel">
+                           =
+                        </mo>
+                        <mi>
+                           c
+                        </mi>
+                     </math>
+                     .”
+                  </p>
+                  <div class="panel-group" id="accordion27">
+                     <div class="panel panel-default">
+                        <a class="accordion-toggle" data-parent="#accordion27" data-toggle="collapse" href="#collapse27">
+                           <div class="panel-heading">
+                              <h4 class="panel-title">
+                                 <font color="#FE2E2E" style="font-size:15px">
+                                    View Code
+                                 </font>
+                                 <span class="pull-right clickable">
+                                    <i class="glyphicon glyphicon-chevron-up">
+                                    </i>
+                                 </span>
+                              </h4>
+                           </div>
+                        </a>
+                        <div class="panel-collapse collapse" id="collapse27">
+                           <div class="panel-body">
+                              <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise C-1.26</span></div><!--tex4ht:label?: x1-740001 --><!--l. 5--><pre class="listings"> <br/><span class="label"><a id="x1-74001r1"></a></span><!--l. 1--><span class="listings-nested">””</span><!--l. 1--><span class="listings-nested">” <br/><span class="label"><a id="x1-74002r2"></a></span>Write a short program that takes as input three integers, a, b, and c, from <br/><span class="label"><a id="x1-74003r3"></a></span>the console and determines if they can be used in a correct arithmetic <br/><span class="label"><a id="x1-74004r4"></a></span>formula (in the given order), like ”</span>a+b = c,<!--l. 4--><span class="listings-nested">” ”</span>a = b-c,<!--l. 4--><span class="listings-nested">” or ”</span>a*b = c.<!--l. 4--><span class="listings-nested">” <br/><span class="label"><a id="x1-74005r5"></a></span> <br/><span class="label"><a id="x1-74006r6"></a></span>&gt;&gt;&gt; ordered_integers(-1,3,2) <br/><span class="label"><a id="x1-74007r7"></a></span>[’add’] <br/><span class="label"><a id="x1-74008r8"></a></span>&gt;&gt;&gt; ordered_integers(1,3,2) <br/><span class="label"><a id="x1-74009r9"></a></span>[’sub’] <br/><span class="label"><a id="x1-74010r10"></a></span>&gt;&gt;&gt; ordered_integers(2,2,4) <br/><span class="label"><a id="x1-74011r11"></a></span>[’add’, ’mul’] <br/><span class="label"><a id="x1-74012r12"></a></span>&gt;&gt;&gt; ordered_integers(78,78,156) <br/><span class="label"><a id="x1-74013r13"></a></span>[’add’] <br/><span class="label"><a id="x1-74014r14"></a></span>&gt;&gt;&gt; ordered_integers(5,10,2) <br/><span class="label"><a id="x1-74015r15"></a></span>[’div’] <br/><span class="label"><a id="x1-74016r16"></a></span>”</span><!--l. 16--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-74017r17"></a></span> <br/><span class="label"><a id="x1-74018r18"></a></span>import operator <br/><span class="label"><a id="x1-74019r19"></a></span> <br/><span class="label"><a id="x1-74020r20"></a></span>def ordered_integers(a,b,c): <br/><span class="label"><a id="x1-74021r21"></a></span><!--l. 21--><span class="listings-nested">    ””</span><!--l. 21--><span class="listings-nested">” determines if the arguments can be used <br/><span class="label"><a id="x1-74022r22"></a></span>    in a correct arithmetic formula (in the given <br/><span class="label"><a id="x1-74023r23"></a></span>    order), like ”</span>a+b = c,<!--l. 23--><span class="listings-nested">” ”</span>a = b-c,<!--l. 23--><span class="listings-nested">” or ”</span>a*b = c.<!--l. 23--><span class="listings-nested">” <br/><span class="label"><a id="x1-74024r24"></a></span> <br/><span class="label"><a id="x1-74025r25"></a></span>    :param a: integer <br/><span class="label"><a id="x1-74026r26"></a></span>    :param b: integer <br/><span class="label"><a id="x1-74027r27"></a></span>    :param c: integer <br/><span class="label"><a id="x1-74028r28"></a></span>    :return: list with operation names that <br/><span class="label"><a id="x1-74029r29"></a></span>    give correct arithmetic formula <br/><span class="label"><a id="x1-74030r30"></a></span>    ”</span><!--l. 30--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-74031r31"></a></span>    operator_list = [operator.add, operator.sub, <br/><span class="label"><a id="x1-74032r32"></a></span>                     operator.mul, operator.div] <br/><span class="label"><a id="x1-74033r33"></a></span>    result_list = list() <br/><span class="label"><a id="x1-74034r34"></a></span>    for op in operator_list: <br/><span class="label"><a id="x1-74035r35"></a></span>        if a == op(float(b),float(c)): <br/><span class="label"><a id="x1-74036r36"></a></span>            result_list.append(op.__name__) <br/><span class="label"><a id="x1-74037r37"></a></span>        if c == op(float(a),float(b)): <br/><span class="label"><a id="x1-74038r38"></a></span>            result_list.append(op.__name__) <br/><span class="label"><a id="x1-74039r39"></a></span>    return result_list
+          <br/><span class="label"><a id="x1-74040r40"></a></span></pre>
+         </pre>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a id="sssec:ex1_27">
+                  </a>
+                  <div class="table-responsive">
+                     <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-75">
+                        <colgroup id="TBL-75-1g">
+                           <col id="TBL-75-1">
+                           </col>
+                           <col id="TBL-75-2">
+                           </col>
+                        </colgroup>
+                        <tr id="TBL-75-1-" style="vertical-align:baseline;">
+                           <td class="td11" id="TBL-75-1-1" style="text-align:left;">
+                              <h5 class="subsubsectionHead">
+                                 <a id="x1-770001">
+                                 </a>
+                                 <b>
+                                    C-1.27
+                                 </b>
+                              </h5>
+                              <p>
+                              </p>
+                           </td>
+                           <td class="td11" id="TBL-75-1-2" style="text-align:right; white-space:nowrap;">
+                              <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                                 <span class="glyphicon glyphicon-arrow-up">
+                                 </span>
+                                 Go to Top
+                              </a>
+                           </td>
+                        </tr>
+                        <tr id="TBL-75-2-" style="vertical-align:baseline;">
+                           <td class="td11" id="TBL-75-2-1" style="text-align:left;">
+                              <p>
+                              </p>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+                  <p>
+                     In Section 1.8, we provided three different implementations of a generator that computes factors of
+a given integer. The third of those implementations, from page 41, was the most efficient,
+but we noted that it did not yield the factors in increasing order. Modify the generator
+so that it reports factors in increasing order, while maintaining its general performance
+advantages.
+                  </p>
+                  <div class="panel-group" id="accordion28">
+                     <div class="panel panel-default">
+                        <a class="accordion-toggle" data-parent="#accordion28" data-toggle="collapse" href="#collapse28">
+                           <div class="panel-heading">
+                              <h4 class="panel-title">
+                                 <font color="#FE2E2E" style="font-size:15px">
+                                    View Code
+                                 </font>
+                                 <span class="pull-right clickable">
+                                    <i class="glyphicon glyphicon-chevron-up">
+                                    </i>
+                                 </span>
+                              </h4>
+                           </div>
+                        </a>
+                        <div class="panel-collapse collapse" id="collapse28">
+                           <div class="panel-body">
+                              <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise C-1.27</span></div><!--tex4ht:label?: x1-770001 --><!--l. 5--><pre class="listings"> <br/><span class="label"><a id="x1-77001r1"></a></span><!--l. 1--><span class="listings-nested">””</span><!--l. 1--><span class="listings-nested">” <br/><span class="label"><a id="x1-77002r2"></a></span>In Section 1.8, we provided three different implementations of a generator <br/><span class="label"><a id="x1-77003r3"></a></span>that computes factors of a given integer. The third of those implementa- <br/><span class="label"><a id="x1-77004r4"></a></span>tions, from page 41, was the most efficient, but we noted that it did not <br/><span class="label"><a id="x1-77005r5"></a></span>yield the factors in increasing order. Modify the generator so that it reports <br/><span class="label"><a id="x1-77006r6"></a></span>factors in increasing order, while maintaining its general performance ad- <br/><span class="label"><a id="x1-77007r7"></a></span>vantages. <br/><span class="label"><a id="x1-77008r8"></a></span> <br/><span class="label"><a id="x1-77009r9"></a></span>&gt;&gt;&gt; for f in factors(1000): <br/><span class="label"><a id="x1-77010r10"></a></span>...     f <br/><span class="label"><a id="x1-77011r11"></a></span>1 <br/><span class="label"><a id="x1-77012r12"></a></span>2 <br/><span class="label"><a id="x1-77013r13"></a></span>4 <br/><span class="label"><a id="x1-77014r14"></a></span>5 <br/><span class="label"><a id="x1-77015r15"></a></span>8 <br/><span class="label"><a id="x1-77016r16"></a></span>10 <br/><span class="label"><a id="x1-77017r17"></a></span>20 <br/><span class="label"><a id="x1-77018r18"></a></span>25 <br/><span class="label"><a id="x1-77019r19"></a></span>40 <br/><span class="label"><a id="x1-77020r20"></a></span>50 <br/><span class="label"><a id="x1-77021r21"></a></span>100 <br/><span class="label"><a id="x1-77022r22"></a></span>125 <br/><span class="label"><a id="x1-77023r23"></a></span>200 <br/><span class="label"><a id="x1-77024r24"></a></span>250 <br/><span class="label"><a id="x1-77025r25"></a></span>500 <br/><span class="label"><a id="x1-77026r26"></a></span>1000 <br/><span class="label"><a id="x1-77027r27"></a></span>”</span><!--l. 27--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-77028r28"></a></span> <br/><span class="label"><a id="x1-77029r29"></a></span> <br/><span class="label"><a id="x1-77030r30"></a></span>class Stack: <br/><span class="label"><a id="x1-77031r31"></a></span>     def __init__(self): <br/><span class="label"><a id="x1-77032r32"></a></span>         self.items = [] <br/><span class="label"><a id="x1-77033r33"></a></span> <br/><span class="label"><a id="x1-77034r34"></a></span>     def isEmpty(self): <br/><span class="label"><a id="x1-77035r35"></a></span>         return self.items == [] <br/><span class="label"><a id="x1-77036r36"></a></span> <br/><span class="label"><a id="x1-77037r37"></a></span>     def push(self, item): <br/><span class="label"><a id="x1-77038r38"></a></span>         self.items.append(item) <br/><span class="label"><a id="x1-77039r39"></a></span> <br/><span class="label"><a id="x1-77040r40"></a></span>     def pop(self): <br/><span class="label"><a id="x1-77041r41"></a></span>         return self.items.pop() <br/><span class="label"><a id="x1-77042r42"></a></span> <br/><span class="label"><a id="x1-77043r43"></a></span>     def peek(self): <br/><span class="label"><a id="x1-77044r44"></a></span>         return self.items[len(self.items)-1] <br/><span class="label"><a id="x1-77045r45"></a></span> <br/><span class="label"><a id="x1-77046r46"></a></span>     def size(self): <br/><span class="label"><a id="x1-77047r47"></a></span>         return len(self.items) <br/><span class="label"><a id="x1-77048r48"></a></span> <br/><span class="label"><a id="x1-77049r49"></a></span>def factors(n): <br/><span class="label"><a id="x1-77050r50"></a></span><!--l. 50--><span class="listings-nested">    ””</span><!--l. 50--><span class="listings-nested">”generator that computes factors <br/><span class="label"><a id="x1-77051r51"></a></span> <br/><span class="label"><a id="x1-77052r52"></a></span>    :param n: max integer <br/><span class="label"><a id="x1-77053r53"></a></span>    :return: the next factor <br/><span class="label"><a id="x1-77054r54"></a></span>    in increasing order <br/><span class="label"><a id="x1-77055r55"></a></span>    ”</span><!--l. 55--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-77056r56"></a></span>    k = 1 <br/><span class="label"><a id="x1-77057r57"></a></span>    ss = Stack() <br/><span class="label"><a id="x1-77058r58"></a></span>    while k * k &lt; n: <br/><span class="label"><a id="x1-77059r59"></a></span>        if n % k == 0: <br/><span class="label"><a id="x1-77060r60"></a></span>            yield k <br/><span class="label"><a id="x1-77061r61"></a></span>            ss.push(n <!--l. 61--><span class="listings-nested">// k)</span> <br/><span class="label"><a id="x1-77062r62"></a></span>        k += 1 <br/><span class="label"><a id="x1-77063r63"></a></span>    if k * k == n: <br/><span class="label"><a id="x1-77064r64"></a></span>        yield k <br/><span class="label"><a id="x1-77065r65"></a></span>    while not ss.isEmpty(): <br/><span class="label"><a id="x1-77066r66"></a></span>        yield ss.pop()
+          <br/><span class="label"><a id="x1-77067r67"></a></span></pre>
+         </pre>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a id="sssec:ex1_28">
+                  </a>
+                  <div class="table-responsive">
+                     <table cellpadding="0" cellspacing="0" class="tabular" id="TBL-78">
+                        <colgroup id="TBL-78-1g">
+                           <col id="TBL-78-1">
+                           </col>
+                           <col id="TBL-78-2">
+                           </col>
+                        </colgroup>
+                        <tr id="TBL-78-1-" style="vertical-align:baseline;">
+                           <td class="td11" id="TBL-78-1-1" style="text-align:left;">
+                              <h5 class="subsubsectionHead">
+                                 <a id="x1-800001">
+                                 </a>
+                                 <b>
+                                    C-1.28
+                                 </b>
+                              </h5>
+                              <p>
+                              </p>
+                           </td>
+                           <td class="td11" id="TBL-78-1-2" style="text-align:right; white-space:nowrap;">
+                              <a class="btn btn-default pull-right" href="#claudiordgzLogo">
+                                 <span class="glyphicon glyphicon-arrow-up">
+                                 </span>
+                                 Go to Top
+                              </a>
+                           </td>
+                        </tr>
+                        <tr id="TBL-78-2-" style="vertical-align:baseline;">
+                           <td class="td11" id="TBL-78-2-1" style="text-align:left;">
+                              <p>
+                              </p>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+                  <p>
+                     The p-norm of a vector
+                     <!--l. 3-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           v
+                        </mi>
+                        <mo class="MathClass-rel">
+                           =
+                        </mo>
+                        <mrow>
+                           <mo class="MathClass-open">
+                              (
+                           </mo>
+                           <mrow>
+                              <msub>
+                                 <mrow>
+                                    <mi>
+                                       v
+                                    </mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mn>
+                                       1
+                                    </mn>
+                                 </mrow>
+                              </msub>
+                              <mo class="MathClass-punc">
+                                 ,
+                              </mo>
+                              <msub>
+                                 <mrow>
+                                    <mi>
+                                       v
+                                    </mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mn>
+                                       2
+                                    </mn>
+                                 </mrow>
+                              </msub>
+                              <mo class="MathClass-punc">
+                                 ,
+                              </mo>
+                              <mo class="MathClass-op">
+                                 …
+                              </mo>
+                              <mo class="MathClass-punc">
+                                 ,
+                              </mo>
+                              <msub>
+                                 <mrow>
+                                    <mi>
+                                       v
+                                    </mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mi>
+                                       n
+                                    </mi>
+                                 </mrow>
+                              </msub>
+                           </mrow>
+                           <mo class="MathClass-close">
+                              )
+                           </mo>
+                        </mrow>
+                     </math>
+                     in n-dimensional space is defined as:
+                     <br class="newline"/>
+                  </p>
+                  <div class="par-math-display">
+                     <!--l. 5-->
+                     <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mfenced close="∥" open="∥" separators="">
+                              <mrow>
+                                 <mi>
+                                    v
+                                 </mi>
+                              </mrow>
+                           </mfenced>
+                           <mo class="MathClass-rel">
+                              =
+                           </mo>
+                           <mroot>
+                              <mrow>
+                                 <msubsup>
+                                    <mrow>
+                                       <mi>
+                                          v
+                                       </mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mn>
+                                          1
+                                       </mn>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>
+                                          p
+                                       </mi>
+                                    </mrow>
+                                 </msubsup>
+                                 <mo class="MathClass-bin">
+                                    +
+                                 </mo>
+                                 <msubsup>
+                                    <mrow>
+                                       <mi>
+                                          v
+                                       </mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mn>
+                                          2
+                                       </mn>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>
+                                          p
+                                       </mi>
+                                    </mrow>
+                                 </msubsup>
+                                 <mo class="MathClass-bin">
+                                    +
+                                 </mo>
+                                 <mo class="MathClass-op">
+                                    …
+                                 </mo>
+                                 <mo class="MathClass-bin">
+                                    +
+                                 </mo>
+                                 <msubsup>
+                                    <mrow>
+                                       <mi>
+                                          v
+                                       </mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>
+                                          n
+                                       </mi>
+                                    </mrow>
+                                    <mrow>
+                                       <mi>
+                                          p
+                                       </mi>
+                                    </mrow>
+                                 </msubsup>
+                              </mrow>
+                              <mrow>
+                                 <mi>
+                                    p
+                                 </mi>
+                              </mrow>
+                           </mroot>
+                        </mrow>
+                     </math>
+                  </div>
+                  <p>
+                  </p>
+                  <p>
+                     For the special case of
+                     <!--l. 9-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           p
+                        </mi>
+                        <mo class="MathClass-rel">
+                           =
+                        </mo>
+                        <mn>
+                           2
+                        </mn>
+                     </math>
+                     ,
+this results in the traditional Euclidean norm, which represents the length of the vector.
+For example, the Euclidean norm of a two-dimensional vector with coordinates
+                     <!--l. 9-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mrow>
+                           <mo class="MathClass-open">
+                              (
+                           </mo>
+                           <mrow>
+                              <mn>
+                                 4
+                              </mn>
+                              <mo class="MathClass-punc">
+                                 ,
+                              </mo>
+                              <mn>
+                                 3
+                              </mn>
+                           </mrow>
+                           <mo class="MathClass-close">
+                              )
+                           </mo>
+                        </mrow>
+                     </math>
+                     has a Euclidean
+norm of
+                     <!--l. 9-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msqrt>
+                           <mrow>
+                              <msup>
+                                 <mrow>
+                                    <mn>
+                                       4
+                                    </mn>
+                                 </mrow>
+                                 <mrow>
+                                    <mn>
+                                       2
+                                    </mn>
+                                 </mrow>
+                              </msup>
+                              <mo class="MathClass-bin">
+                                 +
+                              </mo>
+                              <msup>
+                                 <mrow>
+                                    <mn>
+                                       3
+                                    </mn>
+                                 </mrow>
+                                 <mrow>
+                                    <mn>
+                                       2
+                                    </mn>
+                                 </mrow>
+                              </msup>
+                           </mrow>
+                        </msqrt>
+                        <mo class="MathClass-rel">
+                           =
+                        </mo>
+                        <msqrt>
+                           <mrow>
+                              <mn>
+                                 1
+                              </mn>
+                              <mn>
+                                 6
+                              </mn>
+                              <mo class="MathClass-bin">
+                                 +
+                              </mo>
+                              <mn>
+                                 9
+                              </mn>
+                           </mrow>
+                        </msqrt>
+                        <mo class="MathClass-rel">
+                           =
+                        </mo>
+                        <msqrt>
+                           <mrow>
+                              <mn>
+                                 2
+                              </mn>
+                              <mn>
+                                 5
+                              </mn>
+                           </mrow>
+                        </msqrt>
+                        <mo class="MathClass-rel">
+                           =
+                        </mo>
+                        <mn>
+                           5
+                        </mn>
+                     </math>
+                     .
+Give an implementation of a function named norm such that
+                     <!--l. 9-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           n
+                        </mi>
+                        <mi>
+                           o
+                        </mi>
+                        <mi>
+                           r
+                        </mi>
+                        <mi>
+                           m
+                        </mi>
+                        <mrow>
+                           <mo class="MathClass-open">
+                              (
+                           </mo>
+                           <mrow>
+                              <mi>
+                                 v
+                              </mi>
+                              <mo class="MathClass-punc">
+                                 ,
+                              </mo>
+                              <mi>
+                                 p
+                              </mi>
+                           </mrow>
+                           <mo class="MathClass-close">
+                              )
+                           </mo>
+                        </mrow>
+                     </math>
+                     returns the p-norm
+value of
+                     <!--l. 9-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           v
+                        </mi>
+                     </math>
+                     and
+                     <!--l. 9-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           n
+                        </mi>
+                        <mi>
+                           o
+                        </mi>
+                        <mi>
+                           r
+                        </mi>
+                        <mi>
+                           m
+                        </mi>
+                        <mrow>
+                           <mo class="MathClass-open">
+                              (
+                           </mo>
+                           <mrow>
+                              <mi>
+                                 v
+                              </mi>
+                           </mrow>
+                           <mo class="MathClass-close">
+                              )
+                           </mo>
+                        </mrow>
+                     </math>
+                     returns the Euclidean
+norm of
+                     <!--l. 9-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           v
+                        </mi>
+                     </math>
+                     . You
+may assume that
+                     <!--l. 9-->
+                     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>
+                           v
+                        </mi>
+                     </math>
+                     is a list of numbers.
+                  </p>
+                  <div class="panel-group" id="accordion29">
+                     <div class="panel panel-default">
+                        <a class="accordion-toggle" data-parent="#accordion29" data-toggle="collapse" href="#collapse29">
+                           <div class="panel-heading">
+                              <h4 class="panel-title">
+                                 <font color="#FE2E2E" style="font-size:15px">
+                                    View Code
+                                 </font>
+                                 <span class="pull-right clickable">
+                                    <i class="glyphicon glyphicon-chevron-up">
+                                    </i>
+                                 </span>
+                              </h4>
+                           </div>
+                        </a>
+                        <div class="panel-collapse collapse" id="collapse29">
+                           <div class="panel-body">
+                              <pre class="prettyprint"> 
+<br/> <div class="caption"><span class="id">: </span><span class="content">Exercise C-1.28</span></div><!--tex4ht:label?: x1-800001 --><!--l. 11--><pre class="listings"> <br/><span class="label"><a id="x1-80001r1"></a></span><!--l. 1--><span class="listings-nested">””</span><!--l. 1--><span class="listings-nested">” <br/><span class="label"><a id="x1-80002r2"></a></span>The p-norm of a vector v = (v_{1} ,v_{2} ,...,v_{n} ) <br/><span class="label"><a id="x1-80003r3"></a></span>in n-dimensional space is defined as: <br/><span class="label"><a id="x1-80004r4"></a></span> <br/><span class="label"><a id="x1-80005r5"></a></span>||v|| = \sqrt[p]{vˆp_1 + vˆp_2 +  ... + vˆp_n} <br/><span class="label"><a id="x1-80006r6"></a></span> <br/><span class="label"><a id="x1-80007r7"></a></span>For the special case of p = 2, this results in the traditional <br/><span class="label"><a id="x1-80008r8"></a></span>Euclidean norm, which represents the length of the vector. <br/><span class="label"><a id="x1-80009r9"></a></span>For example, the Euclidean norm of a two-dimensional vector <br/><span class="label"><a id="x1-80010r10"></a></span>with coordinates (4,3) has a Euclidean norm of <br/><span class="label"><a id="x1-80011r11"></a></span>\sqrt{4ˆ{2} + 3ˆ{2}} = \sqrt{16 + 9} = \sqrt{25} = 5 <br/><span class="label"><a id="x1-80012r12"></a></span> <br/><span class="label"><a id="x1-80013r13"></a></span>Give an implementation of a function named norm such that <br/><span class="label"><a id="x1-80014r14"></a></span>norm(v, p) returns the p-norm value of v and norm(v) returns <br/><span class="label"><a id="x1-80015r15"></a></span>the Euclidean norm of v. You may assume that vis a list of numbers. <br/><span class="label"><a id="x1-80016r16"></a></span> <br/><span class="label"><a id="x1-80017r17"></a></span>&gt;&gt;&gt; norm([4,3]) <br/><span class="label"><a id="x1-80018r18"></a></span>5 <br/><span class="label"><a id="x1-80019r19"></a></span>&gt;&gt;&gt; norm([4,3,9,2],3) <br/><span class="label"><a id="x1-80020r20"></a></span>9 <br/><span class="label"><a id="x1-80021r21"></a></span>”</span><!--l. 21--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-80022r22"></a></span> <br/><span class="label"><a id="x1-80023r23"></a></span>import math <br/><span class="label"><a id="x1-80024r24"></a></span> <br/><span class="label"><a id="x1-80025r25"></a></span>def nroot(x, n): <br/><span class="label"><a id="x1-80026r26"></a></span><!--l. 26--><span class="listings-nested">    ””</span><!--l. 26--><span class="listings-nested">” Calculates the root to a given <br/><span class="label"><a id="x1-80027r27"></a></span>    radical n <br/><span class="label"><a id="x1-80028r28"></a></span> <br/><span class="label"><a id="x1-80029r29"></a></span>    :param x: number to which we want to find <br/><span class="label"><a id="x1-80030r30"></a></span>     root to n radical <br/><span class="label"><a id="x1-80031r31"></a></span>    :param n: radical <br/><span class="label"><a id="x1-80032r32"></a></span>    :return: the root <br/><span class="label"><a id="x1-80033r33"></a></span>    ”</span><!--l. 33--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-80034r34"></a></span>    return int(math.pow(x, 1.0/n)) <br/><span class="label"><a id="x1-80035r35"></a></span> <br/><span class="label"><a id="x1-80036r36"></a></span>def norm(v, p=2): <br/><span class="label"><a id="x1-80037r37"></a></span><!--l. 37--><span class="listings-nested">    ””</span><!--l. 37--><span class="listings-nested">”The p-norm of a vector v <br/><span class="label"><a id="x1-80038r38"></a></span> <br/><span class="label"><a id="x1-80039r39"></a></span>    :param v: a vector of integers <br/><span class="label"><a id="x1-80040r40"></a></span>    :param p: radical of the root <br/><span class="label"><a id="x1-80041r41"></a></span>    :return: p-norm of a vector v <br/><span class="label"><a id="x1-80042r42"></a></span>    ”</span><!--l. 42--><span class="listings-nested">””</span> <br/><span class="label"><a id="x1-80043r43"></a></span>    return nroot(sum(list(map((lambda x: x **p), v))), p)
+          <br/><span class="label"><a id="x1-80046r46"></a></span></pre>
          </pre>
                            </div>
                         </div>
@@ -3814,7 +4486,7 @@ function would return:
                         Chapter 2
                      </span>
                      <br/>
-                     <a id="x1-720002">
+                     <a id="x1-810002">
                      </a>
                      Object-Oriented Programming
                   </h2>
@@ -3824,14 +4496,14 @@ function would return:
                   <p>
                      <a id="ssec:Exercises">
                      </a>
-                     <a id="x1-72001r5">
+                     <a id="x1-81001r5">
                      </a>
                   </p>
                   <h4 class="subsectionHead">
                      <span class="titlemark">
                         2.0.2
                      </span>
-                     <a id="x1-730002">
+                     <a id="x1-820002">
                      </a>
                      Exercises
                   </h4>
