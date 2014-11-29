@@ -4,22 +4,29 @@ SETLOCAL ENABLEEXTENSIONS
 SETLOCAL ENABLEDELAYEDEXPANSION
 
 set SolutionDirectory=%~dp0
-START  /b /wait "HTLATEX" /d  "%SolutionDirectory%" htlatex GoodrichTamassiaGoldwasserPages.tex blogConfig.cfg
+START  /b /wait "HTLATEX" /d  "%SolutionDirectory%" htlatex GoodrichTamassiaGoldwasserPages.tex blog.cfg
 echo.
 echo.
 echo  			HTLATEX done...
 echo.
 echo.
-START  /b /wait "Bootstrapify" /d  "%SolutionDirectory%" Bootstrapify.exe GoodrichTamassiaGoldwasserPages.html index.html
+START  /b /wait "Bootstrapify" /d  "%SolutionDirectory%" Bootstrapify.exe GoodrichTamassiaGoldwasserPages.html file.html
 echo.
 echo.
 echo  			Bootstrapify done...
 echo.
 echo.
-START /b /wait "Tidy2" %SolutionDirectory%\..\tools\tidy2\tidy.exe "-config tidy_config.txt" "-o file.html" "index.html"
+START /b /wait "BeautifulSoup"  C:\Anaconda\python.exe ..\BeautifyHtml\BeautifyHtml.py
 echo.
 echo.
-echo  			Tidy2 done...
+echo  			BeautifulSoup done...
+echo.
+echo.
+del file.html
+START  /b /wait "XELATEX" /d  "%SolutionDirectory%" xelatex -enable-write18 -synctex=-1 -max-print-line=120 "GoodrichTamassiaGoldwasserPages.tex" 
+echo.
+echo.
+echo  			XELATEX done...
 echo.
 echo.
 goto :eof
