@@ -10,4 +10,13 @@ del GoodrichTamassiaGoldwasserPages.log
 del GoodrichTamassiaGoldwasserPages.tmp
 del GoodrichTamassiaGoldwasserPages.toc
 del GoodrichTamassiaGoldwasserPages.xdv
+del *.4ct
+del *.4tc
+del GoodrichTamassiaGoldwasserPages.html
+del *.out
+del *.tps
+del *.xref
 del texput.log
+del *.tmp
+del *.synctex
+del ch01.pdf

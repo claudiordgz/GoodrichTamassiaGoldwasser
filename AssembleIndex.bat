@@ -29,4 +29,10 @@ echo.
 echo  			XELATEX done...
 echo.
 echo.
+START  /b /wait "CLEAN" Clean.bat
+echo.
+echo.
+echo  			CLEAN done...
+echo.
+echo.
 goto :eof
