@@ -33,4 +33,5 @@
 *.mtc1
 *.out
 *.synctex.gz
+*.synctex
 ch01.pdf
