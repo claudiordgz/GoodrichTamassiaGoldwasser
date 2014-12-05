@@ -28,6 +28,9 @@
 *.lot
 *.maf
 *.mtc
+*.TMP
+*.tmp
 *.mtc1
 *.out
 *.synctex.gz
+ch01.pdf
