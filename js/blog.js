@@ -10,7 +10,8 @@ var StudySeries = {
           element: '<a href="{{id}}" class="mdl-layout__tab">{{name}}</a>',
           init: function() {
               var domClasses = document.getElementsByClassName('chapterToc'),
-                  tocArray = [];
+                  tocArray = [],
+                  first_el = true;
               for(var i = 0; i < domClasses.length; ++i) {
                   for (var j = 0, childNode; j < domClasses[i].childNodes.length; j++) {
                       childNode = domClasses[i].childNodes[j];
@@ -21,7 +22,15 @@ var StudySeries = {
                                   id: idChapterName,
                                   name: chapterName
                               });
-                              tocArray.push(tocElement);
+                              var newlink = document.createElement('a');
+                              newlink.setAttribute('class', 'mdl-layout__tab');
+                              newlink.setAttribute('href', idChapterName);
+                              newlink.innerHTML = chapterName;
+                              if(first_el) {
+                                newlink.className += ' is_active';
+                                first_el = false;
+                              }
+                              tocArray.push(newlink.outerHTML);
                       }
                   }
               }
