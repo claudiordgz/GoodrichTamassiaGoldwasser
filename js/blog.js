@@ -6,8 +6,8 @@ var StudySeries = {
     },
     CreateToc: function() {
       return {
-          container: '<div class="mdl-layout__tab-bar-container"><div class="mdl-layout__tab-bar-button mdl-layout__tab-bar-left-button"><i class="material-icons">chevron_left</i></div><div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-js-ripple-effect--ignore-events" data-upgraded=",MaterialRipple">{element}</div><div class="mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button"><i class="material-icons">chevron_right</i></div></div>',
-          element: '<a href="{{id}}" class="mdl-layout__tab">{{name}}<span class="mdl-layout__tab-ripple-container mdl-js-ripple-effect" data-upgraded=",MaterialRipple"><span class="mdl-ripple is-animating" style="width: 268.063079926547px; height: 268.063079926547px; -webkit-transform: translate(-50%, -50%) translate(19px, 44px); transform: translate(-50%, -50%) translate(19px, 44px);"></span></span></a>',
+          container: '<div class="mdl-layout--large-screen-only mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">{element}</div>',
+          element: '<a href="{{id}}" class="mdl-layout__tab">{{name}}</a>',
           init: function() {
               var domClasses = document.getElementsByClassName('chapterToc'),
                   tocArray = [];
