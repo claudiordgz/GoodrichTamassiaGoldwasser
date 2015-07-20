@@ -1,0 +1,25 @@
+{
+  "name": "study-series-goodrich-tamassia-goldwasser",
+  "version": "0.0.1",
+  "description": "Study Notes and Answers for Data Structures and Algorithms in Python",
+  "license": {
+    "type": "Apache-2",
+    "url": "https://claudiordgz.github.io/GoodrichTamassiaGoldwasser/"
+  },
+  "author": {
+    "name": "Claudio Rodriguez"
+  },
+  "homepage": "https://claudiordgz.github.io/GoodrichTamassiaGoldwasser/",
+  "maintainers": [
+    {
+      "name": "claudiordgz",
+      "email": "claudiordgz@gmail.com"
+    }
+  ],
+  "devDependencies": {
+    "font-awesome": "^4.3.0",
+    "icanhaz": "^0.10.3",
+    "material-design-lite": "^1.0.0-3",
+    "mustache": "^2.1.2"
+  }
+}

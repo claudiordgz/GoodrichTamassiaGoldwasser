@@ -10,13 +10,13 @@ echo.
 echo  			HTLATEX done...
 echo.
 echo.
-START  /b /wait "Bootstrapify" /d ../tools/Bootstrapify.exe ../../GoodrichTamassiaGoldwasser/GoodrichTamassiaGoldwasserPages.html ../../GoodrichTamassiaGoldwasser/file.html
+START  /b /wait "Bootstrapify" "../tools/bootstrapify/Bootstrapify.exe" ../../GoodrichTamassiaGoldwasser/GoodrichTamassiaGoldwasserPages.html ../../GoodrichTamassiaGoldwasser/file.html
 echo.
 echo.
 echo  			Bootstrapify done...
 echo.
 echo.
-START /b /wait "BeautifulSoup"  C:\Anaconda\python.exe ../StudySeriesStyles/BeautifyHtml/BeautifyHtml.py
+START /b /wait "BeautifulSoup"  C:\Anaconda\python.exe ../StudySeriesStyles/BeautifyHtml/BeautifyHtml.py "E:/Claudio/git/sites/GoodrichTamassiaGoldwasser/file.html" "E:/Claudio/git/sites/GoodrichTamassiaGoldwasser/index.html"
 echo.
 echo.
 echo  			BeautifulSoup done...
@@ -27,12 +27,6 @@ START  /b /wait "XELATEX" /d  "%SolutionDirectory%" xelatex -enable-write18 -syn
 echo.
 echo.
 echo  			XELATEX done...
-echo.
-echo.
-START  /b /wait "CLEAN" Clean.bat
-echo.
-echo.
-echo  			CLEAN done...
 echo.
 echo.
 goto :eof

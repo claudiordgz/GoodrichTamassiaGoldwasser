@@ -34,4 +34,6 @@
 *.out
 *.synctex.gz
 *.synctex
+*.fuse*
+*.idea
 ch01.pdf
